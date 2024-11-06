@@ -1,4 +1,7 @@
-@import "./reset.scss";
+@use "./reset.scss";
+@use "./header.scss";
+@use "./main.scss";
+@use "./footer.scss";
 
 * {
   box-sizing: border-box;

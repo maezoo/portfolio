@@ -1,0 +1,63 @@
+@use "./color.scss";
+
+header {
+  // background-color: red;
+  width: 100vw;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 1px 0px 20px 3px rgba(78, 78, 78, 0.082);
+
+
+
+  .header_wrap {
+    // background-color: greenyellow;
+    padding: 0px 2% 10px 2%;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    // align-items: center;
+    align-items: flex-end;
+    // align-items: center;
+  }
+
+  .logo {
+    font-size: 3rem;
+    font-weight: bold;
+
+    span {
+      font-weight: 400;
+      font-size: 2rem;
+
+    }
+  }
+
+
+  .gnb {
+    width: 30%;
+    // background-color: orange;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+
+    // align-items: center;
+
+    li {
+      // background-color: darkgray;
+
+
+      .lnb_list {
+        display: none;
+        position: absolute;
+        top: 70px;
+        font-size: 1.8rem;
+
+        li {
+          // padding: 10px;
+          background-color: salmon;
+        }
+      }
+    }
+  }
+}

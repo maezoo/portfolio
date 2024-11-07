@@ -22,3 +22,24 @@
 // `
 
 // setupCounter(document.querySelector('#counter'))
+
+
+const clickImg = document.querySelector('.clone');
+const infoShow = document.querySelector('.info');
+
+clickImg.addEventListener('click', () => {
+  infoShow.classList.toggle('show'); // 토글 기능으로 등장/사라짐 조절
+});
+clickImg.addEventListener('click', () => {
+  // infoShow.classList.t('show'); // 토글 기능으로 등장/사라짐 조절
+});
+// clickImg.addEventListener('click', () => {
+//   clickImg.style.animation = 'none'; // 애니메이션 제거
+//   clickImg.style.filter = 'none'; // 애니메이션 제거
+// });
+
+
+clickImg.addEventListener('click', () => {
+  clickImg.classList.toggle('noAni');
+});
+

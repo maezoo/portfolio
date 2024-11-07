@@ -43,3 +43,25 @@ clickImg.addEventListener('click', () => {
   clickImg.classList.toggle('noAni');
 });
 
+
+// ====================
+
+const clickProject = document.querySelector('.menu1');
+const projectShow = document.querySelector('.project');
+
+clickProject.addEventListener('click', () => {
+  projectShow.classList.toggle('show');
+});
+
+// ====================
+
+
+const clickCoding = document.querySelector('.coding');
+const openCoding = document.querySelector('.codingHome');
+const clickDesign = document.querySelector('.design');
+const openDesign = document.querySelector('.designHome');
+
+
+clickCoding.addEventListener('click', () => {
+  openCoding.classList.toggle('show');
+});   

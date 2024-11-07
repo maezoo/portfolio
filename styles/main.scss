@@ -3,34 +3,35 @@
 
 main {
   font-size: 1.8rem;
-  padding: 40px 20px;
+  // padding: 40px 20px;
   width: 100vw;
 
   // background-color: sandybrown;
   height: 100vh;
 
-  .visual {
 
-    .project_wrapper {
-      // padding: 0 500px;
-      display: flex;
-      // flex-direction: column;
-      // gap: 5px;
-      // width: ;
-      // animation: rotate_pro 3s linear infinite;
-      // transform-style: preserve-3d;
+  .codingHome {
+    // opacity: 0;
+    padding: 70px 0px;
+    display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // padding: 0 500px;
+    // flex-direction: column;
+    // gap: 5px;
+    // width: ;
+    // transform-style: preserve-3d;
+    // animation: rotate_pro 3s linear infinite;
 
-      @keyframes rotate_pro {
-        0% {
-          transform: rotateX(0deg) rotateY(180deg);
-        }
+    // @keyframes rotate_pro {
+    //   0% {
+    //     transform: rotateX(0deg) rotateY(180deg);
+    //   }
 
-        100% {
-          transform: rotateX(0deg)rotateY(360deg);
-        }
-      }
-    }
-
+    //   100% {
+    //     transform: rotateX(0deg)rotateY(360deg);
+    //   }
+    // }
     // width: 100vw;
     // height: 100vh;
     // background-color: rgb(185, 132, 94);
@@ -39,89 +40,104 @@ main {
     // .project_1 {
     // display: flex;
     // justify-content: center;
-    // gap: 45px;
-    .project_1 {
-      // position: absolute;
-      // width: 100px;
-      // transform: translateZ(100px);
+    // position: absolute;
+    // width: 100px;
+    // transform: translateZ(100px);
 
 
+    // gap: 35px;
 
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      // gap: 35px;
+    //   background: url(/images/suseong.JPG) no-repeat;
+    //   background-size: cover;
+    //   width: 300px;
+    //   height: 200px;
+    //   border-radius: 1.6rem;
+    //   box-shadow: -5px 10px 15px rgba(0, 0, 0, 0.25);
+    //   filter: grayscale(1) brightness(0.8);
+    //   animation: rotate_img 3.5s linear infinite;
 
-      //   background: url(/images/suseong.JPG) no-repeat;
-      //   background-size: cover;
-      //   width: 300px;
-      //   height: 200px;
-      //   border-radius: 1.6rem;
-      //   box-shadow: -5px 10px 15px rgba(0, 0, 0, 0.25);
-      //   filter: grayscale(1) brightness(0.8);
-      //   animation: rotate_img 3.5s linear infinite;
+    //   &:hover {
+    //     filter: none;
+    //   }
+    // }
+  }
 
-      //   &:hover {
-      //     filter: none;
-      //   }
-      // }
+}
 
-      .clone {
-        background: url(/images/suseong.JPG) no-repeat;
-        background-size: cover;
-        width: 250px;
-        height: 140px;
-        // width: 400px;
-        // height: 230px;
-        border-radius: 1.4rem;
-        box-shadow: -5px 10px 15px rgba(0, 0, 0, 0.25);
-        filter: grayscale(1) brightness(0.8);
-        // animation: rotate_img 3.5s linear infinite;
+.project_1 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 45px;
 
-        // min-width: 600px;
-        // height: 350px;
-        // min-width: 700px;
-        // height: 400px;
-        // transition: all .1s ease-in-out;
-        // overflow: hidden;
+  .clone {
 
-        &:hover {
-          filter: none;
-          // background-position: 100% 100%;
-          // transition: all 2s linear;
-          // animation: none;
-          // animation: size_img .1s linear infinite;
-        }
-
-        // @keyframes size_img {
-        //   0% {
-        //     // transform: scaleX(600px) scaleY(350px);
-        //     transform: scale(0);
-
-        //   }
-
-        //   100% {
-        //     // transform: scaleX(700px) scaleY(400px);
-        //     transform: scale(1, 1);
-
-        //   }
-        // }
-
-      }
-
-      @keyframes rotate_img {
-        0% {
-          transform: perspective(1500px) rotateY(0deg);
-        }
-
-        100% {
-          transform: perspective(1500px) rotateY(360deg);
-        }
-      }
+    h2 {
+      font-size: 3.6rem;
     }
+
+    h3 {
+      font-size: 2.4rem;
+    }
+  }
+
+  .clone_img {
+
+
+
+    background: url(/images/suseong.JPG) no-repeat;
+    background-size: cover;
+    width: 250px;
+    height: 140px;
+    // width: 400px;
+    // height: 230px;
+    border-radius: 1.4rem;
+    box-shadow: -5px 10px 15px rgba(0, 0, 0, 0.25);
+    filter: grayscale(1) brightness(0.8);
+    // animation: rotate_img 3.5s linear infinite;
+
+    // min-width: 600px;
+    // height: 350px;
+    // min-width: 700px;
+    // height: 400px;
+    // transition: all .1s ease-in-out;
+    // overflow: hidden;
+
+    &:hover {
+      filter: none;
+      // background-position: 100% 100%;
+      // transition: all 2s linear;
+      // animation: none;
+      // animation: size_img .1s linear infinite;
+    }
+
+    // @keyframes size_img {
+    //   0% {
+    //     // transform: scaleX(600px) scaleY(350px);
+    //     transform: scale(0);
+
+    //   }
+
+    //   100% {
+    //     // transform: scaleX(700px) scaleY(400px);
+    //     transform: scale(1, 1);
+
+    //   }
+    // }
+
   }
 }
 
+
+@keyframes rotate_img {
+  0% {
+    transform: perspective(1500px) rotateY(0deg);
+  }
+
+  100% {
+    transform: perspective(1500px) rotateY(360deg);
+  }
+}
 
 .info {
   opacity: 0;
@@ -132,13 +148,6 @@ main {
   justify-content: flex-end;
   // align-items: center;
 
-  h2 {
-    font-size: 3.6rem;
-  }
-
-  h3 {
-    font-size: 2.4rem;
-  }
 
   table {
     margin: 0 0 5px 0;
@@ -192,7 +201,6 @@ main {
     line-height: 40px;
   }
 }
-
 
 .info.show {
   opacity: 1;

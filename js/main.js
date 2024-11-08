@@ -1,3 +1,90 @@
+const clickCoding = document.querySelector('.coding');
+
+const projectElements = document.querySelectorAll('.project');
+const openCoding = document.querySelector('.codingHome');
+
+clickCoding.addEventListener('click', function (e) {
+  e.preventDefault();
+
+  // 모든 .project 요소 숨기기
+  projectElements.forEach(project => {
+    project.style.display = 'none';
+  });
+
+  // .codingHome 요소 보이기
+  openCoding.style.display = 'block';
+});
+// $('.coding').click(function (e) {
+//   e.preventDefault();
+//   $('.project').hide()
+//   $('.codingHome').show()
+// })
+
+
+// const openCoding = document.querySelector('.codingHome');
+// const clickDesign = document.querySelector('.design');
+// const openDesign = document.querySelector('.designHome');
+
+
+// clickCoding.addEventListener('click', () => {
+//   openCoding.classList.toggle('show');
+// });
+
+
+
+
+// =====================================================================
+const clickImg = document.querySelector('.clone');
+const infoShow = document.querySelector('.info_page');
+const imgZoom = document.querySelector('.zoom_img');
+const closeBtn = document.querySelector('.title img');
+const backHome = document.querySelector('.codingHome');
+
+clickImg.addEventListener('click', () => {
+  infoShow.classList.toggle('show'); // 토글 기능으로 등장/사라짐 조절
+  imgZoom.classList.toggle('zoom'); // 토글 기능으로 등장/사라짐 조절
+  clickImg.classList.toggle('remove'); // 토글 기능으로 등장/사라짐 조절
+});
+
+closeBtn.addEventListener('click', () => {
+  infoShow.classList.toggle('show');
+});
+
+
+
+// 토글 기능으로 등장/사라짐 조절
+// infoShow.classList.remove('remove'); // 토글 기능으로 등장/사라짐 조절
+
+
+// clickImg.addEventListener('click', () => {
+// infoShow.classList.t('show'); // 토글 기능으로 등장/사라짐 조절
+// });
+// clickImg.addEventListener('click', () => {
+//   clickImg.style.animation = 'none'; // 애니메이션 제 ㅇ거
+//   clickImg.style.filter = 'none'; // 애니메이션 제거
+// });
+
+
+clickImg.addEventListener('click', () => {
+  clickImg.classList.toggle('noAni');
+});
+
+
+// ====================
+
+const clickProject = document.querySelector('.menu1');
+const projectShow = document.querySelector('.project');
+
+clickProject.addEventListener('click', () => {
+  projectShow.classList.toggle('show');
+});
+
+// ====================
+
+
+
+
+// =====================================================================
 // import './style.css'
 // import javascriptLogo from './javascript.svg'
 // import viteLogo from '/vite.svg'
@@ -22,46 +109,3 @@
 // `
 
 // setupCounter(document.querySelector('#counter'))
-
-
-const clickImg = document.querySelector('.clone');
-const infoShow = document.querySelector('.info');
-
-clickImg.addEventListener('click', () => {
-  infoShow.classList.toggle('show'); // 토글 기능으로 등장/사라짐 조절
-});
-clickImg.addEventListener('click', () => {
-  // infoShow.classList.t('show'); // 토글 기능으로 등장/사라짐 조절
-});
-// clickImg.addEventListener('click', () => {
-//   clickImg.style.animation = 'none'; // 애니메이션 제거
-//   clickImg.style.filter = 'none'; // 애니메이션 제거
-// });
-
-
-clickImg.addEventListener('click', () => {
-  clickImg.classList.toggle('noAni');
-});
-
-
-// ====================
-
-const clickProject = document.querySelector('.menu1');
-const projectShow = document.querySelector('.project');
-
-clickProject.addEventListener('click', () => {
-  projectShow.classList.toggle('show');
-});
-
-// ====================
-
-
-const clickCoding = document.querySelector('.coding');
-const openCoding = document.querySelector('.codingHome');
-const clickDesign = document.querySelector('.design');
-const openDesign = document.querySelector('.designHome');
-
-
-clickCoding.addEventListener('click', () => {
-  openCoding.classList.toggle('show');
-});   

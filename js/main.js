@@ -1,19 +1,43 @@
-const clickCoding = document.querySelector('.coding');
+// =======================================================
+// 첫번째 화면전환 ===========================================
+const clickPort = document.querySelector('.text_box');
+const clickLogo = document.querySelector('.logo');
+const hideIntro = document.querySelector('.intro');
+const showHeader = document.querySelector('header');
+const showProject = document.querySelector('.project');
 
-const projectElements = document.querySelectorAll('.project');
-const openCoding = document.querySelector('.codingHome');
-
-clickCoding.addEventListener('click', function (e) {
-  e.preventDefault();
-
-  // 모든 .project 요소 숨기기
-  projectElements.forEach(project => {
-    project.style.display = 'none';
-  });
-
-  // .codingHome 요소 보이기
-  openCoding.style.display = 'block';
+clickPort.addEventListener('click', () => {
+  hideIntro.classList.toggle('hide');
+  showHeader.classList.toggle('show');
+  showProject.classList.toggle('show');
 });
+
+clickLogo.addEventListener('click', () => {
+  hideIntro.classList.toggle('hide');
+  showHeader.classList.toggle('show');
+  showProject.classList.toggle('show');
+});
+// =======================================================
+// =======================================================
+
+
+
+
+// const clickCoding = document.querySelector('.coding');
+// const projectElements = document.querySelectorAll('.project');
+// const openCoding = document.querySelector('.codingHome');
+
+// clickCoding.addEventListener('click', function (e) {
+//   e.preventDefault();
+
+//   projectElements.forEach(project => {
+//     project.style.display = 'none';
+//   });
+
+//   openCoding.style.display = 'block';
+// });
+
+
 // $('.coding').click(function (e) {
 //   e.preventDefault();
 //   $('.project').hide()
@@ -34,21 +58,21 @@ clickCoding.addEventListener('click', function (e) {
 
 
 // =====================================================================
-const clickImg = document.querySelector('.clone');
-const infoShow = document.querySelector('.info_page');
-const imgZoom = document.querySelector('.zoom_img');
-const closeBtn = document.querySelector('.title img');
-const backHome = document.querySelector('.codingHome');
+// const clickImg = document.querySelector('.clone');
+// const infoShow = document.querySelector('.info_page');
+// const imgZoom = document.querySelector('.zoom_img');
+// const closeBtn = document.querySelector('.title img');
+// const backHome = document.querySelector('.codingHome');
 
-clickImg.addEventListener('click', () => {
-  infoShow.classList.toggle('show'); // 토글 기능으로 등장/사라짐 조절
-  imgZoom.classList.toggle('zoom'); // 토글 기능으로 등장/사라짐 조절
-  clickImg.classList.toggle('remove'); // 토글 기능으로 등장/사라짐 조절
-});
+// clickImg.addEventListener('click', () => {
+//   infoShow.classList.toggle('show'); // 토글 기능으로 등장/사라짐 조절
+//   imgZoom.classList.toggle('zoom'); // 토글 기능으로 등장/사라짐 조절
+//   clickImg.classList.toggle('remove'); // 토글 기능으로 등장/사라짐 조절
+// });
 
-closeBtn.addEventListener('click', () => {
-  infoShow.classList.toggle('show');
-});
+// closeBtn.addEventListener('click', () => {
+//   infoShow.classList.toggle('show');
+// });
 
 
 
@@ -65,19 +89,19 @@ closeBtn.addEventListener('click', () => {
 // });
 
 
-clickImg.addEventListener('click', () => {
-  clickImg.classList.toggle('noAni');
-});
+// clickImg.addEventListener('click', () => {
+//   clickImg.classList.toggle('noAni');
+// });
 
 
 // ====================
 
-const clickProject = document.querySelector('.menu1');
-const projectShow = document.querySelector('.project');
+// const clickProject = document.querySelector('.menu1');
+// const projectShow = document.querySelector('.project');
 
-clickProject.addEventListener('click', () => {
-  projectShow.classList.toggle('show');
-});
+// clickProject.addEventListener('click', () => {
+//   projectShow.classList.toggle('show');
+// });
 
 // ====================
 

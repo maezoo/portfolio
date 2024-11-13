@@ -23,11 +23,11 @@ a {
 
 // =============================================
 .intro {
-  opacity: 1;
+  display: block;
 }
 
 .intro.hide {
-  opacity: 0;
+  display: none;
 }
 
 // =============================================
@@ -49,3 +49,9 @@ header.show {
 .project.show {
   opacity: 1;
 }
+
+// =============================================
+
+// .tab_item.sectionShow {
+//   display: none;
+// }

@@ -1,3 +1,95 @@
+
+// const openCoding = document.querySelector('.codingHome');
+// const clickDesign = document.querySelector('.design');
+// const openDesign = document.querySelector('.designHome');
+
+
+// clickCoding.addEventListener('click', () => {
+//   openCoding.classList.toggle('show');
+// });
+
+
+
+// const projectElements = document.querySelectorAll('.project');
+// const openCoding = document.querySelector('.codingHome');
+
+
+// const clickCoding = document.querySelector('.coding');
+// const sectionTabs = document.querySelectorAll('.tab_item');
+
+// clickCoding.addEventListener('click', function (e) {
+//   e.preventDefault();
+
+//   sectionTabs.forEach(tab_item => {
+//     tab_item.style.display = 'none';
+//   });
+
+//   openCoding.style.display = 'block';
+// });
+
+
+// $('.coding').click(function (e) {
+//   e.preventDefault();
+//   $('.project').hide()
+//   $('.codingHome').show()
+// })
+
+
+
+// =======================================================
+// =======================================================
+const menuItems = document.querySelectorAll('.gnb_list');
+const sectionTabs = document.querySelectorAll('.tab_item');
+
+menuItems.forEach(button => {
+  button.addEventListener('click', function () {
+    sectionTabs.forEach(tab => {
+      tab.style.display = 'none';  // 또는 tab.classList.add('hide');
+    });
+
+
+    // 클릭한 메뉴에 해당하는 tab_item을 표시하기
+    const targetTabId = button.getAttribute('data-tab');
+    const targetTab = document.querySelector(`#${targetTabId}`);
+    targetTab.style.display = 'block';  // 또는 targetTab.classList.remove('hide');
+  });
+});
+
+
+
+
+
+
+
+
+// // 선택된 탭 ID 얻기
+// const clickDataTab = this.getAttribute('data-tab')
+// const targetTab = document.getElementById(clickDataTab);
+
+// // 모든 탭 항목 숨기기
+// // sectionTabs.forEach(item => item.style.display = 'none');
+
+// // 선택된 탭만 표시
+// if (targetTab) {
+//   targetTab.style.display = 'block';
+//   targetTab.style.opacity = 0;
+//   // 페이드 인 효과
+//   let opacity = 0;
+//   const fadeIn = setInterval(function () {
+//     if (opacity < 1) {
+//       opacity += 0.1;
+//       targetTab.style.opacity = opacity;
+//     } else {
+//       clearInterval(fadeIn);
+//     }
+//   }, 100);
+// }
+//   });
+// });
+
+// // 첫 번째 탭 버튼 클릭을 자동으로 트리거
+// menuItems[0]?.click();
+
 // =======================================================
 // 첫번째 화면전환 ===========================================
 const clickPort = document.querySelector('.text_box');
@@ -21,38 +113,6 @@ clickLogo.addEventListener('click', () => {
 // =======================================================
 
 
-
-
-// const clickCoding = document.querySelector('.coding');
-// const projectElements = document.querySelectorAll('.project');
-// const openCoding = document.querySelector('.codingHome');
-
-// clickCoding.addEventListener('click', function (e) {
-//   e.preventDefault();
-
-//   projectElements.forEach(project => {
-//     project.style.display = 'none';
-//   });
-
-//   openCoding.style.display = 'block';
-// });
-
-
-// $('.coding').click(function (e) {
-//   e.preventDefault();
-//   $('.project').hide()
-//   $('.codingHome').show()
-// })
-
-
-// const openCoding = document.querySelector('.codingHome');
-// const clickDesign = document.querySelector('.design');
-// const openDesign = document.querySelector('.designHome');
-
-
-// clickCoding.addEventListener('click', () => {
-//   openCoding.classList.toggle('show');
-// });
 
 
 

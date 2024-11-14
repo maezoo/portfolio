@@ -2,7 +2,6 @@
 @use "./header.scss";
 @use "./main.scss";
 @use "./intro.scss";
-@use "./home.scss";
 
 * {
   box-sizing: border-box;
@@ -32,25 +31,43 @@ a {
 
 // =============================================
 
-header {
-  opacity: 0;
+.firstPage {
+  display: none;
 }
 
-header.show {
-  opacity: 1;
+.firstPage.show {
+  display: block;
 }
 
-// =============================================
 
-.project {
-  opacity: 0;
+.tab_item {
+  display: none;
 }
 
-.project.show {
-  opacity: 1;
+/* .firstPage.show가 적용되었을 때 */
+.firstPage.show .tab_item:nth-child(1) {
+  display: block;
 }
 
-// =============================================
+// header {
+//   opacity: 0;
+// }
+
+// header.show {
+//   opacity: 1;
+// }
+
+// // =============================================
+
+// .project {
+//   opacity: 0;
+// }
+
+// .project.show {
+//   opacity: 1;
+// }
+
+// // =============================================
 
 // .tab_item.sectionShow {
 //   display: none;

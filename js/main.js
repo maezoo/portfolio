@@ -34,83 +34,49 @@
 //   $('.codingHome').show()
 // })
 
+// =======================================================
+// 첫번째 화면전환 ===========================================
+const clickPort = document.querySelector('.text_box');
+const hideIntro = document.querySelector('.intro');
+const firstTab = document.querySelectorAll('.firstPage');
+const clickLogo = document.querySelector('.logo');
 
+const toggleTab = () => {
+  hideIntro.classList.toggle('hide');
+  firstTab.forEach(active => {
+    active.classList.toggle('show');
+  });
+};
+
+clickPort.addEventListener('click', toggleTab);
+clickLogo.addEventListener('click', toggleTab);
+
+//   hideIntro.classList.toggle('hide');
+//   showHeader.classList.toggle('show');
+//   showProject.classList.toggle('show');
+// });
 
 // =======================================================
 // =======================================================
+
+// =======================================================
+// 메뉴 전환 ============================================
 const menuItems = document.querySelectorAll('.gnb_list');
 const sectionTabs = document.querySelectorAll('.tab_item');
 
 menuItems.forEach(button => {
   button.addEventListener('click', function () {
     sectionTabs.forEach(tab => {
-      tab.style.display = 'none';  // 또는 tab.classList.add('hide');
+      tab.style.display = 'none';
     });
 
 
-    // 클릭한 메뉴에 해당하는 tab_item을 표시하기
     const targetTabId = button.getAttribute('data-tab');
     const targetTab = document.querySelector(`#${targetTabId}`);
-    targetTab.style.display = 'block';  // 또는 targetTab.classList.remove('hide');
+    targetTab.style.display = 'block';
   });
 });
 
-
-
-
-
-
-
-
-// // 선택된 탭 ID 얻기
-// const clickDataTab = this.getAttribute('data-tab')
-// const targetTab = document.getElementById(clickDataTab);
-
-// // 모든 탭 항목 숨기기
-// // sectionTabs.forEach(item => item.style.display = 'none');
-
-// // 선택된 탭만 표시
-// if (targetTab) {
-//   targetTab.style.display = 'block';
-//   targetTab.style.opacity = 0;
-//   // 페이드 인 효과
-//   let opacity = 0;
-//   const fadeIn = setInterval(function () {
-//     if (opacity < 1) {
-//       opacity += 0.1;
-//       targetTab.style.opacity = opacity;
-//     } else {
-//       clearInterval(fadeIn);
-//     }
-//   }, 100);
-// }
-//   });
-// });
-
-// // 첫 번째 탭 버튼 클릭을 자동으로 트리거
-// menuItems[0]?.click();
-
-// =======================================================
-// 첫번째 화면전환 ===========================================
-const clickPort = document.querySelector('.text_box');
-const clickLogo = document.querySelector('.logo');
-const hideIntro = document.querySelector('.intro');
-const showHeader = document.querySelector('header');
-const showProject = document.querySelector('.project');
-
-clickPort.addEventListener('click', () => {
-  hideIntro.classList.toggle('hide');
-  showHeader.classList.toggle('show');
-  showProject.classList.toggle('show');
-});
-
-clickLogo.addEventListener('click', () => {
-  hideIntro.classList.toggle('hide');
-  showHeader.classList.toggle('show');
-  showProject.classList.toggle('show');
-});
-// =======================================================
-// =======================================================
 
 
 

@@ -11,11 +11,20 @@ main {
   font-size: 1.8rem;
   width: 100vw;
   height: 100vh;
+
+  .inner {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 main section {
-  padding: 100px 3% 0;
+  padding: 110px 3% 0;
+  width: 100%;
+  height: 100%;
 }
+
+
 
 .project {
   width: 100%;
@@ -25,14 +34,11 @@ main section {
   text-shadow: 35px 30px 15px rgb(179, 179, 179);
 
   .project_inner {
-    width: 100%;
-    height: 100%;
     display: flex;
     gap: 200px;
     align-items: center;
     justify-content: center;
   }
-
 
   .coding {
     cursor: pointer;
@@ -54,7 +60,56 @@ main section {
   }
 }
 
+.aboutMe_inner {
+  // height: 30px;
+  // padding: 0px 3%;
+  background-color: rgb(196, 169, 205);
+  display: flex;
+  align-items: center;
+  gap: 120px;
+  justify-content: center;
 
+  font-size: 2.2rem;
+
+  h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    // margin: 15px 0;
+  }
+
+  h6 {
+    font-size: 1.9rem;
+  }
+
+  .meBox_1 {
+    .photo {
+      background: url(/images/포폴사진.jpg) no-repeat 42% 54%;
+      background-size: cover;
+      width: 250px;
+      height: 360px;
+      border-radius: 100%;
+    }
+  }
+
+  .performance ul {
+    display: flex;
+    gap: 10px;
+  }
+}
+
+
+.meBox_3 {}
+
+
+.meBox_detail {
+  background-color: salmon;
+  margin-bottom: 20px;
+  // display: flex;
+  // flex-direction: column;
+  // gap: 10px;
+}
+
+// =======================================
 .codingHome {
   opacity: 0;
   width: 100%;

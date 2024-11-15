@@ -17,26 +17,29 @@ main {
   .inner {
     width: 100%;
     height: 100%;
+    margin: 150px 3% 0;
     // background-color: orange;
-
   }
 }
 
 main section {
+
   // width: 100%;
   // height: 100%;
-  padding: 150px 3% 0;
 
 }
 
-.project {
+
+.home {
   width: 100%;
   height: 100%;
   font-family: 'Cafe24Decoshadow';
   font-size: 10rem;
   text-shadow: 35px 30px 15px rgb(179, 179, 179);
 
-  .project_inner {
+  .home_inner {
+    width: 100%;
+    height: 100%;
     display: flex;
     gap: 200px;
     align-items: center;
@@ -67,38 +70,12 @@ main section {
   display: flex;
   justify-content: center;
 
-  // height: 100vh;
-  // width: 100%;
-  // height: 100vh;
   .meBox_wrapper {
     font-size: 2.2rem;
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
-    // align-items: flex-start;
-    // justify-content: center;
-    // text-align: left;
     width: 50%;
-    // height: 100%;
-
-    // justify-content: center;
-    // gap: 100px;
-    // height: 100%;
-    // width: 100%;
-    // width: fit-content;
-    // align-items: center;
-
-    // height: 30px;
-    // padding: 0px 3%;
-    // height: fit-content;
 
     .meBox_detail {
-      // width: fit-content;
       margin-bottom: 60px;
-      // margin-bottom: 100px;
-      // display: flex;
-      // flex-direction: column;
-      // gap: 50px;
     }
 
     h3 {
@@ -117,7 +94,6 @@ main section {
       margin-bottom: 5px;
     }
 
-
     .photo {
       display: flex;
       align-items: center;
@@ -125,14 +101,12 @@ main section {
     }
 
     .photo_img {
-      // background: url(/images/포폴사진.jpg) no-repeat 40%;
-      background: green;
+      background: url(/images/포폴사진.jpg) no-repeat 40%;
       background-size: cover;
       width: 320px;
       height: 430px;
       border-radius: 100%;
     }
-
 
     .performance ul {
       display: flex;

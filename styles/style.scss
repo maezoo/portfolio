@@ -48,3 +48,15 @@ a {
 .firstPage.show .tab_item:nth-child(1) {
   display: block;
 }
+
+
+
+.lnb_list li.active {
+  // background-color: cornflowerblue;
+  // display: block;
+}
+
+
+.lnb_tab.active {
+  display: block;
+}

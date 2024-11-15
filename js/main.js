@@ -1,38 +1,43 @@
 
-// const openCoding = document.querySelector('.codingHome');
-// const clickDesign = document.querySelector('.design');
-// const openDesign = document.querySelector('.designHome');
+// const lnbListsClick = document.querySelectorAll('.lnb_list a');
+// const gnbBg = document.querySelector('.gnb_bg');
+// const navArea = document.querySelector('.nav');
 
 
-// clickCoding.addEventListener('click', () => {
-//   openCoding.classList.toggle('show');
+// const gnbClicks = document.querySelectorAll('.gnb_list');
+// const lnbLists = document.querySelectorAll('.lnb_list');
+
+// gnbClicks.forEach(gnbClick => {
+//   gnbClick.addEventListener('mouseover', () => {
+//     lnbLists.forEach(lnbList => {
+//       lnbList.classList.add('show');
+//     });
+//   });
 // });
+// gnbBg.classList.add('show');
 
-
-
-// const projectElements = document.querySelectorAll('.project');
-// const openCoding = document.querySelector('.codingHome');
-
-
-// const clickCoding = document.querySelector('.coding');
-// const sectionTabs = document.querySelectorAll('.tab_item');
-
-// clickCoding.addEventListener('click', function (e) {
-//   e.preventDefault();
-
-//   sectionTabs.forEach(tab_item => {
-//     tab_item.style.display = 'none';
+// lnbListsClick.forEach(lnbList => {
+//   lnbList.addEventListener('mouseover', () => {
+//     lnbListsClick.forEach(item => {
+//       if (item !== lnbList) {
+//         item.style.color = '#7a7a7a';
+//       }
+//     });
 //   });
 
-//   openCoding.style.display = 'block';
+//   lnbList.addEventListener('mouseout', () => {
+//     lnbListsClick.forEach(item => {
+//       item.style.color = '';
+//     });
+//   });
 // });
 
-
-// $('.coding').click(function (e) {
-//   e.preventDefault();
-//   $('.project').hide()
-//   $('.codingHome').show()
-// })
+// navArea.addEventListener('mouseleave', () => {
+//   lnbLists.forEach(lnbList => {
+//     lnbList.classList.remove('show');
+//   });
+//   gnbBg.classList.remove('show');
+// });
 
 // =======================================================
 // 첫번째 화면전환 ===========================================
@@ -59,8 +64,63 @@ clickLogo.addEventListener('click', toggleTab);
 // =======================================================
 // =======================================================
 
+// const sectionTabs = document.querySelectorAll('.tab_item');
+
+
+// lnbItems.forEach(lnb_btn => {
+//   lnb_btn.addEventListener('click', function () {
+//     sectionTabs.forEach(tab => {
+//       tab.style.display = 'none';
+//     });
+//   });
+// });
+
+// const targetTabId = lnb_btn.getAttribute('data-tab');
+// const targetTab = document.querySelector(`#${targetTabId}`);
+// if (targetTab) {
+//   targetTab.style.display = 'block';
+// }
+
+
+// const lnbItems = document.querySelectorAll('.lnb_list li');
+// lnbItems.forEach(lnb_btn => {
+
+// menuItems.forEach((idx_1, idx_2) => {
+//   idx_1.addEventListener('click', () => {
+//     sectionTabs.forEach((tab, tabIndex) => {
+//       tab.style.display = tabIndex === idx_2 ? 'block' : 'none';
+//     });
+//   });
+// });
+
+// const lnbItems = document.querySelectorAll('.lnb_item');
+// const lnbTab = document.querySelectorAll('.lnb_tab');
+
+
+// const lnbItems = document.querySelectorAll('.lnb_item');
+// const projectTabs = document.querySelectorAll('.tab_item');
+
+// lnbItems.forEach(lnb_btn => {
+//   lnb_btn.addEventListener('click', () => {
+//     const tabId = lnb_btn.getAttribute('data-tab');
+
+//     // 모든 tab_item을 숨기기
+//     projectTabs.forEach(tab => {
+//       tab.style.display = 'none';
+//     });
+
+//     // 클릭한 lnb_item의 data-tab 값과 동일한 id를 가진 tab_item만 표시
+//     const clickedTab = document.querySelector(`#tab-${tabId}`);
+//     if (clickedTab) {
+//       clickedTab.style.display = 'block';
+//     }
+//   });
+// });
+
+
+
 // =======================================================
-// 메뉴 전환 ============================================
+// // 메뉴 전환 ===============================================
 const menuItems = document.querySelectorAll('.gnb_list');
 const sectionTabs = document.querySelectorAll('.tab_item');
 
@@ -76,13 +136,6 @@ menuItems.forEach(button => {
     targetTab.style.display = 'block';
   });
 });
-
-
-
-
-
-
-
 // =====================================================================
 // const clickImg = document.querySelector('.clone');
 // const infoShow = document.querySelector('.info_page');

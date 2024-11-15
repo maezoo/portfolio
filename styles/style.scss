@@ -21,30 +21,30 @@ a {
 }
 
 // =============================================
-// .intro {
-//   display: block;
-// }
+.intro {
+  display: block;
+}
 
-// .intro.hide {
-//   display: none;
-// }
+.intro.hide {
+  display: none;
+}
 
 // =============================================
 
 .firstPage {
-  // display: none;
+  display: none;
 }
 
 .firstPage.show {
-  // display: block;
+  display: block;
 }
 
 
 .tab_item {
-  // display: none;
+  display: none;
 }
 
 /* .firstPage.show가 적용되었을 때 */
 .firstPage.show .tab_item:nth-child(1) {
-  // display: block;
+  display: block;
 }

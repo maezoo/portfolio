@@ -13,6 +13,7 @@
   align-items: center;
 }
 
+
 // ** ================================================== ** 
 
 main {
@@ -26,23 +27,6 @@ main {
     // background-color: orange;
   }
 
-  .home_inner {
-    gap: 200px;
-    @extend .flex_center;
-  }
-
-  .coding_inner {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 150px;
-  }
-
-  .aboutMe_inner {
-    @extend .flex_center;
-    flex-direction: column;
-    gap: 50px;
-  }
 
   .contact_inner {
     @extend .flex_center;
@@ -68,6 +52,11 @@ main section {
   font-size: 10rem;
   text-shadow: 35px 30px 15px rgb(179, 179, 179);
 
+  .home_inner {
+    gap: 200px;
+    @extend .flex_center;
+  }
+
   .codingIcon {
     cursor: pointer;
 
@@ -88,10 +77,85 @@ main section {
   }
 }
 
+// 원본 지우면 앙대!!
+// .aboutMe {
+//   .aboutMe_inner {
+//     @extend .flex_center;
+//     flex-direction: column;
+//     gap: 50px;
+//   }
+
+//   .meBox_wrapper {
+//     font-size: 2.2rem;
+//     width: 50%;
+
+//     .meBox_detail {
+//       margin-bottom: 60px;
+//     }
+
+//     h3 {
+//       font-size: 2.8rem;
+//       font-weight: bold;
+//       margin-bottom: 20px;
+//     }
+
+//     h6 {
+//       font-size: 1.8rem;
+//       margin-bottom: 20px;
+
+//     }
+
+//     p {
+//       margin-bottom: 5px;
+//     }
+
+//     .photo {
+//       @extend .flex_center;
+//     }
+
+//     .photo_img {
+//       background: url(/images/포폴사진.jpg) no-repeat 40%;
+//       background-size: cover;
+//       width: 320px;
+//       height: 430px;
+//       border-radius: 100%;
+//     }
+
+//     .performance ul {
+//       display: flex;
+//       gap: 15px;
+
+//       li:nth-child(3) {
+//         img {
+//           width: 78px;
+//           height: 87px;
+//           object-fit: contain;
+//         }
+//       }
+//     }
+//   }
+// }
+// 지우면 앙대!!
+
 .aboutMe {
+  .aboutMe_inner {
+    @extend .flex_center;
+    flex-direction: column;
+    gap: 50px;
+  }
+
   .meBox_wrapper {
     font-size: 2.2rem;
-    width: 50%;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+
+    .profile,
+    .education {
+      padding-top: 120px;
+    }
 
     .meBox_detail {
       margin-bottom: 60px;
@@ -113,10 +177,6 @@ main section {
       margin-bottom: 5px;
     }
 
-    .photo {
-      @extend .flex_center;
-    }
-
     .photo_img {
       background: url(/images/포폴사진.jpg) no-repeat 40%;
       background-size: cover;
@@ -128,6 +188,95 @@ main section {
     .performance ul {
       display: flex;
       gap: 15px;
+
+      li:nth-child(3) {
+        img {
+          width: 78px;
+          height: 87px;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 640px) {
+  .aboutMe {
+    .aboutMe_inner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 50px;
+    }
+
+    .meBox_wrapper {
+      font-size: 1.2rem;
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      // align-items: center;
+      // justify-content: flex-start;
+      gap: 20px;
+
+
+      .meBox_detail {
+        margin-bottom: 0px;
+      }
+
+      .profile,
+      .education {
+        padding-top: 10px;
+      }
+
+      h3 {
+        font-size: 1.8rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+
+      h6 {
+        font-size: 0.8rem;
+        margin-bottom: 20px;
+
+      }
+
+      p {
+        margin-bottom: 5px;
+      }
+
+      .photo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .photo_img {
+        width: 220px;
+        height: 300px;
+      }
+
+      .performance ul {
+        // display: flex;
+        // gap: 25px;
+
+
+        li {
+          img {
+            width: 50px;
+            height: 50px;
+          }
+        }
+
+        li:nth-child(3) {
+          img {
+            width: 45px;
+            height: 45px;
+            object-fit: contain;
+          }
+        }
+      }
     }
   }
 }
@@ -135,6 +284,7 @@ main section {
 // =======================================
 
 .coding {
+
   // width: 100%;
   // height: 100%;
   // width: 70%;
@@ -142,6 +292,12 @@ main section {
   // display: flex;
   // align-items: center;
   // justify-content: space-between;
+  .coding_inner {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 150px;
+  }
 
   .clone_wrapper {
     // width: 100%;

@@ -107,96 +107,89 @@
 
 
 
-
-
-
-
-
-
-
-
   .aboutMe {
-    .aboutMe_inner {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      gap: 50px;
+    //   .aboutMe_inner {
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
+    //     flex-direction: column;
+    //     gap: 50px;
+    //   }
+
+    //   .meBox_wrapper {
+    //     font-size: 1.2rem;
+    //     width: 100%;
+    //     display: flex;
+    //     flex-direction: column;
+    //     // align-items: center;
+    //     // justify-content: flex-start;
+    //     gap: 20px;
+
+    //     >div {
+    //       width: 100%;
+    //     }
+
+    //     .meBox_detail {
+    //       margin-bottom: 0px;
+    //     }
+
+
+
+    //     .profile,
+    //     .education {
+    //       padding-top: 10px;
+    //     }
+
+    //     h3 {
+    //       font-size: 1.8rem;
+    //       font-weight: bold;
+    //       margin-bottom: 20px;
+    //     }
+
+    //     h6 {
+    //       font-size: 0.8rem;
+    //       margin-bottom: 20px;
+
+    //     }
+
+    //     p {
+    //       margin-bottom: 5px;
+    //     }
+
+    //     .photo {
+    //       width: 100%;
+    //       height: 100%;
+    //       display: flex;
+    //       justify-content: center;
+    //     }
+
+    .photo_img {
+      width: 220px;
+      height: 300px;
     }
 
-    .meBox_wrapper {
-      font-size: 1.2rem;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      // align-items: center;
-      // justify-content: flex-start;
-      gap: 20px;
+    //     .performance ul {
+    //       display: flex;
+    //       gap: 10px;
 
-      >div {
-        width: 100%;
-      }
+    //       justify-content: flex-start;
 
-      .meBox_detail {
-        margin-bottom: 0px;
-      }
+    //       li {
+    //         img {
+    //           width: 50px;
+    //           height: 50px;
+    //         }
+    //       }
 
-
-
-      .profile,
-      .education {
-        padding-top: 10px;
-      }
-
-      h3 {
-        font-size: 1.8rem;
-        font-weight: bold;
-        margin-bottom: 20px;
-      }
-
-      h6 {
-        font-size: 0.8rem;
-        margin-bottom: 20px;
-
-      }
-
-      p {
-        margin-bottom: 5px;
-      }
-
-      .photo {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-      }
-
-      .photo_img {
-        width: 220px;
-        height: 300px;
-      }
-
-      .performance ul {
-        display: flex;
-        gap: 10px;
-
-        justify-content: flex-start;
-
-        li {
-          img {
-            width: 50px;
-            height: 50px;
-          }
-        }
-
-        li:nth-child(3) {
-          img {
-            width: 45px;
-            height: 45px;
-            object-fit: contain;
-          }
-        }
-      }
-    }
+    //       li:nth-child(3) {
+    //         img {
+    //           width: 45px;
+    //           height: 45px;
+    //           object-fit: contain;
+    //         }
+    //       }
+    //     }
+    //   }
+    // }
   }
 }

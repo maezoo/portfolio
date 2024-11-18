@@ -13,20 +13,26 @@
   align-items: center;
 }
 
-
 // ** ================================================== ** 
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  // height: 100vh;
+}
 
 main {
   font-size: 1.8rem;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  // width: 100vw;
+  // height: 100vh;
+  // background-color: rgb(203, 129, 77);
 
   .inner {
     width: 100%;
     height: 100%;
-    // background-color: orange;
+    // background-color: thistle;
   }
-
 
   .contact_inner {
     @extend .flex_center;
@@ -35,15 +41,23 @@ main {
   }
 
   .tab_title {
-    font-size: 6rem;
+    font-size: 5rem;
   }
-
 }
 
 main section {
-  padding: 230px 3% 200px;
-
+  padding: 200px 9% 200px;
+  // background-color: teal;
 }
+
+
+
+
+
+
+
+
+// ** ================================================== ** 
 
 .home {
   width: 100%;
@@ -201,85 +215,6 @@ main section {
 }
 
 
-@media (max-width: 640px) {
-  .aboutMe {
-    .aboutMe_inner {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      gap: 50px;
-    }
-
-    .meBox_wrapper {
-      font-size: 1.2rem;
-      width: 90%;
-      display: flex;
-      flex-direction: column;
-      // align-items: center;
-      // justify-content: flex-start;
-      gap: 20px;
-
-
-      .meBox_detail {
-        margin-bottom: 0px;
-      }
-
-      .profile,
-      .education {
-        padding-top: 10px;
-      }
-
-      h3 {
-        font-size: 1.8rem;
-        font-weight: bold;
-        margin-bottom: 20px;
-      }
-
-      h6 {
-        font-size: 0.8rem;
-        margin-bottom: 20px;
-
-      }
-
-      p {
-        margin-bottom: 5px;
-      }
-
-      .photo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .photo_img {
-        width: 220px;
-        height: 300px;
-      }
-
-      .performance ul {
-        // display: flex;
-        // gap: 25px;
-
-
-        li {
-          img {
-            width: 50px;
-            height: 50px;
-          }
-        }
-
-        li:nth-child(3) {
-          img {
-            width: 45px;
-            height: 45px;
-            object-fit: contain;
-          }
-        }
-      }
-    }
-  }
-}
 
 // =======================================
 

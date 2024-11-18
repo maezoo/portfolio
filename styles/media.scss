@@ -107,89 +107,76 @@
 
 
 
+
   .aboutMe {
-    //   .aboutMe_inner {
-    //     display: flex;
-    //     justify-content: center;
-    //     align-items: center;
-    //     flex-direction: column;
-    //     gap: 50px;
-    //   }
-
-    //   .meBox_wrapper {
-    //     font-size: 1.2rem;
-    //     width: 100%;
-    //     display: flex;
-    //     flex-direction: column;
-    //     // align-items: center;
-    //     // justify-content: flex-start;
-    //     gap: 20px;
-
-    //     >div {
-    //       width: 100%;
-    //     }
-
-    //     .meBox_detail {
-    //       margin-bottom: 0px;
-    //     }
-
-
-
-    //     .profile,
-    //     .education {
-    //       padding-top: 10px;
-    //     }
-
-    //     h3 {
-    //       font-size: 1.8rem;
-    //       font-weight: bold;
-    //       margin-bottom: 20px;
-    //     }
-
-    //     h6 {
-    //       font-size: 0.8rem;
-    //       margin-bottom: 20px;
-
-    //     }
-
-    //     p {
-    //       margin-bottom: 5px;
-    //     }
-
-    //     .photo {
-    //       width: 100%;
-    //       height: 100%;
-    //       display: flex;
-    //       justify-content: center;
-    //     }
-
-    .photo_img {
-      width: 220px;
-      height: 300px;
+    .aboutMe_inner {
+      gap: 50px;
     }
 
-    //     .performance ul {
-    //       display: flex;
-    //       gap: 10px;
+    .meBox_wrapper {
+      font-size: 2rem;
+      flex-direction: column;
+      gap: 70px;
 
-    //       justify-content: flex-start;
+      h3 {
+        font-size: 2.6rem;
+      }
 
-    //       li {
-    //         img {
-    //           width: 50px;
-    //           height: 50px;
-    //         }
-    //       }
+      h6 {
+        font-size: 1.6rem;
+      }
+    }
 
-    //       li:nth-child(3) {
-    //         img {
-    //           width: 45px;
-    //           height: 45px;
-    //           object-fit: contain;
-    //         }
-    //       }
-    //     }
-    //   }
-    // }
+    .photo {
+      display: flex;
+      justify-content: center;
+
+      .photo_img {
+        width: 220px;
+        height: 300px;
+      }
+    }
+
+    .resume {
+      display: flex;
+      row-gap: 60px;
+
+      .meBox_1 {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+      }
+
+      .education {
+        min-width: 320px;
+      }
+
+      .meBox_2 {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+
+        .performance ul {
+          display: flex;
+          gap: 15px;
+
+          li {
+            img {
+              width: 50px;
+              height: 50px;
+            }
+          }
+
+          li:nth-child(3) {
+            img {
+              width: 45px;
+              height: 45px;
+              object-fit: contain;
+            }
+          }
+        }
+      }
+    }
   }
+
 }

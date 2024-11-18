@@ -153,7 +153,6 @@ main section {
 
 .aboutMe {
   .aboutMe_inner {
-    // background-color: rgb(221, 119, 52);
     display: flex;
     flex-direction: column;
     gap: 100px;
@@ -162,11 +161,9 @@ main section {
 
   .meBox_wrapper {
     font-size: 2.2rem;
-    // width: 100%;
     display: flex;
     gap: 100px;
-    // justify-content: center;
-    // justify-content: space-around;
+
 
     h3 {
       font-size: 2.8rem;
@@ -202,6 +199,7 @@ main section {
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 80px;
+    // width: fit-content;
 
     .meBox_1 {
       grid-row: 1/2;
@@ -232,6 +230,7 @@ main section {
     .education {
       grid-row: 2/3;
       grid-column: 1/4;
+      min-width: 900px;
     }
 
     .meBox_2 {

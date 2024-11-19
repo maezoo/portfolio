@@ -120,13 +120,16 @@
   }
 
   .home_inner {
-    flex-direction: column;
+    // flex-direction: column;
   }
 
 
 
 
   .aboutMe {
+    padding-left: 9%;
+    padding-right: 9%;
+
     .aboutMe_inner {
       gap: 50px;
     }
@@ -135,6 +138,8 @@
       font-size: 2rem;
       flex-direction: column;
       gap: 70px;
+      text-align: left;
+
 
       h3 {
         font-size: 2.6rem;

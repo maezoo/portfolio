@@ -25,7 +25,6 @@ header {
     font-weight: bold;
     padding-bottom: 10px;
 
-
     span {
       font-weight: 400;
       font-size: 2rem;
@@ -34,21 +33,20 @@ header {
 
 
   .gnb {
-    width: 28%;
-    height: 50%;
-    // vertical-align: middle;
-    line-height: 50px;
     font-size: 2rem;
     display: flex;
-    justify-content: space-between;
+    height: 50%;
+    line-height: 50px;
+    gap: 0px;
     text-align: center;
-
 
     img {
       display: none;
     }
 
     .gnb_list {
+      width: 100px;
+
       a {
         display: block;
         width: 100%;
@@ -72,7 +70,7 @@ header {
       // text-align: center;
 
       li {
-        padding: 5px 15px;
+        // padding: 5px 15px;
         background-color: rgb(161, 155, 154);
 
         &:hover {

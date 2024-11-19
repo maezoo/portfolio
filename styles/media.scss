@@ -1,6 +1,6 @@
 @use "./color.scss";
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   header {
     background-color: white;
     width: 100%;
@@ -81,6 +81,22 @@
     }
   }
 
+
+  .meBox_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+
+  .performance {
+
+    ul {
+      justify-content: center;
+    }
+  }
+
 }
 
 @media (max-width: 640px) {
@@ -103,7 +119,9 @@
     }
   }
 
-
+  .home_inner {
+    flex-direction: column;
+  }
 
 
 

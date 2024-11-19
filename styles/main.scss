@@ -22,7 +22,7 @@ body {
 }
 
 main {
-  font-size: 1.8rem;
+  // font-size: 1.6rem;
   width: 100%;
   // width: 100vw;
   // height: 100vh;
@@ -41,12 +41,12 @@ main {
   }
 
   .tab_title {
-    font-size: 5rem;
+    font-size: 3rem;
   }
 }
 
 main section {
-  padding: 200px 9% 200px;
+  padding: 190px 9% 150px;
   // background-color: teal;
 }
 
@@ -68,7 +68,9 @@ main section {
 
   .home_inner {
     gap: 200px;
-    @extend .flex_center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .codingIcon {
@@ -91,122 +93,62 @@ main section {
   }
 }
 
-// 원본 지우면 앙대!!
-// .aboutMe {
-//   .aboutMe_inner {
-//     @extend .flex_center;
-//     flex-direction: column;
-//     gap: 50px;
-//   }
-
-//   .meBox_wrapper {
-//     font-size: 2.2rem;
-//     width: 50%;
-
-//     .meBox_detail {
-//       margin-bottom: 60px;
-//     }
-
-//     h3 {
-//       font-size: 2.8rem;
-//       font-weight: bold;
-//       margin-bottom: 20px;
-//     }
-
-//     h6 {
-//       font-size: 1.8rem;
-//       margin-bottom: 20px;
-
-//     }
-
-//     p {
-//       margin-bottom: 5px;
-//     }
-
-//     .photo {
-//       @extend .flex_center;
-//     }
-
-//     .photo_img {
-//       background: url(/images/포폴사진.jpg) no-repeat 40%;
-//       background-size: cover;
-//       width: 320px;
-//       height: 430px;
-//       border-radius: 100%;
-//     }
-
-//     .performance ul {
-//       display: flex;
-//       gap: 15px;
-
-//       li:nth-child(3) {
-//         img {
-//           width: 78px;
-//           height: 87px;
-//           object-fit: contain;
-//         }
-//       }
-//     }
-//   }
-// }
-// 지우면 앙대!!
 
 .aboutMe {
+  padding: 190px 0% 150px;
+
   .aboutMe_inner {
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    gap: 80px;
     align-items: center;
   }
 
   .meBox_wrapper {
-    font-size: 2.2rem;
     display: flex;
-    gap: 100px;
+    gap: 50px;
 
 
     h3 {
-      font-size: 2.8rem;
+      font-size: 2rem;
       font-weight: bold;
       margin-bottom: 20px;
     }
 
     h6 {
-      font-size: 1.8rem;
+      font-size: 1.5rem;
       margin-bottom: 20px;
     }
 
     p {
+      font-size: 1.6rem;
       margin-bottom: 5px;
     }
   }
 
-  .photo {
-    .photo_img {
-      background: url(/images/포폴사진.jpg) no-repeat 40%;
-      background-size: cover;
-      width: 370px;
-      height: 490px;
-      // width: 320px;
-      // height: 430px;
-      border-radius: 100%;
+  .photo_img {
+    max-width: 250px;
+    height: 100%;
+    border-radius: 100%;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
     }
   }
 
   .resume {
+    display: flex;
     flex-direction: column;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    row-gap: 80px;
-    // width: fit-content;
+    row-gap: 50px;
+
 
     .meBox_1 {
-      grid-row: 1/2;
-      grid-column: 1/4;
+      // grid-row: 1/2;
+      // grid-column: 1/4;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      gap: 80px;
 
       .profile {
         grid-column: 1/2;
@@ -234,11 +176,8 @@ main section {
     }
 
     .meBox_2 {
-      grid-row: 3/4;
-      grid-column: 1/4;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      gap: 80px;
 
       .experience {
         grid-column: 1/2;
@@ -249,12 +188,21 @@ main section {
 
         ul {
           display: flex;
-          gap: 15px;
+          // flex-wrap: wrap;
+          gap: 10px;
+
+          li {
+            img {
+              width: 60px;
+              height: 65px;
+              object-fit: contain;
+            }
+          }
 
           li:nth-child(3) {
             img {
-              width: 78px;
-              height: 87px;
+              width: 56px;
+              height: 58px;
               object-fit: contain;
             }
           }
@@ -279,7 +227,7 @@ main section {
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 150px;
+    gap: 80px;
   }
 
   .clone_wrapper {

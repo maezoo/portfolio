@@ -18,20 +18,15 @@
 body {
   width: 100vw;
   overflow-x: hidden;
-  // height: 100vh;
 }
 
 main {
-  // font-size: 1.6rem;
   width: 100%;
-  // width: 100vw;
-  // height: 100vh;
-  // background-color: rgb(203, 129, 77);
 
   .inner {
     width: 100%;
-    height: 100%;
-    // background-color: thistle;
+    height: 100vh;
+    // 물어보기!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
   }
 
   .contact_inner {
@@ -47,15 +42,7 @@ main {
 
 main section {
   padding: 190px 9% 150px;
-  // background-color: teal;
 }
-
-
-
-
-
-
-
 
 // ** ================================================== ** 
 
@@ -92,6 +79,238 @@ main section {
     }
   }
 }
+
+// =======================================
+// <!-- 원본 -->
+
+// .coding {
+//   background-color: rebeccapurple;
+
+//   .coding_inner {
+//     display: flex;
+//     align-items: center;
+//     flex-direction: column;
+//     gap: 80px;
+//     background-color: yellow;
+//   }
+
+//   .clone_wrapper {
+//     width: 100%;
+//     height: 100%;
+//     display: flex;
+//     gap: 80px;
+//     flex-direction: column;
+
+//     >div {
+//       justify-content: center;
+//       display: flex;
+//       gap: 80px;
+//     }
+
+//     .clone_box {
+//       display: flex;
+//       flex-direction: column;
+//       gap: 15px;
+
+//       h3 {
+//         font-size: 2rem;
+//       }
+
+//       .cloneImg {
+//         width: 380px;
+//         height: 180px;
+//         border-radius: 1rem;
+//         box-shadow: -5px 10px 15px rgba(0, 0, 0, 0.25);
+//         filter: grayscale(1) brightness(0.8);
+//         transition: background-position 2s linear;
+//         cursor: pointer;
+
+//         &:hover {
+//           background-position: 100% 100%;
+//           filter: none;
+//         }
+//       }
+
+//       .cloneImg_1 {
+//         background: url(/images/full-screen_ckdhc.JPG) no-repeat;
+//         background-size: cover;
+//       }
+
+//       .cloneImg_2 {
+//         background: url(/images/full-screen_suseong.JPG) no-repeat;
+//         background-size: cover;
+//       }
+
+//       .cloneImg_3 {
+//         background: url(/images/full-screen_ulsan-fire.JPG) no-repeat;
+//         background-size: cover;
+//       }
+
+//       .cloneImg_4 {
+//         background: url(/images/full-screen_SPC.jpg) no-repeat;
+//         background-size: cover;
+//       }
+//     }
+//   }
+// }
+// =======================================
+
+.coding {
+  // background-color: rebeccapurple;
+
+  .coding_inner {
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+    flex-direction: column;
+    gap: 80px;
+    // background-color: rgb(222, 222, 173);
+  }
+
+  .clone_wrapper {
+    // background-color: rgb(225, 7, 7);
+
+    // width: 100%;
+    // height: 100%;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+
+
+
+    .clone_box {
+      display: flex;
+      gap: 15px;
+      align-items: flex-end;
+      font-size: 1.6rem;
+
+      h3 {
+        font-size: 3rem;
+        font-weight: 500;
+      }
+
+      .info {
+        display: flex;
+        row-gap: 10px;
+        flex-direction: column;
+        // background-color: rgb(222, 222, 173);
+      }
+
+
+
+      .cloneImg {
+        min-width: 700px;
+        height: 400px;
+        border-radius: 2.6rem;
+        box-shadow: -5px 10px 15px rgba(0, 0, 0, 0.25);
+        filter: grayscale(1) brightness(0.8);
+        transition: background-position 2s linear;
+        cursor: pointer;
+        // overflow: hidden;
+
+        &:hover {
+          background-position: 100% 100%;
+          filter: none;
+        }
+      }
+
+      .cloneImg_1 {
+        background: url(/images/full-screen_ckdhc.JPG) no-repeat;
+        background-size: cover;
+      }
+
+      .cloneImg_2 {
+        background: url(/images/full-screen_suseong.JPG) no-repeat;
+        background-size: cover;
+      }
+
+      .cloneImg_3 {
+        background: url(/images/full-screen_ulsan-fire.JPG) no-repeat;
+        background-size: cover;
+      }
+
+      .cloneImg_4 {
+        background: url(/images/full-screen_SPC.jpg) no-repeat;
+        background-size: cover;
+      }
+
+      table {
+
+        th,
+        td {
+          border: 1px solid black;
+          vertical-align: middle;
+        }
+
+        th {
+          height: 70px;
+          width: 70px;
+        }
+
+        td {
+          padding: 0px 15px;
+
+        }
+      }
+
+      .link_btn {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+
+        button {
+          width: 120px;
+          height: 40px;
+          border-radius: 8px;
+          border: none;
+          box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.25);
+          background-color: rgb(210, 210, 210);
+
+          transition: all .4s ease-in-out;
+
+          // transition: all .2s linear;
+          a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            line-height: 40px;
+          }
+
+          &:hover {
+            background-color: white;
+          }
+        }
+      }
+
+    }
+  }
+}
+
+// ==========================================
+
+// transition: all .1s ease-in-out;
+// transition: all 2s linear;
+// animation: none;
+// animation: size_img .1s linear infinite;
+
+
+// animation: size_img 3.5s linear infinite;
+// @keyframes size_img {
+//   0% {
+//     // transform: scaleX(600px) scaleY(350px);
+//     transform: scale(0);
+
+//   }
+
+//   100% {
+//     // transform: scaleX(700px) scaleY(400px);
+//     transform: scale(1, 1);
+
+//   }
+// }
+
+
+
 
 
 .aboutMe {
@@ -209,246 +428,61 @@ main section {
   }
 }
 
-// =======================================
 
-.coding {
+// .pop-up {
+//   background-color: rgba(135, 207, 235, 0.493);
+//   position: absolute;
+//   z-index: 99999999;
+//   top: 0;
+//   left: 0;
+//   padding: 0px;
+//   width: 100%;
+//   height: 100%;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
 
-  // width: 100%;
-  // height: 100%;
-  // width: 70%;
-  // height: 100%;
-  // display: flex;
-  // align-items: center;
-  // justify-content: space-between;
-  .coding_inner {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 80px;
-    // width: 100%;
-    // height: 100%;
-  }
-
-  .clone_wrapper {
-    width: 100%;
-    height: 100%;
-
-
-    // align-items: center;
-    // display: flex;
-    // flex-wrap: wrap;
-    // gap: 50px;
-    // justify-content: center;
-    display: flex;
-    // align-items: center;
-    gap: 50px;
-    flex-direction: column;
-
-    >div {
-      justify-content: center;
-      display: flex;
-      gap: 50px;
-    }
-
-    .clone_box {
-      display: flex;
-      flex-direction: column;
-      // align-items: center;
-      gap: 18px;
-
-      h3 {
-        font-size: 2rem;
-      }
-    }
-
-
-
-
-
-    .cloneImg {
-      width: 380px;
-      height: 180px;
-      //  width: 780px;
-      // height: 450px;
-      // width: 250px;
-      // height: 140px;
-      border-radius: 1rem;
-      box-shadow: -5px 10px 15px rgba(0, 0, 0, 0.25);
-      filter: grayscale(1) brightness(0.8);
-      // animation: rotate_img 3.5s linear infinite;
-
-      // overflow: hidden;
-      transition: all .3s ease-in-out;
-
-      &:hover {
-        filter: none;
-        // transition: all .1s ease-in-out;
-
-        // background-position: 100% 100%;
-        // transition: all 2s linear;
-        // animation: none;
-        // animation: size_img .1s linear infinite;
-      }
-
-      // @keyframes size_img {
-      //   0% {
-      //     // transform: scaleX(600px) scaleY(350px);
-      //     transform: scale(0);
-
-      //   }
-
-      //   100% {
-      //     // transform: scaleX(700px) scaleY(400px);
-      //     transform: scale(1, 1);
-
-      //   }
-      // }
-
-    }
-
-    .cloneImg_1 {
-      background: url(/images/ckdhc.JPG) no-repeat;
-      background-size: cover;
-    }
-
-    .cloneImg_2 {
-      background: url(/images/suseong.JPG) no-repeat;
-      background-size: cover;
-    }
-
-    .cloneImg_3 {
-      background: url(/images/suseong.JPG) no-repeat;
-      background-size: cover;
-    }
-
-    .cloneImg_4 {
-      background: url(/images/suseong.JPG) no-repeat;
-      background-size: cover;
-    }
-
-  }
-
-
-
-}
-
-
-// .project_1 {
-//   // width: 100%;
-//   // height: 100%;
-//   // align-items: center;
-//   // justify-content: center;
-//   // gap: 45px;
-//   // background-color: aqua;
-
-//   .clone {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     // text-align: left;
-//     gap: 20px;
-
-//   
+//   .design-pop_1 {
+//     background-color: lightcoral;
+//     width: 90%;
+//     // opacity: 0;
+//     // height: 100%;
 //   }
-
 // }
 
+// opacity: 0;
+// padding: 70px 0px;
+// display: flex;
+// flex-direction: column;
+// align-items: center;
+// flex-direction: column;
+// transform-style: preserve-3d;
+// animation: rotate_pro 3s linear infinite;
 
+// @keyframes rotate_pro {
+//   0% {
+//     transform: rotateX(0deg) rotateY(180deg);
+//   }
 
+//   100% {
+//     transform: rotateX(0deg)rotateY(360deg);
+//   }
+// }
+// width: 100vw;
+// height: 100vh;
+// background-color: rgb(185, 132, 94);
 
+// .project_1 {
+// display: flex;
+// justify-content: center;
+// position: absolute;
+// width: 100px;
+// transform: translateZ(100px);
 
-table {
-  margin: 0 0 5px 0;
-  // border-collapse: collapse;
-
-  th,
-  td {
-    border: 1px solid black;
-    // height: 50px;
-  }
-
-  th {
-    // width: 80px;
-    padding: 10px;
-  }
-
-  td {
-    // text-align: left;
-    min-width: 350px;
-    // width: 350px;
-    padding: 0 10px;
-  }
-}
-
-.link_btn {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-
-  button {
-    width: 120px;
-    height: 40px;
-    border-radius: 8px;
-    border: none;
-    box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.25);
-    background-color: rgb(210, 210, 210);
-
-    transition: all .4s ease-in-out;
-
-    // transition: all .2s linear;
-    a {
-      display: block;
-      width: 100%;
-      height: 100%;
-      line-height: 40px;
-    }
-
-    &:hover {
-      background-color: white;
-    }
-  }
-}
-
-
-.codingssssss {
-  // opacity: 0;
-  width: 100%;
-  height: 100%;
-  // opacity: 0;
-  // padding: 70px 0px;
-  display: flex;
-  // flex-direction: column;
-  // align-items: center;
-  // flex-direction: column;
-  // transform-style: preserve-3d;
-  // animation: rotate_pro 3s linear infinite;
-
-  // @keyframes rotate_pro {
-  //   0% {
-  //     transform: rotateX(0deg) rotateY(180deg);
-  //   }
-
-  //   100% {
-  //     transform: rotateX(0deg)rotateY(360deg);
-  //   }
-  // }
-  // width: 100vw;
-  // height: 100vh;
-  // background-color: rgb(185, 132, 94);
-
-  // .project_1 {
-  // display: flex;
-  // justify-content: center;
-  // position: absolute;
-  // width: 100px;
-  // transform: translateZ(100px);
-
-  //   box-shadow: -5px 10px 15px rgba(0, 0, 0, 0.25);
-  //   filter: grayscale(1) brightness(0.8);
-  //   animation: rotate_img 3.5s linear infinite;
-
-  // }
-}
+//   box-shadow: -5px 10px 15px rgba(0, 0, 0, 0.25);
+//   filter: grayscale(1) brightness(0.8);
+//   animation: rotate_img 3.5s linear infinite;
+// }
 
 
 

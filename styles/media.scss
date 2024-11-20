@@ -150,14 +150,8 @@
       }
     }
 
-    .photo {
-      display: flex;
-      justify-content: center;
-
-      .photo_img {
-        width: 220px;
-        height: 300px;
-      }
+    .photo_img {
+      width: 280px;
     }
 
     .resume {
@@ -182,6 +176,7 @@
         .performance ul {
           display: flex;
           gap: 15px;
+          justify-content: flex-start;
 
           li {
             img {

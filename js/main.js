@@ -1,4 +1,9 @@
 
+// $(function () {
+//   var page = $('.fullpage').fullpage({
+
+//   });
+// })
 // const lnbListsClick = document.querySelectorAll('.lnb_list a');
 // const gnbBg = document.querySelector('.gnb_bg');
 // const navArea = document.querySelector('.nav');

@@ -1,6 +1,5 @@
 @use "./color.scss";
-
-@media (max-width: 800px) {
+@media (max-width: 920px) {
   header {
     background-color: white;
     width: 100%;
@@ -81,6 +80,9 @@
     }
   }
 
+}
+
+@media (max-width: 820px) {
 
   .meBox_wrapper {
     display: flex;

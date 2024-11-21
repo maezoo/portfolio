@@ -6,9 +6,16 @@
   <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> 파비콘-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>New Portfolio</title>
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="styles/jquery.fullPage.css">
   <link rel="stylesheet" href="styles/style.scss">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script src="js/jquery.fullPage.js"></script>
   <script src="js/main.js" defer></script>
+
+
 
 </head>
 
@@ -36,12 +43,15 @@
       </div>
       <ul class="gnb"><img src="/images/hamburger_mo.svg" alt="hamburger">
         <li class="gnb_list" data-tab="menuList_0"><a href="#">Home</a></li>
-        <li class="gnb_list" data-tab="menuList_1"><a href="#">Projects</a>
+        <li class="gnb_list" data-tab="menuList_1"><a href="#">Coding</a>
           <ul class="lnb_list">
-            <li class="lnb_item codingIcon" data-tab="lnbItem_1"><a href="#">CODING</a></li>
-            <li class="lnb_item designIcon" data-tab="lnbItem_2"><a href="#">DESIGN</a></li>
+            <li class="lnb_item codingIcon" data-menuanchor="clone_1"><a href="#clone_1">Project 1</a></li>
+            <li class="lnb_item codingIcon" data-menuanchor="clone_2"><a href="#clone_2">Project 2</a></li>
+            <li class="lnb_item codingIcon" data-menuanchor="clone_3"><a href="#clone_3">Project 3</a></li>
+            <li class="lnb_item codingIcon" data-menuanchor="clone_4"><a href="#clone_4">Project 4</a></li>
           </ul>
         </li>
+        <li class="gnb_list" data-tab="menuList_2"><a href="#">Design</a></li>
         <li class="gnb_list" data-tab="menuList_3"><a href="#">About Me</a></li>
         <li class="gnb_list" data-tab="menuList_4"><a href="#">Contact</a></li>
       </ul>
@@ -61,46 +71,13 @@
       </div>
     </section>
 
-    <!-- 원본 -->
-    <!-- <section class="coding tab_item lnb_tab" id="menuList_1">
-      <div class="inner coding_inner">
+    <section class="coding tab_item lnb_tab fullpage" id="menuList_1">
+      <div class="inner coding_inner section" id="clone_1">
         <h1 class="tab_title">CLONE CODING</h1>
         <div class="clone_wrapper">
-          <div>
-            <div class="clone_box">
-              <h3>종근당건강</h3>
-              <div class="cloneImg cloneImg_1"></div>
-            </div>
-            <div class="clone_box">
-              <h3>호텔수성</h3>
-              <div class="cloneImg cloneImg_2"></div>
-            </div>
-          </div>
-          <div>
-            <div class="clone_box">
-              <h3>울산안전체험관</h3>
-              <div class="cloneImg cloneImg_3"></div>
-            </div>
-            <div class="clone_box">
-              <h3>SPC</h3>
-              <div class="cloneImg cloneImg_4"></div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section> -->
-    <!-- ==================== -->
-
-    <section class="coding tab_item lnb_tab" id="menuList_1">
-      <div class="inner coding_inner">
-        <h1 class="tab_title">CLONE CODING</h1>
-        <div class="clone_wrapper">
-
-
           <div class="clone_box">
-            <div class="preview">
-              <p class="hover_effect">Hover me!!</p>
+            <div class=" preview">
+              <p class="hover_effect animate__animated animate__flash">Hover me!!</p>
               <div class="cloneImg cloneImg_1"></div>
             </div>
             <div class="info">
@@ -117,34 +94,271 @@
               </table>
               <div class="link_btn">
                 <button class="btn1">
-                  <a href="connect/hotel/index.html" target="_blank">
+                  <a href="https://www.ckdhc.com/home" target="_blank">
                     <p>WEB</p>
                   </a></button>
                 <button class="btn2">
-                  <a href="connect/compared hotel/compared.html" target="_blank">
+                  <a href="#" target="_blank">
+                    <p>ORIGINAL</p>
+                  </a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="inner coding_inner section" id="clone_2">
+        <h1 class="tab_title">CLONE CODING</h1>
+        <div class="clone_wrapper">
+          <div class="clone_box">
+            <div class="preview">
+              <p class="hover_effect animate__animated animate__flash">Hover me!!</p>
+              <div class="cloneImg cloneImg_2"></div>
+            </div>
+            <div class="info">
+              <h3>호텔수성</h3>
+
+              <table>
+                <tr>
+                  <th>TYPE</th>
+                  <td>개인 작업 100%</td>
+                </tr>
+                <tr>
+                  <th>TOOLS</th>
+                  <td>HTML5, CSS, jQuery, Bxslider, Swiper, AOS</td>
+                </tr>
+              </table>
+              <div class="link_btn">
+                <button class="btn1">
+                  <a href="http://www.hotelsusung.co.kr/main/index.php" target="_blank">
+                    <p>WEB</p>
+                  </a></button>
+                <button class="btn2">
+                  <a href="#" target="_blank">
+                    <p>ORIGINAL</p>
+                  </a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="inner coding_inner section" id="clone_3">
+        <h1 class="tab_title">CLONE CODING</h1>
+        <div class="clone_wrapper">
+          <div class="clone_box">
+            <div class="preview">
+              <p class="hover_effect animate__animated animate__flash">Hover me!!</p>
+              <div class="cloneImg cloneImg_3"></div>
+            </div>
+            <div class="info">
+              <h3>울산안전체험관</h3>
+
+              <table>
+                <tr>
+                  <th>TYPE</th>
+                  <td>개인 작업 100%</td>
+                </tr>
+                <tr>
+                  <th>TOOLS</th>
+                  <td>HTML5, CSS, jQuery, Bxslider, Swiper, AOS</td>
+                </tr>
+              </table>
+              <div class="link_btn">
+                <button class="btn1">
+                  <a href="https://fire.ulsan.go.kr/safety/#;" target="_blank">
+                    <p>WEB</p>
+                  </a></button>
+                <button class="btn2">
+                  <a href="#" target="_blank">
+                    <p>ORIGINAL</p>
+                  </a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="inner coding_inner section" id="clone_4">
+        <h1 class="tab_title">CLONE CODING</h1>
+        <div class="clone_wrapper">
+          <div class="clone_box">
+            <div class="preview">
+              <p class="hover_effect animate__animated animate__flash">Hover me!!</p>
+              <div class="cloneImg cloneImg_4"></div>
+            </div>
+            <div class="info">
+              <h3>SPC</h3>
+              <table>
+                <tr>
+                  <th>TYPE</th>
+                  <td>개인 작업 100%</td>
+                </tr>
+                <tr>
+                  <th>TOOLS</th>
+                  <td>HTML5, CSS, jQuery, Bxslider, Swiper, AOS</td>
+                </tr>
+              </table>
+              <div class="link_btn">
+                <button class="btn1">
+                  <a href="https://www.spc.co.kr/" target="_blank">
+                    <p>WEB</p>
+                  </a></button>
+                <button class="btn2">
+                  <a href="#" target="_blank">
+                    <p>ORIGINAL</p>
+                  </a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <!--  원본
+    <section class="coding tab_item lnb_tab" id="menuList_1">
+      <div class="inner coding_inner" id="fullpage">
+        <h1 class="tab_title">CLONE CODING</h1>
+
+
+        <div class="clone_wrapper">
+
+
+          <div class="clone_box section fp-auto-height">
+            <div class=" preview">
+              <p class="hover_effect animate__animated animate__flash">Hover me!!</p>
+              <div class="cloneImg cloneImg_1"></div>
+            </div>
+            <div class="info">
+              <h3>종근당건강</h3>
+              <table>
+                <tr>
+                  <th>TYPE</th>
+                  <td>개인 작업 100%</td>
+                </tr>
+                <tr>
+                  <th>TOOLS</th>
+                  <td>HTML5, CSS, jQuery, Bxslider, Swiper, AOS</td>
+                </tr>
+              </table>
+              <div class="link_btn">
+                <button class="btn1">
+                  <a href="https://www.ckdhc.com/home" target="_blank">
+                    <p>WEB</p>
+                  </a></button>
+                <button class="btn2">
+                  <a href="#" target="_blank">
                     <p>ORIGINAL</p>
                   </a></button>
               </div>
             </div>
           </div>
 
-          <!-- 
-          <div class="clone_box">
-            <h3>호텔수성</h3>
-            <div class="cloneImg cloneImg_2"></div>
-          </div>
-          <div class="clone_box">
-            <h3>울산안전체험관</h3>
-            <div class="cloneImg cloneImg_3"></div>
-          </div>
-          <div class="clone_box">
-            <h3>SPC</h3>
-            <div class="cloneImg cloneImg_4"></div>
-          </div> -->
-        </div>
+          <div class="clone_box section fp-auto-height">
+            <div class="preview">
+              <p class="hover_effect animate__animated animate__flash">Hover me!!</p>
+              <div class="cloneImg cloneImg_2"></div>
+            </div>
+            <div class="info">
+              <h3>호텔수성</h3>
 
+              <table>
+                <tr>
+                  <th>TYPE</th>
+                  <td>개인 작업 100%</td>
+                </tr>
+                <tr>
+                  <th>TOOLS</th>
+                  <td>HTML5, CSS, jQuery, Bxslider, Swiper, AOS</td>
+                </tr>
+              </table>
+              <div class="link_btn">
+                <button class="btn1">
+                  <a href="http://www.hotelsusung.co.kr/main/index.php" target="_blank">
+                    <p>WEB</p>
+                  </a></button>
+                <button class="btn2">
+                  <a href="#" target="_blank">
+                    <p>ORIGINAL</p>
+                  </a></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="clone_box section fp-auto-height">
+            <div class="preview">
+              <p class="hover_effect animate__animated animate__flash">Hover me!!</p>
+              <div class="cloneImg cloneImg_3"></div>
+            </div>
+            <div class="info">
+              <h3>울산안전체험관</h3>
+
+              <table>
+                <tr>
+                  <th>TYPE</th>
+                  <td>개인 작업 100%</td>
+                </tr>
+                <tr>
+                  <th>TOOLS</th>
+                  <td>HTML5, CSS, jQuery, Bxslider, Swiper, AOS</td>
+                </tr>
+              </table>
+              <div class="link_btn">
+                <button class="btn1">
+                  <a href="https://fire.ulsan.go.kr/safety/#;" target="_blank">
+                    <p>WEB</p>
+                  </a></button>
+                <button class="btn2">
+                  <a href="#" target="_blank">
+                    <p>ORIGINAL</p>
+                  </a></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="clone_box section fp-auto-height">
+            <div class="preview">
+              <p class="hover_effect animate__animated animate__flash">Hover me!!</p>
+              <div class="cloneImg cloneImg_4"></div>
+            </div>
+            <div class="info">
+              <h3>SPC</h3>
+              <table>
+                <tr>
+                  <th>TYPE</th>
+                  <td>개인 작업 100%</td>
+                </tr>
+                <tr>
+                  <th>TOOLS</th>
+                  <td>HTML5, CSS, jQuery, Bxslider, Swiper, AOS</td>
+                </tr>
+              </table>
+              <div class="link_btn">
+                <button class="btn1">
+                  <a href="https://www.spc.co.kr/" target="_blank">
+                    <p>WEB</p>
+                  </a></button>
+                <button class="btn2">
+                  <a href="#" target="_blank">
+                    <p>ORIGINAL</p>
+                  </a></button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+    </section>
+    원본  -->
+
+
+    <section class="design tab_item lnb_tab" id="menuList_2">
+      <div class="inner design_inner">
+        <h1 class="tab_title">DESIGN</h1>
+        <div class="design_wrapper">
+        </div>
       </div>
     </section>
+
 
     <!-- <section class="coding_pop-up">
       <div class="coding-pop_1">
@@ -189,18 +403,6 @@
 
 
 
-
-
-
-    <section class="design tab_item lnb_tab" id="lnbItem_2">
-      <div class="inner">
-        디자인디자인디자인디자인디자인디자인디자인디자인디자인디자인디자인디자인디자인디자인디자인디자인디자인디자인디자인디자인디자인디자인디자인디자인
-        디자인디자인디자인디자인디자인디자인디자인디자인디자인디자인디자인디자인디자인디자인디자인디자인디자인디자인디자인디자인디자인디자인디자인디자인디자인디자인디자인디자인디자인디자인디자인디자인
-        디자인디자인디자인디자인디자인디자인디자인디자인
-        디자인디자인디자인디자인디자인디자인디자인디자인디자인디자인디자인디자인디자인디자인디자인디자인디자인디자인디자인디자인디자인디자인디자인디자인 디자인디자인디자인디자인디자인디자인디자인디자인
-        디자인디자인디자인디자인디자인디자인디자인디자인
-      </div>
-    </section>
 
     <section class="aboutMe tab_item" id="menuList_3">
       <div class="inner aboutMe_inner">

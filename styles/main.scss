@@ -49,6 +49,10 @@ main {
 
 // ** ================================================== ** 
 
+
+
+// ** ================================================== ** 
+
 .home {
   width: 100%;
   height: 100%;
@@ -302,6 +306,22 @@ main {
 // }
 // 원본
 // ==========================================
+.hover_effect {
+  font-family: 'InkLipquid';
+  font-size: 2.2rem;
+  padding: 0px 0px 8px 30px;
+}
+
+.click_effect {
+  font-family: 'InkLipquid';
+  font-size: 2.2rem;
+}
+
+.animate__flash {
+  animation-duration: 1.8s;
+  animation-iteration-count: infinite;
+}
+
 .coding {
   // background-color: rebeccapurple;
 
@@ -332,20 +352,7 @@ main {
         font-weight: 500;
       }
 
-      .preview {
-        .hover_effect {
-          font-family: 'InkLipquid';
-          font-size: 2.2rem;
-          padding: 0px 0px 8px 30px;
-          padding-left: 30px;
-        }
-
-        .animate__flash {
-          animation-duration: 1.8s;
-          animation-iteration-count: infinite;
-        }
-
-      }
+      .preview {}
 
 
       .info {
@@ -453,15 +460,29 @@ main {
     gap: 80px;
   }
 
-  .design_1 {
+
+
+  .design_box {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px; // justify-content: center;
+    gap: 10px;
 
     h3 {
       font-size: 2rem;
     }
+  }
+
+  .design_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .phone_wrapper {
+    display: flex;
+    gap: 100px;
   }
 
   .phone {
@@ -471,7 +492,57 @@ main {
     border-radius: 3.6rem;
     width: 26rem;
     height: 51rem;
+    cursor: pointer;
+
+    &:hover {
+      background-position: 100% 100%;
+    }
   }
+
+  .detailPage_1 {
+    background: url(/images/detailPage_1.jpg) no-repeat;
+    background-size: cover;
+    transition: background-position 3.5s linear;
+
+  }
+
+  .detailPage_2 {
+    background: url(/images/detailPage_2.jpg) no-repeat;
+    background-size: cover;
+    transition: background-position 4s linear;
+
+  }
+
+  .detailPage_3 {
+    background: url(/images/detailPage_3.jpg) no-repeat;
+    background-size: cover;
+    transition: background-position 2s linear;
+
+  }
+}
+
+.detail_pop {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  position: relative;
+  opacity: 0;
+}
+
+.close_btn {
+  width: 50px;
+  filter: invert(100);
+  cursor: pointer;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  // position: absolute;
+  // z-index: 99999;
 }
 
 // transition: all .1s ease-in-out;

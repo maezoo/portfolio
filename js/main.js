@@ -44,22 +44,6 @@
 //   gnbBg.classList.remove('show');
 // });
 
-// =======================================================
-// 첫번째 화면전환 ===========================================
-const clickPort = document.querySelector('.text_box');
-const hideIntro = document.querySelector('.intro');
-const firstTab = document.querySelectorAll('.firstPage');
-const clickLogo = document.querySelector('.logo');
-
-const toggleTab = () => {
-  hideIntro.classList.toggle('hide');
-  firstTab.forEach(active => {
-    active.classList.toggle('show');
-  });
-};
-
-clickPort.addEventListener('click', toggleTab);
-clickLogo.addEventListener('click', toggleTab);
 
 //   hideIntro.classList.toggle('hide');
 //   showHeader.classList.toggle('show');
@@ -123,9 +107,88 @@ clickLogo.addEventListener('click', toggleTab);
 // });
 
 
+// =======================================================
+// // 팝업 ================================================
+
+// const detailPop = document.querySelectorAll('.detail_pop img');
+
+// detailPop.addEventListener('click', function () {
+//   detailPop.classList.toggle('show');
+// });
+
+
+
+// document.querySelectorAll('.design-slide-image').forEach((el) => {
+//   const popup = document.querySelector('.popup')
+//   const popupImageBox = document.querySelector('.popup-image-box')
+//   const popupImage = document.querySelector('.popup-image')
+//   el.addEventListener('click', () => {
+//     popupImage.setAttribute('src', el.getAttribute('data-image'))
+//     popupImageBox.scrollTop = 0;
+//     popup.classList.add('popup-on')
+//   });
+// })
+
+
 
 // =======================================================
-// // 메뉴 전환 ===============================================
+
+const phoneClick = document.querySelectorAll('.design_box');
+const detailPop = document.querySelectorAll('.detail_pop');
+
+phoneClick.forEach(iphone => {
+  iphone.addEventListener('click', function () {
+    detailPop.forEach(tab => {
+      tab.style.display = 'none';
+    });
+
+
+    const clickedPhone = iphone.getAttribute('data-tab');
+    const clickedTab = document.querySelector(`#${clickedPhone}`);
+    clickedTab.style.display = 'block';
+  });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+// =======================================================
+// // 팝업 닫기 =============================================
+const popCloseBtn = document.querySelector('.close_btn');
+const popClose = document.querySelector('#juice'); // `.` 제거
+
+popCloseBtn.addEventListener('click', () => {
+  popClose.style.display = 'none';
+});
+
+// =======================================================
+// 인트로 화면전환 ===========================================
+const clickPort = document.querySelector('.text_box');
+const hideIntro = document.querySelector('.intro');
+const firstTab = document.querySelectorAll('.firstPage');
+const clickLogo = document.querySelector('.logo');
+
+const toggleTab = () => {
+  hideIntro.classList.toggle('hide');
+  firstTab.forEach(active => {
+    active.classList.toggle('show');
+  });
+};
+
+clickPort.addEventListener('click', toggleTab);
+clickLogo.addEventListener('click', toggleTab);
+
+// =======================================================
+// // 메뉴 전환 ============================================
 const menuItems = document.querySelectorAll('.gnb_list');
 const sectionTabs = document.querySelectorAll('.tab_item');
 
@@ -134,7 +197,6 @@ menuItems.forEach(button => {
     sectionTabs.forEach(tab => {
       tab.style.display = 'none';
     });
-
 
     const targetTabId = button.getAttribute('data-tab');
     const targetTab = document.querySelector(`#${targetTabId}`);

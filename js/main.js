@@ -1,173 +1,22 @@
-
-// $(function () {
-//   var page = $('.fullpage').fullpage({
-
-//   });
-// })
-// const lnbListsClick = document.querySelectorAll('.lnb_list a');
-// const gnbBg = document.querySelector('.gnb_bg');
-// const navArea = document.querySelector('.nav');
-
-
-// const gnbClicks = document.querySelectorAll('.gnb_list');
-// const lnbLists = document.querySelectorAll('.lnb_list');
-
-// gnbClicks.forEach(gnbClick => {
-//   gnbClick.addEventListener('mouseover', () => {
-//     lnbLists.forEach(lnbList => {
-//       lnbList.classList.add('show');
-//     });
-//   });
-// });
-// gnbBg.classList.add('show');
-
-// lnbListsClick.forEach(lnbList => {
-//   lnbList.addEventListener('mouseover', () => {
-//     lnbListsClick.forEach(item => {
-//       if (item !== lnbList) {
-//         item.style.color = '#7a7a7a';
-//       }
-//     });
-//   });
-
-//   lnbList.addEventListener('mouseout', () => {
-//     lnbListsClick.forEach(item => {
-//       item.style.color = '';
-//     });
-//   });
-// });
-
-// navArea.addEventListener('mouseleave', () => {
-//   lnbLists.forEach(lnbList => {
-//     lnbList.classList.remove('show');
-//   });
-//   gnbBg.classList.remove('show');
-// });
-
-
-//   hideIntro.classList.toggle('hide');
-//   showHeader.classList.toggle('show');
-//   showProject.classList.toggle('show');
-// });
-
 // =======================================================
-// =======================================================
-
-// const sectionTabs = document.querySelectorAll('.tab_item');
-
-
-// lnbItems.forEach(lnb_btn => {
-//   lnb_btn.addEventListener('click', function () {
-//     sectionTabs.forEach(tab => {
-//       tab.style.display = 'none';
-//     });
-//   });
-// });
-
-// const targetTabId = lnb_btn.getAttribute('data-tab');
-// const targetTab = document.querySelector(`#${targetTabId}`);
-// if (targetTab) {
-//   targetTab.style.display = 'block';
-// }
-
-
-// const lnbItems = document.querySelectorAll('.lnb_list li');
-// lnbItems.forEach(lnb_btn => {
-
-// menuItems.forEach((idx_1, idx_2) => {
-//   idx_1.addEventListener('click', () => {
-//     sectionTabs.forEach((tab, tabIndex) => {
-//       tab.style.display = tabIndex === idx_2 ? 'block' : 'none';
-//     });
-//   });
-// });
-
-// const lnbItems = document.querySelectorAll('.lnb_item');
-// const lnbTab = document.querySelectorAll('.lnb_tab');
-
-
-// const lnbItems = document.querySelectorAll('.lnb_item');
-// const projectTabs = document.querySelectorAll('.tab_item');
-
-// lnbItems.forEach(lnb_btn => {
-//   lnb_btn.addEventListener('click', () => {
-//     const tabId = lnb_btn.getAttribute('data-tab');
-
-//     // 모든 tab_item을 숨기기
-//     projectTabs.forEach(tab => {
-//       tab.style.display = 'none';
-//     });
-
-//     // 클릭한 lnb_item의 data-tab 값과 동일한 id를 가진 tab_item만 표시
-//     const clickedTab = document.querySelector(`#tab-${tabId}`);
-//     if (clickedTab) {
-//       clickedTab.style.display = 'block';
-//     }
-//   });
-// });
-
-
-// =======================================================
-// // 팝업 ================================================
-
-// const detailPop = document.querySelectorAll('.detail_pop img');
-
-// detailPop.addEventListener('click', function () {
-//   detailPop.classList.toggle('show');
-// });
-
-
-
-// document.querySelectorAll('.design-slide-image').forEach((el) => {
-//   const popup = document.querySelector('.popup')
-//   const popupImageBox = document.querySelector('.popup-image-box')
-//   const popupImage = document.querySelector('.popup-image')
-//   el.addEventListener('click', () => {
-//     popupImage.setAttribute('src', el.getAttribute('data-image'))
-//     popupImageBox.scrollTop = 0;
-//     popup.classList.add('popup-on')
-//   });
-// })
-
-
-
-// =======================================================
-
-const phoneClick = document.querySelectorAll('.design_box');
-const detailPop = document.querySelectorAll('.detail_pop');
-
-phoneClick.forEach(iphone => {
-  iphone.addEventListener('click', function () {
-    detailPop.forEach(tab => {
-      tab.style.display = 'none';
+// // 팝업 열기 + 닫기 =============================================
+document.querySelectorAll('.design_box').forEach(item => {
+  item.addEventListener('click', () => {
+    document.querySelectorAll('.detail_pop').forEach(pop => {
+      pop.style.display = 'none';
     });
 
-
-    const clickedPhone = iphone.getAttribute('data-tab');
-    const clickedTab = document.querySelector(`#${clickedPhone}`);
-    clickedTab.style.display = 'block';
+    const tab = item.getAttribute('data-tab');
+    const popUp = document.querySelector(`#${tab}`);
+    popUp.style.display = 'flex';
   });
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-// =======================================================
-// // 팝업 닫기 =============================================
-const popCloseBtn = document.querySelector('.close_btn');
-const popClose = document.querySelector('#juice'); // `.` 제거
-
-popCloseBtn.addEventListener('click', () => {
-  popClose.style.display = 'none';
+document.querySelectorAll('.close_btn').forEach(closeBtn => {
+  closeBtn.addEventListener('click', (event) => {
+    const popUp = event.target.closest('.detail_pop');
+    popUp.style.display = 'none';
+  });
 });
 
 // =======================================================

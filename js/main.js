@@ -1,3 +1,41 @@
+// ======================
+// go to top ============
+const goTopBtn = document.querySelector('.go-top');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 1500) {
+    goTopBtn.classList.add('visible');
+  } else {
+    goTopBtn.classList.remove('visible');
+  }
+});
+
+goTopBtn.addEventListener('click', function (e) {
+  e.preventDefault();
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
+// ======================// 
+// =======================================================
+// // 스와이퍼 =============================================
+var swiper = new Swiper(".mySwiper", {
+  pagination: {
+    el: ".swiper-pagination",
+    type: "fraction",
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  autoplay: {
+    delay: 1500,
+  },
+  keyboard: true,
+  slidesPerView: 1,
+  loop: true,
+});
 // =======================================================
 // // 팝업 열기 + 닫기 =============================================
 document.querySelectorAll('.design_box').forEach(item => {

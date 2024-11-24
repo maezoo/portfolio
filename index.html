@@ -6,11 +6,12 @@
   <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> 파비콘-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>New Portfolio</title>
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="jquery.fullPage.css">
   <link rel="stylesheet" href="styles/style.scss">
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="js/jquery.fullPage.js"></script>
   <script src="js/main.js" defer></script>
@@ -77,8 +78,47 @@
         <!-- ===============================   작업중  =================================== -->
         <div class="inner coding_inner section" id="clone_0">
           <h1 class="tab_title">CODING</h1>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper pra_wrapper">
+              <div class="swiper-slide pra pra_beauty">
+                <div class="preview sqa">
+                  <img src="/images/pra_beauty-store.JPG" alt="">
+                </div>
+                <button>
+                  <a href="#" target="_blank">
+                    <p>TRANSFORMATION</p>
+                  </a>
+                </button>
+              </div>
 
-          <div class="pra_wrapper">
+              <div class="swiper-slide pra pra_E">
+                <div class="preview E-class">
+                  <img src="/images/pra_e-class.JPG" alt="">
+                </div>
+                <button>
+                  <a href="#" target="_blank">
+                    <p>TRANSFORMATION</p>
+                  </a>
+                </button>
+              </div>
+
+              <div class="swiper-slide pra pra_shop">
+                <div class="preview shop">
+                  <img src="/images/pra_shopping-app.png" alt="">
+                </div>
+                <button>
+                  <a href="#" target="_blank">
+                    <p>TRANSFORMATION</p>
+                  </a>
+                </button>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <!-- <div class="pra_wrapper">
             <div class="pra pra_beauty">
               <div class="preview sqa">
                 <img src="/images/pra_beauty-store.JPG" alt="">
@@ -89,7 +129,6 @@
                 </a>
               </button>
             </div>
-
             <div class="pra pra_E">
               <div class="preview E-class">
                 <img src="/images/pra_e-class.JPG" alt="">
@@ -100,7 +139,6 @@
                 </a>
               </button>
             </div>
-
             <div class="pra pra_shop">
               <div class="preview shop">
                 <img src="/images/pra_shopping-app.png" alt="">
@@ -111,47 +149,10 @@
                 </a>
               </button>
             </div>
-
-
-
-            <!-- <div class="pra pra_shop">
-              <img src="/images/pra_shopping-app.png" alt="">
-              <div class="link_btn">
-                <button class="btn1">
-                  <a href="https://www.ckdhc.com/home" target="_blank">
-                    <p>WEB</p>
-                  </a></button>
-                <button class="btn2">
-                  <a href="#" target="_blank">
-                    <p>ORIGINAL</p>
-                  </a></button>
-              </div>
-            </div>
-
-            <div class="pra pra_E">
-              <img src="/images/pra_e-class.png" alt="">
-
-              <div class="link_btn">
-                <button class="btn1">
-                  <a href="https://www.ckdhc.com/home" target="_blank">
-                    <p>WEB</p>
-                  </a></button>
-                <button class="btn2">
-                  <a href="#" target="_blank">
-                    <p>ORIGINAL</p>
-                  </a></button>
-              </div>
-            </div> -->
-
-
-
-          </div>
-        </div>
-
+          </div> -->
 
 
         <!-- ===============================   작업중  =================================== -->
-
 
         <div class="inner coding_inner section" id="clone_1">
           <h1 class="tab_title">CLONE CODING</h1>
@@ -560,6 +561,9 @@
       </div>
     </div>
 
+    <div class="go-top">
+      <a href="#"></a>
+    </div>
   </main>
 
 </body>

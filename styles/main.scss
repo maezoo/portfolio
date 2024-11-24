@@ -114,31 +114,76 @@ main {
 
     .pra_wrapper {
       display: flex;
-      gap: 15px;
+      gap: 50px;
+
+      button {
+        width: 150px;
+        height: 40px;
+        border-radius: 8px;
+        border: none;
+        box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.4);
+        background-color: rgb(210, 210, 210);
+        transition: 0.4s ease-in-out;
+
+        a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          line-height: 40px;
+        }
+
+        &:hover {
+          background-color: white;
+        }
+      }
 
       .pra {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 15px;
+        gap: 20px;
+      }
+
+      .preview {
+        width: 350px;
+        height: 200px;
+        border-radius: 2.6rem;
+        overflow: hidden;
+        box-shadow: -5px 10px 15px rgba(0, 0, 0, 0.25);
+
+      }
+
+      .sqa img {
+        width: 390px;
+        height: 220px;
+        transform: translate(-20px, -8px);
+      }
+
+      .E-class img {
+        width: 100%;
+        height: 100%;
+      }
+
+      .shop img {
+        width: 360px;
+        // width: 350px;
+        height: 235px;
+        // object-fit: cover;
+        transform: translate(-4px, -15px);
       }
     }
 
-    .preview_sqa {
-      width: 350px;
-      height: 300px;
-      border-radius: 2.6rem;
-      overflow: hidden;
-      box-shadow: -5px 10px 15px rgba(0, 0, 0, 0.25);
 
-      img {
-        object-fit: cover;
-        transform: scale(1.2);
-        // transform: translate(50%);
-        width: 400px;
-        height: 400px;
-      }
-    }
+
+
+
+
+
+
+
+
+
+
 
 
     .clone_wrapper {
@@ -230,10 +275,8 @@ main {
         border: none;
         box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.25);
         background-color: rgb(210, 210, 210);
-
         transition: all .4s ease-in-out;
 
-        // transition: all .2s linear;
         a {
           display: block;
           width: 100%;

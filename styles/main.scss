@@ -14,6 +14,7 @@
   font-style: normal;
 }
 
+
 .flex_center {
   display: flex;
   justify-content: center;
@@ -99,6 +100,7 @@ main {
 
   .coding {
 
+
     .coding_inner {
       height: 100vh;
       display: flex;
@@ -119,9 +121,6 @@ main {
             gap: 20px;
 
             .preview {
-              // width: 550px;
-              // height: 300px;
-
               width: 700px;
               height: 400px;
 
@@ -141,7 +140,6 @@ main {
             }
 
             .shop img {
-              // width: 95%;
               height: 450px;
               transform: translate(3px, -15px);
             }
@@ -372,6 +370,10 @@ main {
     }
   }
 
+  // .coding.scroll {
+  //   overflow-y: hidden;
+  // }
+
   .design {
     .design_inner {
       display: flex;
@@ -592,7 +594,7 @@ main {
   height: 60px;
   bottom: 35px;
   right: 9%;
-  z-index: 99999;
+  z-index: 999;
   position: fixed;
   transform: translateY(140%);
   transition: transform 0.3s ease;

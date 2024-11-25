@@ -43,14 +43,14 @@
       </div>
       <ul class="gnb"><img src="/images/hamburger_mo.svg" alt="hamburger">
         <li class="gnb_list" data-tab="menuList_0"><a href="#">Home</a></li>
-        <li class="gnb_list" data-tab="menuList_1"><a href="#">Coding</a>
-          <ul class="lnb_list">
-            <li class="lnb_item codingIcon" data-anchor="clone_0"><a href="#clone_0">Project 0</a></li>
+        <li class="gnb_list codingMenu" data-tab="menuList_1"><a href="#">Coding</a>
+          <!-- <ul class="lnb_list">
             <li class="lnb_item codingIcon" data-anchor="clone_1"><a href="#clone_1">Project 1</a></li>
             <li class="lnb_item codingIcon" data-anchor="clone_2"><a href="#clone_2">Project 2</a></li>
             <li class="lnb_item codingIcon" data-anchor="clone_3"><a href="#clone_3">Project 3</a></li>
             <li class="lnb_item codingIcon" data-anchor="clone_4"><a href="#clone_4">Project 4</a></li>
-          </ul>
+            <li class="lnb_item codingIcon" data-anchor="clone_5"><a href="#clone_5">Project 5</a></li>
+          </ul> -->
         </li>
         <li class="gnb_list" data-tab="menuList_2"><a href="#">Design</a></li>
         <li class="gnb_list" data-tab="menuList_3"><a href="#">About Me</a></li>
@@ -60,8 +60,8 @@
   </header>
 
   <main>
-    <div class="visual">
 
+    <div class="visual">
       <section class="home tab_item firstPage" id="menuList_0">
         <div class="inner home_inner">
           <div class="codingIcon">
@@ -74,9 +74,21 @@
       </section>
 
       <section class="coding tab_item lnb_tab fullpage" id="menuList_1">
+        <div class="left-menu" id="leftMenu">
+          <div class="left-menu_inner">
+            <h1>Coding</h1>
+            <ul class="lnb_list">
+              <li class="lnb_item codingIcon" data-anchor="clone_1"><a href="#clone_1">01</a></li>
+              <li class="lnb_item codingIcon" data-anchor="clone_2"><a href="#clone_2">02</a></li>
+              <li class="lnb_item codingIcon" data-anchor="clone_3"><a href="#clone_3">03</a></li>
+              <li class="lnb_item codingIcon" data-anchor="clone_4"><a href="#clone_4">04</a></li>
+              <li class="lnb_item codingIcon" data-anchor="clone_5"><a href="#clone_5">05</a></li>
+            </ul>
+            <p>2024 yeonhee<br>&copy;All right reserved.</P>
+          </div>
+        </div>
 
-        <!-- ===============================   작업중  =================================== -->
-        <div class="inner coding_inner section" id="clone_0">
+        <div class="inner coding_inner section" id="clone_1">
           <h1 class="tab_title">CODING</h1>
           <div class="swiper mySwiper">
             <div class="swiper-wrapper pra_wrapper">
@@ -118,43 +130,7 @@
             <div class="swiper-pagination"></div>
           </div>
         </div>
-        <!-- <div class="pra_wrapper">
-            <div class="pra pra_beauty">
-              <div class="preview sqa">
-                <img src="/images/pra_beauty-store.JPG" alt="">
-              </div>
-              <button>
-                <a href="#" target="_blank">
-                  <p>TRANSFORMATION</p>
-                </a>
-              </button>
-            </div>
-            <div class="pra pra_E">
-              <div class="preview E-class">
-                <img src="/images/pra_e-class.JPG" alt="">
-              </div>
-              <button>
-                <a href="#" target="_blank">
-                  <p>TRANSFORMATION</p>
-                </a>
-              </button>
-            </div>
-            <div class="pra pra_shop">
-              <div class="preview shop">
-                <img src="/images/pra_shopping-app.png" alt="">
-              </div>
-              <button>
-                <a href="#" target="_blank">
-                  <p>TRANSFORMATION</p>
-                </a>
-              </button>
-            </div>
-          </div> -->
-
-
-        <!-- ===============================   작업중  =================================== -->
-
-        <div class="inner coding_inner section" id="clone_1">
+        <div class="inner coding_inner section" id="clone_2">
           <h1 class="tab_title">CLONE CODING</h1>
           <div class="clone_wrapper">
             <div class="clone_box">
@@ -188,7 +164,7 @@
             </div>
           </div>
         </div>
-        <div class="inner coding_inner section" id="clone_2">
+        <div class="inner coding_inner section" id="clone_3">
           <h1 class="tab_title">CLONE CODING</h1>
           <div class="clone_wrapper">
             <div class="clone_box">
@@ -223,7 +199,7 @@
             </div>
           </div>
         </div>
-        <div class="inner coding_inner section" id="clone_3">
+        <div class="inner coding_inner section" id="clone_4">
           <h1 class="tab_title">CLONE CODING</h1>
           <div class="clone_wrapper">
             <div class="clone_box">
@@ -258,7 +234,7 @@
             </div>
           </div>
         </div>
-        <div class="inner coding_inner section" id="clone_4">
+        <div class="inner coding_inner section" id="clone_5">
           <h1 class="tab_title">CLONE CODING</h1>
           <div class="clone_wrapper">
             <div class="clone_box">
@@ -292,11 +268,172 @@
             </div>
           </div>
         </div>
-
-
       </section>
 
-      <!--  원본
+      <section class="design tab_item lnb_tab" id="menuList_2">
+        <div class="inner design_inner">
+          <h1 class="tab_title">DESIGN</h1>
+          <div class="design_wrapper">
+            <p class="click_effect animate__animated animate__flash">Click the phone!!</p>
+            <div class="phone_wrapper">
+              <div class="design_box" data-tab="juice">
+                <h3>건강주스</h3>
+                <div class=" phone detailPage_1">
+                </div>
+              </div>
+              <div class="design_box" data-tab="beready">
+                <h3>선크림</h3>
+                <div class="phone detailPage_2">
+                </div>
+              </div>
+              <div class="design_box" data-tab="dessert">
+                <h3>디저트</h3>
+                <div class="phone detailPage_3">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="aboutMe tab_item" id="menuList_3">
+        <div class="inner aboutMe_inner">
+          <h1 class="tab_title">ABOUT ME</h1>
+          <div class="meBox_wrapper">
+            <div class="photo_img">
+              <img src="/images/포폴사진.jpg" alt="">
+            </div>
+            <div class="resume">
+              <div class="meBox_1">
+                <div class="profile meBox_detail">
+                  <h3>진연희 Yeonhee Jin</h3>
+                  <div>
+                    <p>Birth &nbsp; 1993. 12. 29</p>
+                    <p>Tel &nbsp; 010. 5483. 7894</p>
+                    <p>E-mail &nbsp; tsu0022@gmail.com</p>
+                  </div>
+                </div>
+                <div class="license meBox_detail">
+                  <h3>License</h3>
+                  <p>컴퓨터활용능력 2급</p>
+                  <h6>2023.10</h6>
+                  <p>TOEIC Speaking IH(140점)</p>
+                  <h6>2023.03 </h6>
+                  <p>2종 보통 운전면허</p>
+                  <h6>2022.09</h6>
+                </div>
+                <div class="personality meBox_detail">
+                  <h3>Personality</h3>
+                  <p># ESTJ</p>
+                  <p># 책임감 있는</p>
+                  <p># 끈기 있는</p>
+                  <p># 성실한 & 꼼꼼한</p>
+                  <p># 뛰어난 수용력 및 적응력</p>
+                </div>
+              </div>
+              <div class="education">
+                <h3>Education</h3>
+                <p>계명문화대학교 패션디자인과 졸업</p>
+                <h6>2012.03 ~ 2014.02</h6>
+                <p>DIMENSIONS International College(싱가포르) Holiday
+                  Program(English) 수료
+                </p>
+                <h6>2012.06 ~ 2012.07</h6>
+                <p>그린컴퓨터아트학원 UIUX 디자이너를 위한 웹디자인(피그마 활용) & 웹퍼블리셔 실무 양성
+                  과정 수료
+                </p>
+                <h6>2024.03 ~ 2024.07</h6>
+              </div>
+              <div class="meBox_2">
+                <div class="experience meBox_detail">
+                  <h3>Experience</h3>
+                  <p>캐나다 워킹홀리데이</p>
+                  <h6>2016.10 ~ 2017.09</h6>
+                  <p>올리브영 파트타이머</p>
+                  <h6>2019.02 ~ 2024.02</h6>
+                </div>
+                <div class="performance meBox_detail">
+                  <h3>Skill</h3>
+                  <ul>
+                    <li><img src="/images/html.png" alt="html"></li>
+                    <li><img src="/images/css.png" alt="css"></li>
+                    <li><img src="/images/jq.png" alt="jq"></li>
+                    <li><img src="/images/js.png" alt="js"></li>
+                    <li><img src="/images/ps.png" alt="ps"></li>
+                    <li><img src="/images/ai.png" alt="ai"></li>
+                    <li><img src="/images/fig.png" alt="fig"></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact tab_item" id="menuList_4">
+        <div class="inner contact_inner">
+          <h1 class="tab_title">CONTACT</h1>
+
+          컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택
+          컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택
+          컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택
+          컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택
+          컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택
+          컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택
+        </div>
+      </section>
+
+    </div>
+
+    <div class="pop-up">
+      <div class="detail_pop" id="juice">
+        <img src="images/detailPage_1.jpg" alt="" class="detail_img">
+        <img src="/images/icon_close.svg" alt="" class="close_btn">
+      </div>
+      <div class="detail_pop" id="beready">
+        <img src="images/detailPage_2.jpg" alt="" class="detail_img">
+        <img src="/images/icon_close.svg" alt="" class="close_btn">
+      </div>
+      <div class="detail_pop" id="dessert">
+        <img src="images/detailPage_3.jpg" alt="" class="detail_img">
+        <img src="/images/icon_close.svg" alt="" class="close_btn">
+      </div>
+    </div>
+    <div class="go-top">
+      <a href="#">
+        <!-- <img src="images/go-top.svg" alt=""> -->
+      </a>
+    </div>
+  </main>
+
+</body>
+
+</html>
+
+<!-- <div class="phone_wrapper">
+  <div class="design_box" data-tab="juice">
+  </div>
+  <div class="design_box" data-tab="beready">
+  </div>
+  <div class="design_box" data-tab="dessert">
+  </div>
+</div>
+
+<div class="pop-up">
+  <div class="detail_pop pop_juice" id="juice">
+  </div>
+  <div class="detail_pop pop_beready" id="beready">
+  </div>
+  <div class="detail_pop pop_dessert" id="dessert">
+  </div>
+</div>
+
+design_box를 누르면 detail_pop이 열리면 좋겠어 -->
+
+
+
+
+<!--  원본
     <section class="coding tab_item lnb_tab" id="menuList_1">
       <div class="inner coding_inner" id="fullpage">
         <h1 class="tab_title">CLONE CODING</h1>
@@ -430,164 +567,3 @@
         </div>
     </section>
     원본  -->
-
-      <section class="design tab_item lnb_tab" id="menuList_2">
-        <div class="inner design_inner">
-          <h1 class="tab_title">DESIGN</h1>
-          <div class="design_wrapper">
-            <p class="click_effect animate__animated animate__flash">Click the phone!!</p>
-            <div class="phone_wrapper">
-              <div class="design_box" data-tab="juice">
-                <h3>건강주스</h3>
-                <div class=" phone detailPage_1">
-                </div>
-              </div>
-              <div class="design_box" data-tab="beready">
-                <h3>선크림</h3>
-                <div class="phone detailPage_2">
-                </div>
-              </div>
-              <div class="design_box" data-tab="dessert">
-                <h3>디저트</h3>
-                <div class="phone detailPage_3">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="aboutMe tab_item" id="menuList_3">
-        <div class="inner aboutMe_inner">
-          <h1 class="tab_title">ABOUT ME</h1>
-          <div class="meBox_wrapper">
-            <div class="photo_img">
-              <img src="/images/포폴사진.jpg" alt="">
-            </div>
-            <div class="resume">
-              <div class="meBox_1">
-                <div class="profile meBox_detail">
-                  <h3>진연희 Yeonhee Jin</h3>
-                  <div>
-                    <p>Birth &nbsp; 1993. 12. 29</p>
-                    <p>Tel &nbsp; 010. 5483. 7894</p>
-                    <p>E-mail &nbsp; tsu0022@gmail.com</p>
-                  </div>
-                </div>
-                <div class="license meBox_detail">
-                  <h3>License</h3>
-                  <p>컴퓨터활용능력 2급</p>
-                  <h6>2023.10</h6>
-                  <p>TOEIC Speaking IH(140점)</p>
-                  <h6>2023.03 </h6>
-                  <p>2종 보통 운전면허</p>
-                  <h6>2022.09</h6>
-                </div>
-                <div class="personality meBox_detail">
-                  <h3>Personality</h3>
-                  <p># ESTJ</p>
-                  <p># 책임감 있는</p>
-                  <p># 끈기 있는</p>
-                  <p># 성실한 & 꼼꼼한</p>
-                  <p># 뛰어난 수용력 및 적응력</p>
-                </div>
-              </div>
-              <div class="education">
-                <h3>Education</h3>
-                <p>계명문화대학교 패션디자인과 졸업</p>
-                <h6>2012.03 ~ 2014.02</h6>
-                <p>DIMENSIONS International College(싱가포르) Holiday
-                  Program(English) 수료
-                </p>
-                <h6>2012.06 ~ 2012.07</h6>
-                <p>그린컴퓨터아트학원 UIUX 디자이너를 위한 웹디자인(피그마 활용) & 웹퍼블리셔 실무 양성
-                  과정 수료
-                </p>
-                <h6>2024.03 ~ 2024.07</h6>
-              </div>
-              <div class="meBox_2">
-                <div class="experience meBox_detail">
-                  <h3>Experience</h3>
-                  <p>캐나다 워킹홀리데이</p>
-                  <h6>2016.10 ~ 2017.09</h6>
-                  <p>올리브영 파트타이머</p>
-                  <h6>2019.02 ~ 2024.02</h6>
-                </div>
-                <div class="performance meBox_detail">
-                  <h3>Skill</h3>
-                  <ul>
-                    <li><img src="/images/html.png" alt="html"></li>
-                    <li><img src="/images/css.png" alt="css"></li>
-                    <li><img src="/images/jq.png" alt="jq"></li>
-                    <li><img src="/images/js.png" alt="js"></li>
-                    <li><img src="/images/ps.png" alt="ps"></li>
-                    <li><img src="/images/ai.png" alt="ai"></li>
-                    <li><img src="/images/fig.png" alt="fig"></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="contact tab_item" id="menuList_4">
-        <div class="inner contact_inner">
-          <h1 class="tab_title">CONTACT</h1>
-
-          컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택
-          컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택
-          컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택
-          컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택
-          컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택
-          컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택컨택
-        </div>
-      </section>
-
-    </div>
-
-    <div class="pop-up">
-      <div class="detail_pop" id="juice">
-        <img src="images/detailPage_1.jpg" alt="" class="detail_img">
-        <img src="/images/icon_close.svg" alt="" class="close_btn">
-      </div>
-      <div class="detail_pop" id="beready">
-        <img src="images/detailPage_2.jpg" alt="" class="detail_img">
-        <img src="/images/icon_close.svg" alt="" class="close_btn">
-      </div>
-      <div class="detail_pop" id="dessert">
-        <img src="images/detailPage_3.jpg" alt="" class="detail_img">
-        <img src="/images/icon_close.svg" alt="" class="close_btn">
-      </div>
-    </div>
-
-    <div class="go-top">
-      <a href="#">
-        <!-- <img src="images/go-top.svg" alt=""> -->
-      </a>
-    </div>
-  </main>
-
-</body>
-
-</html>
-
-<!-- <div class="phone_wrapper">
-  <div class="design_box" data-tab="juice">
-  </div>
-  <div class="design_box" data-tab="beready">
-  </div>
-  <div class="design_box" data-tab="dessert">
-  </div>
-</div>
-
-<div class="pop-up">
-  <div class="detail_pop pop_juice" id="juice">
-  </div>
-  <div class="detail_pop pop_beready" id="beready">
-  </div>
-  <div class="detail_pop pop_dessert" id="dessert">
-  </div>
-</div>
-
-design_box를 누르면 detail_pop이 열리면 좋겠어 -->

@@ -1,23 +1,20 @@
-// ======================
-// go to top ============
-const goTopBtn = document.querySelector('.go-top');
+// ======================// // go to top ============
+document.addEventListener('DOMContentLoaded', function () {
+  const goTopBtn = document.querySelector('.go-top');
+  const threshold = window.innerHeight * 1.9;
 
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 1500) {
-    goTopBtn.classList.add('visible');
-  } else {
-    goTopBtn.classList.remove('visible');
+  function toggleGoTopBtn() {
+    const pageScroll = window.scrollY;
+    if (pageScroll > threshold) {
+      goTopBtn.classList.add('visible');
+    } else {
+      goTopBtn.classList.remove('visible');
+    }
   }
+  toggleGoTopBtn();
+  window.addEventListener('scroll', toggleGoTopBtn);
 });
 
-goTopBtn.addEventListener('click', function (e) {
-  e.preventDefault();
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
-  });
-});
-// ======================// 
 // =======================================================
 // // 스와이퍼 =============================================
 var swiper = new Swiper(".mySwiper", {

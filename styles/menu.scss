@@ -31,7 +31,6 @@ header {
     }
   }
 
-
   .gnb {
     font-size: 2rem;
     display: flex;
@@ -53,15 +52,66 @@ header {
         height: 100%;
 
         &:hover {
-          color: color.$orange;
+          color: color.$tomato;
         }
       }
     }
+  }
+}
 
+.left-menu {
+  display: none;
+  background-color: white;
+  position: fixed;
+  top: 85px;
+  left: 0;
+  z-index: 99997;
+  box-shadow: 1px 0px 20px 3px rgba(78, 78, 78, 0.082);
+  width: 250px;
+  height: 100%;
+
+
+  padding-top: 300px;
+  padding-left: 20px;
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1.6rem;
+  }
+
+  .left-menu_inner {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    height: fit-content;
+    width: 200px;
+    text-align: right;
 
 
   }
+
+  .lnb_list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    font-size: 2.5rem;
+    font-weight: 300;
+
+    li:nth-child(1) {
+      letter-spacing: 1.2px;
+      font-size: 2.6rem;
+    }
+  }
 }
+
+.left-menu.visible {
+  display: block;
+}
+
+//==============================================@
 
 
 // .lnb_list {
@@ -87,54 +137,3 @@ header {
 // }
 
 //==============================================@
-
-.left-menu {
-  opacity: 0;
-  background-color: white;
-  position: fixed;
-  top: 85px;
-  left: 0;
-  z-index: 99997;
-  box-shadow: 1px 0px 20px 3px rgba(78, 78, 78, 0.082);
-  width: 250px;
-  height: 100%;
-  display: flex;
-  // align-items: center;
-  justify-content: center;
-  text-align: right;
-  padding-top: 300px;
-
-  h1 {
-    font-size: 2.5rem;
-  }
-
-  p {
-    font-size: 1.6rem;
-  }
-
-  .left-menu_inner {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-    height: fit-content;
-    width: 200px;
-    // align-items: center;
-  }
-
-  .lnb_list {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-    font-size: 2.5rem;
-    font-weight: 300;
-
-    li:nth-child(1) {
-      letter-spacing: 1.2px;
-      font-size: 2.6rem;
-    }
-  }
-}
-
-.left-menu.visible {
-  opacity: 1;
-}

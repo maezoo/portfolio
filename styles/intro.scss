@@ -1,139 +1,321 @@
 @use "./color.scss";
 
 .intro {
+  background-color: tomato;
+
   width: 100vw;
   height: 100vh;
-  background-color: black;
   display: flex;
   align-items: center;
   position: absolute;
   z-index: 100000;
-
   top: 0;
   left: 0;
 
+  color: white;
 
-  .item {
-    display: flex;
-    align-items: center;
+
+  h2 {
+    font-weight: 900;
+    font-size: 9rem;
+  }
+
+  h3 {
+    font-weight: 900;
+    font-size: 6rem;
+  }
+
+  p {
+    font-size: 2rem;
+  }
+
+  span {
+    font-size: 3rem;
+    // font-weight: 900;
+  }
+
+  .intro_inner {
     width: 100%;
     height: 100%;
-    // background-color: darkblue;
-
-    .line {
-      // width: 100%;
-      // display: flex;
-      // align-items: center;
-      // background-color: rgb(239, 94, 46);
-      background-color: color.$orange;
-
-      width: 100%;
-      height: 3px;
-      overflow: hidden;
-
-      .light {
-        // display: flex;
-        // align-items: center;
-        // width: 30px;
-        // position: relative;
-        background-color: rgb(255, 255, 255);
-        height: 3px;
-        // animation: light 4s linear infinite;
-        animation: light 4s linear forwards;
-        // animation-delay: 3s;
-
-        .light {
-          // width: 100%;
-          // position: absolute;
-          // background-color: rgba(221, 21, 21, 0.542);
-          // width: 50px;
-          // width: 50px;
-          // height: 50px;
-          // border-radius: 50%;
-        }
-
-        @keyframes light {
-          0% {
-            transform: translateX(0%);
-          }
-
-          100% {
-            transform: translateX(100%);
-          }
-        }
-      }
-
-    }
-
-
-  }
-
-  .text_box {
-    padding: 15px;
-    color: white;
+    padding: 3%;
     display: flex;
-    flex-direction: column;
-    text-align: right;
-    cursor: pointer;
-
-    // background-color: red;
-    a {}
-
-    h1 {
-      font-size: 5rem;
-      font-weight: bold;
-    }
-
-    h3 {
-      font-weight: 400;
-      font-size: 2.5rem;
-    }
+    justify-content: flex-end;
+    align-items: flex-end;
   }
 
-  .loader {
+  .introPhoto {
+    background: yellow url(../images/intro_Photo.jpeg) no-repeat 52% 50%;
+    width: 400px;
+    height: 600px;
+    background-size: cover;
+  }
 
-    // position: fixed;
-    // top: 50%;
-    // left: 50%;
-    // transform: translate(-50%, -50%);
+  .text_wrapper {
     // width: 100%;
     // height: 100%;
-    // background: #000;
-    .inner {
-      // position: fixed;
-      // top: 50%;
-      // left: 50%;
-      // transform: translate(-50%, -50%);
-      // height: 80px;
-      // text-align: center;
-    }
-
-    h1,
-    h3 {
-      // height: 160px;
-      // margin: 0;
-      // padding: 0;
-      // color: rgba(255, 255, 255, 0.2);
-
-      // background-size: 101% 100%;
-      // background-position: left 0px bottom -40px;
-      // background-repeat: repeat-x;
-      // background-clip: text;
-      // color: rgba(239, 94, 46, 0.2);
-      // color: rgba(255, 255, 255);
-      // background: url(../images/flow.svg);
-      // animation: wave 3s both linear infinite;
-    }
-
-
-    @keyframes wave {
-      0% {
-        background-position: left 0px bottom -80px;
-      }
-
-      100% {
-        background-position: left 1200p bottom 20px;
-      }
-    }
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    // position: absolute;
+    // z-index: 100000;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
+
+  // .item {
+  //   display: flex;
+  //   align-items: center;
+  //   width: 100%;
+  //   height: 100%;
+  //   // background-color: darkblue;
+
+  //   .line {
+  //     background-color: color.$tomato;
+  //     width: 100%;
+  //     height: 3px;
+  //     overflow: hidden;
+
+  //     .light {
+  //       // display: flex;
+  //       // align-items: center;
+  //       // width: 30px;
+  //       // position: relative;
+  //       background-color: rgb(255, 255, 255);
+  //       height: 3px;
+  //       // animation: light 4s linear infinite;
+  //       animation: light 4s linear forwards;
+  //       // animation-delay: 3s;
+
+  //       .light {
+  //         // width: 100%;
+  //         // position: absolute;
+  //         // background-color: rgba(221, 21, 21, 0.542);
+  //         // width: 50px;
+  //         // width: 50px;
+  //         // height: 50px;
+  //         // border-radius: 50%;
+  //       }
+
+  //       @keyframes light {
+  //         0% {
+  //           transform: translateX(0%);
+  //         }
+
+  //         100% {
+  //           transform: translateX(100%);
+  //         }
+  //       }
+  //     }
+
+  //   }
+
+
+  // }
+
+  // .text_box {
+  //   padding: 15px;
+  //   color: white;
+  //   display: flex;
+  //   flex-direction: column;
+  //   text-align: right;
+  //   cursor: pointer;
+
+  //   // background-color: red;
+  //   a {}
+
+  //   h1 {
+  //     font-size: 5rem;
+  //     font-weight: bold;
+  //   }
+
+  //   h3 {
+  //     font-weight: 400;
+  //     font-size: 2.5rem;
+  //   }
+  // }
+
+  // .loader {
+
+  //   // position: fixed;
+  //   // top: 50%;
+  //   // left: 50%;
+  //   // transform: translate(-50%, -50%);
+  //   // width: 100%;
+  //   // height: 100%;
+  //   // background: #000;
+  //   .inner {
+  //     // position: fixed;
+  //     // top: 50%;
+  //     // left: 50%;
+  //     // transform: translate(-50%, -50%);
+  //     // height: 80px;
+  //     // text-align: center;
+  //   }
+
+  //   h1,
+  //   h3 {
+  //     // height: 160px;
+  //     // margin: 0;
+  //     // padding: 0;
+  //     // color: rgba(255, 255, 255, 0.2);
+
+  //     // background-size: 101% 100%;
+  //     // background-position: left 0px bottom -40px;
+  //     // background-repeat: repeat-x;
+  //     // background-clip: text;
+  //     // color: rgba(239, 94, 46, 0.2);
+  //     // color: rgba(255, 255, 255);
+  //     // background: url(../images/flow.svg);
+  //     // animation: wave 3s both linear infinite;
+  //   }
+
+
+  //   @keyframes wave {
+  //     0% {
+  //       background-position: left 0px bottom -80px;
+  //     }
+
+  //     100% {
+  //       background-position: left 1200p bottom 20px;
+  //     }
+  //   }
+  // }
 }
+
+
+// .intro {
+//   width: 100vw;
+//   height: 100vh;
+//   background-color: black;
+//   display: flex;
+//   align-items: center;
+//   position: absolute;
+//   z-index: 100000;
+
+//   top: 0;
+//   left: 0;
+
+
+//   .item {
+//     display: flex;
+//     align-items: center;
+//     width: 100%;
+//     height: 100%;
+//     // background-color: darkblue;
+
+//     .line {
+//       background-color: color.$tomato;
+
+
+//       width: 100%;
+//       height: 3px;
+//       overflow: hidden;
+
+//       .light {
+//         // display: flex;
+//         // align-items: center;
+//         // width: 30px;
+//         // position: relative;
+//         background-color: rgb(255, 255, 255);
+//         height: 3px;
+//         // animation: light 4s linear infinite;
+//         animation: light 4s linear forwards;
+//         // animation-delay: 3s;
+
+//         .light {
+//           // width: 100%;
+//           // position: absolute;
+//           // background-color: rgba(221, 21, 21, 0.542);
+//           // width: 50px;
+//           // width: 50px;
+//           // height: 50px;
+//           // border-radius: 50%;
+//         }
+
+//         @keyframes light {
+//           0% {
+//             transform: translateX(0%);
+//           }
+
+//           100% {
+//             transform: translateX(100%);
+//           }
+//         }
+//       }
+
+//     }
+
+
+//   }
+
+//   .text_box {
+//     padding: 15px;
+//     color: white;
+//     display: flex;
+//     flex-direction: column;
+//     text-align: right;
+//     cursor: pointer;
+
+//     // background-color: red;
+//     a {}
+
+//     h1 {
+//       font-size: 5rem;
+//       font-weight: bold;
+//     }
+
+//     h3 {
+//       font-weight: 400;
+//       font-size: 2.5rem;
+//     }
+//   }
+
+//   .loader {
+
+//     // position: fixed;
+//     // top: 50%;
+//     // left: 50%;
+//     // transform: translate(-50%, -50%);
+//     // width: 100%;
+//     // height: 100%;
+//     // background: #000;
+//     .inner {
+//       // position: fixed;
+//       // top: 50%;
+//       // left: 50%;
+//       // transform: translate(-50%, -50%);
+//       // height: 80px;
+//       // text-align: center;
+//     }
+
+//     h1,
+//     h3 {
+//       // height: 160px;
+//       // margin: 0;
+//       // padding: 0;
+//       // color: rgba(255, 255, 255, 0.2);
+
+//       // background-size: 101% 100%;
+//       // background-position: left 0px bottom -40px;
+//       // background-repeat: repeat-x;
+//       // background-clip: text;
+//       // color: rgba(239, 94, 46, 0.2);
+//       // color: rgba(255, 255, 255);
+//       // background: url(../images/flow.svg);
+//       // animation: wave 3s both linear infinite;
+//     }
+
+
+//     @keyframes wave {
+//       0% {
+//         background-position: left 0px bottom -80px;
+//       }
+
+//       100% {
+//         background-position: left 1200p bottom 20px;
+//       }
+//     }
+//   }
+// }

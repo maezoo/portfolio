@@ -1,4 +1,7 @@
 
+// ==============================================
+// ==============================================
+
 // // 메뉴 전환 ============================================
 // =======================================================
 const menuItems = document.querySelectorAll('.gnb_list');
@@ -15,7 +18,7 @@ lnbItem.forEach(leftItems => {
       clickedlnb.style.fontWeight = '';
     });
 
-    leftItems.style.color = '#EF5E2E';
+    leftItems.style.color = '$tomato';
     leftItems.style.fontWeight = '400';
   });
 });
@@ -26,7 +29,7 @@ menuItems.forEach(button => {
       item.style.color = '';
     });
 
-    button.style.color = '#EF5E2E';
+    button.style.color = '$tomato';
 
     sectionTabs.forEach(tab => {
       tab.style.display = 'none';
@@ -44,10 +47,16 @@ topCoding.addEventListener('click', () => {
     clickedlnb.style.color = '';
     clickedlnb.style.fontWeight = '';
   });
-  lnbItem[0].style.color = '#EF5E2E';
+  lnbItem[0].style.color = '$tomato';
   lnbItem[0].style.fontWeight = '400';
 
 });
+
+// const goTopClick = document.querySelector('.go-top a');
+
+// goTop.addEventListener('click', () => {
+//   leftMenu.classList.remove('visible');
+// });
 
 // ==============================================
 // // go to top =================================

@@ -117,27 +117,18 @@ document.querySelectorAll('.close_btn').forEach(closeBtn => {
 
 // =======================================================
 // 인트로 화면전환 ===========================================
-const clickPort = document.querySelector('.text_box');
-const hideIntro = document.querySelector('.intro');
-const firstTab = document.querySelectorAll('.firstPage');
-const clickLogo = document.querySelector('.logo');
+// const clickPort = document.querySelector('.text_box');
+// const hideIntro = document.querySelector('.home');
+// const firstTab = document.querySelectorAll('.firstPage');
+// const clickLogo = document.querySelector('.logo');
 
-const toggleTab = () => {
-  hideIntro.classList.toggle('hide');
-  firstTab.forEach(active => {
-    active.classList.toggle('show');
-  });
-};
+// const toggleTab = () => {
+//   hideIntro.classList.toggle('hide');
+//   firstTab.forEach(active => {
+//     active.classList.toggle('show');
+//   });
+// };
 
-clickPort.addEventListener('click', toggleTab);
-clickLogo.addEventListener('click', toggleTab);
+// clickPort.addEventListener('click', toggleTab);
+// clickLogo.addEventListener('click', toggleTab);
 
-// =======================================================
-// 인트로 화면전환 ===========================================
-// js
-// function setScreenSize() {
-//   let vh = window.innerHeight * 0.01;
-//   document.documentElement.style.setProperty('--vh', `${vh}px`);
-// }
-// setScreenSize();
-// window.addEventListener('resize', setScreenSize);

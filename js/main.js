@@ -131,3 +131,13 @@ const toggleTab = () => {
 
 clickPort.addEventListener('click', toggleTab);
 clickLogo.addEventListener('click', toggleTab);
+
+// =======================================================
+// 인트로 화면전환 ===========================================
+// js
+// function setScreenSize() {
+//   let vh = window.innerHeight * 0.01;
+//   document.documentElement.style.setProperty('--vh', `${vh}px`);
+// }
+// setScreenSize();
+// window.addEventListener('resize', setScreenSize);

@@ -1,216 +1,138 @@
 @use "./color.scss";
 
-.intro_menu {
-  width: 100%;
-  height: 85px;
-  display: flex;
-  padding: 0 9%;
-  position: fixed;
-  z-index: 99998;
-  top: 0;
-  left: 0;
-  // background-color: yellow;
 
-  .gnb_wrap {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-  }
-
-  .gnb {
-    font-size: 2rem;
-    display: flex;
-    height: 50%;
-    line-height: 50px;
-
-    img {
-      display: none;
-    }
-
-    .gnb_list {
-      // padding: 0 15px;
-      // border-right: 1px solid white;
-      // height: 20px;
-      // line-height: 20px;
-
-      a {
-        display: block;
-        width: 100%;
-        height: 100%;
-
-        &:hover {
-          color: color.$tomato;
-        }
-      }
-    }
-
-    a::after {
-      content: "|";
-      padding: 0 15px;
-      color: white;
-      font-size: 20px;
-    }
-
-    .gnb_after::after {
-      content: none;
-    }
-  }
-
-
+@font-face {
+  font-family: 'KCC-eunyoung';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/KCC-eunyoung-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
-
 
 .intro {
   // background-color: tomato;
-  background-color: rgb(74, 74, 74);
+  background-color: rgb(184, 183, 183);
+
+  // background-color: rgb(74, 74, 74);
+  color: white;
   width: 100vw;
   height: 100vh;
+  overflow-y: hidden;
   position: absolute;
   z-index: 100000;
   top: 0;
   left: 0;
+  padding: 0% 9%;
 
-  color: white;
-
-  // padding: 9% 9% 0% 9%;
-  padding: 9%;
-
-
-  @font-face {
-    font-family: 'KCC-eunyoung';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/KCC-eunyoung-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-  }
-
-  .text_wrapper {
-    min-width: 100%;
+  .intro_inner {
+    // background-color: darkblue;
     width: 100%;
-    // background-color: rgb(23, 163, 105);
-  }
-
-  .textInner {
-    // background-color: rgb(133, 203, 59);
-
-    width: 100%;
-    // min-height: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    max-width: 1280px;
+    margin: 0 auto;
+
+    .intro_menu {
+      // background-color: rgba(203, 141, 226, 0.457);
+      width: 100%;
+      height: 85px;
+
+      .gnb_wrap {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+      }
+
+      .gnb {
+        font-size: 2rem;
+        display: flex;
+        height: 50%;
+        line-height: 50px;
+
+        img {
+          display: none;
+        }
+
+        .gnb_list {
+          // padding: 0 15px;
+          // border-right: 1px solid white;
+          // height: 20px;
+          // line-height: 20px;
+
+          a {
+            display: block;
+            width: 100%;
+            height: 100%;
+
+            &:hover {
+              color: color.$tomato;
+            }
+          }
+        }
+
+        a::after {
+          content: "|";
+          padding: 0 15px;
+          color: white;
+          font-size: 20px;
+        }
+
+        .gnb_after::after {
+          content: none;
+        }
+      }
+    }
+  }
+
+  .wrapper {
     position: relative;
+    width: 100%;
+    height: 100%;
 
     .text-flow {
+      position: absolute;
+      top: 15%;
+      width: 100%;
       display: flex;
       flex-direction: column;
-      gap: 30px;
-
-      position: absolute;
-      top: 0;
-      left: 0;
+      gap: 15px;
+      align-items: center;
 
       h2 {
         letter-spacing: 8px;
         font-weight: 900;
-        font-size: 9rem;
+        font-size: 4rem;
       }
 
       h3 {
         letter-spacing: 4px;
         font-weight: 900;
-        font-size: 5rem;
+        font-size: 2.5rem;
       }
-    }
-
-    .intro-photo {
-      // background-color: pink;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      justify-content: flex-end;
-
-      position: relative;
-      // top: 0;
-      // right: 0;
-
-      .photo {
-        background: yellow url(../images/intro_Photo.jpeg) no-repeat 55% 50%;
-        width: 380px;
-        height: 600px;
-        background-size: cover;
-      }
-
-      .text-introduce {
-        // width: 100%;
-        // background-color: rgb(69, 39, 94);
-        display: flex;
-        flex-direction: column;
-        text-align: right;
-        gap: 8px;
-        letter-spacing: 5px;
-        // color: black;
-
-        position: absolute;
-        right: 150px;
-        top: 450px;
-        // left: 0;
-        // bottom: 0;
-
-        h3 {
-          font-size: 3rem;
-          font-weight: 900;
-        }
-
-        p {
-          font-size: 2rem;
-          font-weight: 600;
-        }
-
-        span {
-          font-family: 'KCC-eunyoung';
-          // font-weight: 900;
-          // font-size: 3rem;
-          font-size: 6rem;
-          font-weight: 600;
-
-
-        }
-      }
-
-
     }
   }
 
-
   .light-ray {
-    display: flex;
-    align-items: center;
     width: 100%;
-    // height: 100%;
-    // background-color: darkblue;
     position: absolute;
     top: 50%;
     left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // gap: 15px;
+    gap: 250px;
 
     .line {
-      background-color: white;
+      background-color: color.$tomato;
       width: 100%;
       height: 3px;
       overflow: hidden;
 
       .light {
-        // display: flex;
-        // align-items: center;
-        // width: 30px;
-        // position: relative;
-        // background-color: rgb(255, 255, 255);
-        background-color: color.$tomato;
+        background-color: white;
         height: 3px;
-        // animation: light 4s linear infinite;
         animation: light 4s linear infinite;
-        // animation-delay: 3s;
 
         @keyframes light {
           0% {
@@ -224,82 +146,367 @@
       }
     }
 
-    .text_box {
-      text-align: right;
-      padding: 15px;
-      color: white;
-      display: flex;
-      flex-direction: column;
-      cursor: pointer;
-
-
-
-      h1 {
-        font-size: 5rem;
-        font-weight: bold;
-      }
-
-      h3 {
-        font-weight: 400;
-        font-size: 2.5rem;
-      }
+    .line_text {
+      font-size: 1.7rem;
+      letter-spacing: 2px;
     }
-
-
   }
-
-
-
-
-  // .loader {
-
-  //   // position: fixed;
-  //   // top: 50%;
-  //   // left: 50%;
-  //   // transform: translate(-50%, -50%);
-  //   // width: 100%;
-  //   // height: 100%;
-  //   // background: #000;
-  //   .inner {
-  //     // position: fixed;
-  //     // top: 50%;
-  //     // left: 50%;
-  //     // transform: translate(-50%, -50%);
-  //     // height: 80px;
-  //     // text-align: center;
-  //   }
-
-  //   h1,
-  //   h3 {
-  //     // height: 160px;
-  //     // margin: 0;
-  //     // padding: 0;
-  //     // color: rgba(255, 255, 255, 0.2);
-
-  //     // background-size: 101% 100%;
-  //     // background-position: left 0px bottom -40px;
-  //     // background-repeat: repeat-x;
-  //     // background-clip: text;
-  //     // color: rgba(239, 94, 46, 0.2);
-  //     // color: rgba(255, 255, 255);
-  //     // background: url(../images/flow.svg);
-  //     // animation: wave 3s both linear infinite;
-  //   }
-
-
-  //   @keyframes wave {
-  //     0% {
-  //       background-position: left 0px bottom -80px;
-  //     }
-
-  //     100% {
-  //       background-position: left 1200p bottom 20px;
-  //     }
-  //   }
-  // }
 }
 
 
+
+
+
+
+
+// ===============================================
+.text_box {
+  text-align: right;
+  padding: 15px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+
+  h1 {
+    font-size: 5rem;
+    font-weight: bold;
+  }
+
+  h3 {
+    font-weight: 400;
+    font-size: 2.5rem;
+  }
+}
+
+.photo_wrap {
+  display: flex;
+  background-color: palevioletred;
+  // position: absolute;
+  position: relative;
+  // overflow: hidden;
+  width: 100%;
+  justify-content: flex-end;
+
+  .photo {
+    background: url(../images/intro_Photo.jpeg) no-repeat 50% 50%;
+    width: 250px;
+    height: 550px;
+    background-size: cover;
+    // transform: translateY(0%);
+  }
+
+  .text-introduce {
+    // // background-color: rgb(69, 39, 94);
+    // width: 500px;
+    // display: flex;
+    // flex-direction: column;
+    // text-align: right;
+    // gap: 8px;
+    // letter-spacing: 5px;
+
+    position: absolute;
+    // top: 280px;
+    // right: 120px;
+
+    h3 {
+      font-size: 3rem;
+      font-weight: 900;
+    }
+
+    p {
+      font-size: 2rem;
+      font-weight: 600;
+    }
+
+    span {
+      // font-family: 'KCC-eunyoung';
+      // font-weight: 900;
+      font-size: 4rem;
+      font-weight: 600;
+    }
+  }
+}
+
+
+
+
+// }
+
+// .intro-photo {
+//   background-color: pink;
+//   width: 100%;
+//   // height: 100%;
+//   display: flex;
+//   justify-content: flex-end;
+//   // position: relative;
+
+//   .text-introduce {
+//     // background-color: rgb(69, 39, 94);
+//     width: 500px;
+//     display: flex;
+//     flex-direction: column;
+//     text-align: right;
+//     gap: 8px;
+//     letter-spacing: 5px;
+
+//     position: absolute;
+//     top: 280px;
+//     right: 120px;
+
+//     h3 {
+//       font-size: 3rem;
+//       font-weight: 900;
+//     }
+
+//     p {
+//       font-size: 2rem;
+//       font-weight: 600;
+//     }
+
+//     span {
+//       // font-family: 'KCC-eunyoung';
+//       // font-weight: 900;
+//       font-size: 4rem;
+//       font-weight: 600;
+//     }
+//   }
+// }
+
+// =============================
+
+// 원본
+// .intro {
+//   // background-color: tomato;
+//   background-color: rgb(74, 74, 74);
+//   width: 100vw;
+//   height: 100vh;
+//   position: absolute;
+//   z-index: 100000;
+//   top: 0;
+//   left: 0;
+
+//   color: white;
+
+//   // padding: 9% 9% 0% 9%;
+//   padding: 9%;
+
+
+//   @font-face {
+//     font-family: 'KCC-eunyoung';
+//     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/KCC-eunyoung-Regular.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+//   }
+
+//   .text_wrapper {
+//     width: 100%;
+//     background-color: rgb(23, 163, 105);
+//   }
+
+//   .textInner {
+//     // background-color: rgb(133, 203, 59);
+
+//     width: 100%;
+//     // min-height: 100%;
+//     height: 100%;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-between;
+//     // position: relative;
+
+//     .text-flow {
+//       display: flex;
+//       flex-direction: column;
+//       gap: 30px;
+
+//       h2 {
+//         letter-spacing: 8px;
+//         font-weight: 900;
+//         font-size: 7rem;
+//       }
+
+//       h3 {
+//         letter-spacing: 4px;
+//         font-weight: 900;
+//         font-size: 4rem;
+//       }
+//     }
+
+//     .intro-photo {
+//       background-color: pink;
+//       width: 100%;
+//       // height: 100%;
+//       display: flex;
+//       justify-content: flex-end;
+//       position: relative;
+
+
+//       .photo {
+//         background-color: rgb(166, 114, 250);
+//         background: url(../images/intro_Photo.jpeg) no-repeat 55% 50%;
+//         // height: 600px;
+//         // width: 380px;
+//         height: 400px;
+//         width: 280px;
+//         background-size: cover;
+
+//       }
+
+//       .text-introduce {
+//         // background-color: rgb(69, 39, 94);
+//         width: 500px;
+//         display: flex;
+//         flex-direction: column;
+//         text-align: right;
+//         gap: 8px;
+//         letter-spacing: 5px;
+
+//         position: absolute;
+//         top: 280px;
+//         right: 120px;
+
+//         h3 {
+//           font-size: 3rem;
+//           font-weight: 900;
+//         }
+
+//         p {
+//           font-size: 2rem;
+//           font-weight: 600;
+//         }
+
+//         span {
+//           // font-family: 'KCC-eunyoung';
+//           // font-weight: 900;
+//           font-size: 4rem;
+//           font-weight: 600;
+
+
+//         }
+//       }
+
+
+//     }
+//   }
+
+
+//   .light-ray {
+//     display: flex;
+//     align-items: center;
+//     width: 100%;
+//     // height: 100%;
+//     // background-color: darkblue;
+//     position: absolute;
+//     top: 50%;
+//     left: 0;
+
+//     .line {
+//       background-color: color.$tomato;
+//       width: 100%;
+//       height: 3px;
+//       overflow: hidden;
+
+//       .light {
+//         // display: flex;
+//         // align-items: center;
+//         // width: 30px;
+//         // position: relative;
+//         // background-color: rgb(255, 255, 255);
+//         // background-color: color.$tomato;
+//         background-color: white;
+//         height: 3px;
+//         // animation: light 4s linear infinite;
+//         animation: light 4s linear infinite;
+//         // animation-delay: 3s;
+
+//         @keyframes light {
+//           0% {
+//             transform: translateX(0%);
+//           }
+
+//           100% {
+//             transform: translateX(100%);
+//           }
+//         }
+//       }
+//     }
+
+//     .text_box {
+//       text-align: right;
+//       padding: 15px;
+//       color: white;
+//       display: flex;
+//       flex-direction: column;
+//       cursor: pointer;
+
+
+
+//       h1 {
+//         font-size: 5rem;
+//         font-weight: bold;
+//       }
+
+//       h3 {
+//         font-weight: 400;
+//         font-size: 2.5rem;
+//       }
+//     }
+
+
+//   }
+
+
+
+
+//   // .loader {
+
+//   //   // position: fixed;
+//   //   // top: 50%;
+//   //   // left: 50%;
+//   //   // transform: translate(-50%, -50%);
+//   //   // width: 100%;
+//   //   // height: 100%;
+//   //   // background: #000;
+//   //   .inner {
+//   //     // position: fixed;
+//   //     // top: 50%;
+//   //     // left: 50%;
+//   //     // transform: translate(-50%, -50%);
+//   //     // height: 80px;
+//   //     // text-align: center;
+//   //   }
+
+//   //   h1,
+//   //   h3 {
+//   //     // height: 160px;
+//   //     // margin: 0;
+//   //     // padding: 0;
+//   //     // color: rgba(255, 255, 255, 0.2);
+
+//   //     // background-size: 101% 100%;
+//   //     // background-position: left 0px bottom -40px;
+//   //     // background-repeat: repeat-x;
+//   //     // background-clip: text;
+//   //     // color: rgba(239, 94, 46, 0.2);
+//   //     // color: rgba(255, 255, 255);
+//   //     // background: url(../images/flow.svg);
+//   //     // animation: wave 3s both linear infinite;
+//   //   }
+
+
+//   //   @keyframes wave {
+//   //     0% {
+//   //       background-position: left 0px bottom -80px;
+//   //     }
+
+//   //     100% {
+//   //       background-position: left 1200p bottom 20px;
+//   //     }
+//   //   }
+//   // }
+// }
+// =============================
 // .intro {
 //   width: 100vw;
 //   height: 100vh;

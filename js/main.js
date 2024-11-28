@@ -1,7 +1,4 @@
 
-// ==============================================
-// ==============================================
-
 // // 메뉴 전환 ============================================
 // =======================================================
 const menuItems = document.querySelectorAll('.gnb_list');
@@ -18,7 +15,7 @@ lnbItem.forEach(leftItems => {
       clickedlnb.style.fontWeight = '';
     });
 
-    leftItems.style.color = '$tomato';
+    leftItems.style.color = '#FF6347';
     leftItems.style.fontWeight = '400';
   });
 });
@@ -29,7 +26,7 @@ menuItems.forEach(button => {
       item.style.color = '';
     });
 
-    button.style.color = '$tomato';
+    button.style.color = '#FF6347';
 
     sectionTabs.forEach(tab => {
       tab.style.display = 'none';
@@ -47,16 +44,10 @@ topCoding.addEventListener('click', () => {
     clickedlnb.style.color = '';
     clickedlnb.style.fontWeight = '';
   });
-  lnbItem[0].style.color = '$tomato';
+  lnbItem[0].style.color = '#FF6347';
   lnbItem[0].style.fontWeight = '400';
 
 });
-
-// const goTopClick = document.querySelector('.go-top a');
-
-// goTop.addEventListener('click', () => {
-//   leftMenu.classList.remove('visible');
-// });
 
 // ==============================================
 // // go to top =================================
@@ -117,18 +108,46 @@ document.querySelectorAll('.close_btn').forEach(closeBtn => {
 
 // =======================================================
 // 인트로 화면전환 ===========================================
-// const clickPort = document.querySelector('.text_box');
-// const hideIntro = document.querySelector('.home');
-// const firstTab = document.querySelectorAll('.firstPage');
-// const clickLogo = document.querySelector('.logo');
+const clickEnter = document.querySelector('.enter_btn');
+const lightElement = document.querySelector('.light');
+const clickLogo = document.querySelector('.logo');
+const hideIntro = document.querySelector('.intro');
+const firstTab = document.querySelectorAll('.firstPage');
+const leftBar = document.querySelector('.left-menu');
+const LnbItem = document.querySelectorAll('.lnb_item');
 
-// const toggleTab = () => {
-//   hideIntro.classList.toggle('hide');
-//   firstTab.forEach(active => {
-//     active.classList.toggle('show');
-//   });
-// };
+function showFirstPage() {
+  hideIntro.classList.add('hide');
+  firstTab.forEach(active => {
+    active.classList.add('show');
+  });
 
-// clickPort.addEventListener('click', toggleTab);
-// clickLogo.addEventListener('click', toggleTab);
+  leftBar.classList.add('visible');
+
+  LnbItem.forEach(clickedlnb => {
+    clickedlnb.style.color = '';
+    clickedlnb.style.fontWeight = '';
+  });
+
+  LnbItem[0].style.color = '#FF6347';
+  LnbItem[0].style.fontWeight = '400';
+}
+
+// Enter 버튼 클릭 시
+clickEnter.addEventListener('click', showFirstPage);
+
+// 애니메이션 끝날 시
+lightElement.addEventListener('animationend', showFirstPage);
+
+// 로고 클릭 시
+clickLogo.addEventListener('click', () => {
+  hideIntro.classList.remove('hide');
+  firstTab.forEach(active => {
+    active.classList.remove('show');
+  });
+});
+// =======================================================
+// =======================================================
+
+
 

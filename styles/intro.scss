@@ -28,21 +28,23 @@
       height: 50%;
       display: flex;
       flex-direction: column;
-      gap: 15px;
+      gap: 30px;
       align-items: center;
-      justify-content: center;
-
+      // justify-content: center;
+      justify-content: flex-end;
+      padding-bottom: 6%;
 
       h2 {
         letter-spacing: 8px;
         font-weight: 900;
-        font-size: 5.5rem;
+        // font-size: 5.5rem;
+        font-size: 5rem;
       }
 
       h3 {
         letter-spacing: 4px;
-        font-weight: 900;
-        font-size: 2.5rem;
+        // font-weight: 900;
+        font-size: 2.8rem;
       }
     }
 
@@ -66,7 +68,7 @@
         .light {
           background-color: white;
           height: 3px;
-          animation: light 3s forwards;
+          animation: light 5s forwards;
 
           @keyframes light {
             0% {
@@ -84,32 +86,57 @@
   }
 
   .line_text {
+    padding-top: 6%;
+
     height: 50%;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 25px;
+    // justify-content: center;
+    justify-content: flex-start;
+    gap: 20px;
 
     h3 {
-      font-size: 2.1rem;
+      font-size: 2rem;
       letter-spacing: 2px;
     }
 
-    h4 {
-      font-size: 2rem;
+    // span {
+    //   color: color.$tomato;
+    //   font-size: 2rem;
+    //   letter-spacing: 2px;
+    // }
+
+    span {
+      color: color.$tomato;
+    }
+
+    .enter_btn {
+      font-size: 2.5rem;
       cursor: pointer;
+      letter-spacing: 10px;
+      font-style: italic;
     }
 
     .animate__fadeInDown {
-      animation-duration: 2s;
+      animation-duration: 3s;
       animation-iteration-count: 1;
     }
+
+
   }
 }
 
+.animate__fadeInDown {
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+}
 
+.animate__fadeInUp {
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+}
 
 // 원본
 // .intro {

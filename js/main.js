@@ -1,54 +1,3 @@
-
-// // 메뉴 전환 ============================================
-// =======================================================
-const menuItems = document.querySelectorAll('.gnb_list');
-const sectionTabs = document.querySelectorAll('.tab_item');
-const topCoding = document.querySelector('.codingMenu');
-const leftMenu = document.querySelector('#leftMenu');
-const lnbItem = document.querySelectorAll('.lnb_item');
-const sectionCoding = document.querySelector('.coding');
-
-lnbItem.forEach(leftItems => {
-  leftItems.addEventListener('click', function () {
-    lnbItem.forEach(clickedlnb => {
-      clickedlnb.style.color = '';
-      clickedlnb.style.fontWeight = '';
-    });
-
-    leftItems.style.color = '#FF6347';
-    leftItems.style.fontWeight = '400';
-  });
-});
-
-menuItems.forEach(button => {
-  button.addEventListener('click', function () {
-    menuItems.forEach(item => {
-      item.style.color = '';
-    });
-
-    button.style.color = '#FF6347';
-
-    sectionTabs.forEach(tab => {
-      tab.style.display = 'none';
-    });
-
-    const targetTabId = button.getAttribute('data-tab');
-    const targetTab = document.querySelector(`#${targetTabId}`);
-    targetTab.style.display = 'block';
-  });
-});
-
-topCoding.addEventListener('click', () => {
-  leftMenu.classList.add('visible');
-  lnbItem.forEach(clickedlnb => {
-    clickedlnb.style.color = '';
-    clickedlnb.style.fontWeight = '';
-  });
-  lnbItem[0].style.color = '#FF6347';
-  lnbItem[0].style.fontWeight = '400';
-
-});
-
 // ==============================================
 // // go to top =================================
 document.addEventListener('DOMContentLoaded', function () {
@@ -148,6 +97,53 @@ clickLogo.addEventListener('click', () => {
 });
 // =======================================================
 // =======================================================
+// // 메뉴 전환 ============================================
+// =======================================================
+const menuItems = document.querySelectorAll('.gnb_list');
+const sectionTabs = document.querySelectorAll('.tab_item');
+const topCoding = document.querySelector('.codingMenu');
+const leftMenu = document.querySelector('#leftMenu');
+const lnbItem = document.querySelectorAll('.lnb_item');
+const sectionCoding = document.querySelector('.coding');
 
+lnbItem.forEach(leftItems => {
+  leftItems.addEventListener('click', function () {
+    lnbItem.forEach(clickedlnb => {
+      clickedlnb.style.color = '';
+      clickedlnb.style.fontWeight = '';
+    });
 
+    leftItems.style.color = '#FF6347';
+    leftItems.style.fontWeight = '400';
+  });
+});
+
+menuItems.forEach(button => {
+  button.addEventListener('click', function () {
+    menuItems.forEach(item => {
+      item.style.color = '';
+    });
+
+    button.style.color = '#FF6347';
+
+    sectionTabs.forEach(tab => {
+      tab.style.display = 'none';
+    });
+
+    const targetTabId = button.getAttribute('data-tab');
+    const targetTab = document.querySelector(`#${targetTabId}`);
+    targetTab.style.display = 'block';
+  });
+});
+
+topCoding.addEventListener('click', () => {
+  leftMenu.classList.add('visible');
+  lnbItem.forEach(clickedlnb => {
+    clickedlnb.style.color = '';
+    clickedlnb.style.fontWeight = '';
+  });
+  lnbItem[0].style.color = '#FF6347';
+  lnbItem[0].style.fontWeight = '400';
+
+});
 

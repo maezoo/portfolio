@@ -37,19 +37,12 @@ a {
   display: none;
 }
 
-// .firstPage {
-//   display: none;
-// }
-
-// .firstPage.show {
-//   display: block;
-// }
 
 .firstPage {
   display: none;
   opacity: 0;
-  transition: opacity 2s ease-in-out;
-  // transition: opacity 2s ease;
+  // transition: opacity 2s ease-in-out;
+  transition: opacity 2s ease;
 }
 
 .firstPage.show {

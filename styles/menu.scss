@@ -68,17 +68,17 @@ header {
   left: 0;
   z-index: 99997;
   box-shadow: 1px 0px 20px 3px rgba(78, 78, 78, 0.082);
-  width: 250px;
+  width: 150px;
   height: 100%;
-  padding-top: 300px;
-  padding-left: 20px;
+  padding-top: 250px;
+  padding-left: 10px;
 
   h1 {
     font-size: 2.5rem;
   }
 
   p {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
 
   .left-menu_inner {
@@ -86,22 +86,21 @@ header {
     flex-direction: column;
     gap: 25px;
     height: fit-content;
-    width: 200px;
+    width: 130px;
     text-align: right;
-
-
+    // align-items: center;
   }
 
   .lnb_list {
     display: flex;
     flex-direction: column;
     gap: 25px;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 300;
 
     li:nth-child(1) {
       letter-spacing: 1.2px;
-      font-size: 2.6rem;
+      font-size: 2.2rem;
     }
   }
 }

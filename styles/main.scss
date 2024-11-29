@@ -51,37 +51,6 @@ main {
 
 // ** ================================================== ** 
 .visual {
-  // .home {
-  //   width: 100%;
-  //   height: 100%;
-  //   font-family: 'Cafe24Decoshadow';
-  //   font-size: 10rem;
-  //   text-shadow: 35px 30px 15px rgb(179, 179, 179);
-
-  //   .home_inner {
-  //     gap: 200px;
-  //     display: flex;
-  //     justify-content: center;
-  //     align-items: center;
-  //   }
-
-  //   .codingIcon {
-  //     .animate__bounce {
-  //       animation-duration: 2s;
-  //       animation-iteration-count: infinite;
-  //     }
-  //   }
-
-  //   .designIcon {
-  //     cursor: pointer;
-
-  //     .animate__bounce {
-  //       animation-duration: 2s;
-  //       animation-delay: 2.7s;
-  //       animation-iteration-count: infinite;
-  //     }
-  //   }
-  // }
 
   .hover_effect {
     font-family: 'InkLipquid';
@@ -103,14 +72,19 @@ main {
 
     .coding_inner {
       height: 100vh;
+      max-height: 975px;
       display: flex;
       align-items: center;
       flex-direction: column;
-      gap: 150px;
+      gap: 50px;
+      padding: 190px 9% 0px 22%;
+
 
       .mySwiper {
         width: 900px;
         min-height: 550px;
+        margin-top: 30px;
+        // padding-top: 30px;
 
         .swiper-wrapper {
 
@@ -189,11 +163,11 @@ main {
         }
 
         .swiper-button-prev {
-          background: url(/images/arrow-left.svg) no-repeat;
+          background: url(/public/images/arrow-left.svg) no-repeat;
         }
 
         .swiper-button-next {
-          background: url(/images/arrow-right.svg) no-repeat;
+          background: url(/public/images/arrow-right.svg) no-repeat;
         }
 
         .swiper-button-next:after,
@@ -208,14 +182,14 @@ main {
         // }
 
         // .swiper-button-next {
-        //   background: url(/images/slide_next.svg) no-repeat;
+        //   background: url(/public/images/slide_next.svg) no-repeat;
         //   width: 21px;
         //   height: 21px;
         //   background-size: contain;
         // }
 
         // .swiper-button-prev {
-        //   background: url(/images/slide_prev.svg) no-repeat;
+        //   background: url(/public/images/slide_prev.svg) no-repeat;
         //   width: 21px;
         //   height: 21px;
         //   background-size: contain;
@@ -299,22 +273,22 @@ main {
           }
 
           .cloneImg_1 {
-            background: url(/images/full-screen_ckdhc.JPG) no-repeat;
+            background: url(/public/images/full-screen_ckdhc.JPG) no-repeat;
             background-size: cover;
           }
 
           .cloneImg_2 {
-            background: url(/images/full-screen_suseong.JPG) no-repeat;
+            background: url(/public/images/full-screen_suseong.JPG) no-repeat;
             background-size: cover;
           }
 
           .cloneImg_3 {
-            background: url(/images/full-screen_ulsan-fire.JPG) no-repeat;
+            background: url(/public/images/full-screen_ulsan-fire.JPG) no-repeat;
             background-size: cover;
           }
 
           .cloneImg_4 {
-            background: url(/images/full-screen_SPC.jpg) no-repeat;
+            background: url(/public/images/full-screen_SPC.jpg) no-repeat;
             background-size: cover;
           }
 
@@ -412,21 +386,21 @@ main {
             }
 
             .detailPage_1 {
-              background: url(/images/detailPage_1.jpg) no-repeat;
+              background: url(/public/images/detailPage_1.jpg) no-repeat;
               background-size: cover;
               transition: background-position 3.5s linear;
 
             }
 
             .detailPage_2 {
-              background: url(/images/detailPage_2.jpg) no-repeat;
+              background: url(/public/images/detailPage_2.jpg) no-repeat;
               background-size: cover;
               transition: background-position 4s linear;
 
             }
 
             .detailPage_3 {
-              background: url(/images/detailPage_3.jpg) no-repeat;
+              background: url(/public/images/detailPage_3.jpg) no-repeat;
               background-size: cover;
               transition: background-position 2s linear;
 
@@ -583,17 +557,18 @@ main {
 
 .go-top {
   box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.25);
-  background-color: white;
+  background-color: #FF6347;
+  // background-color: white;
 
   border: 1px solid rgba(0, 0, 0, 0.107);
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  bottom: 35px;
+  width: 45px;
+  height: 45px;
+  bottom: 15px;
   right: 9%;
   z-index: 999;
   position: fixed;
-  transform: translateY(140%);
+  transform: translateY(160%);
   transition: transform 0.3s ease;
 
 
@@ -605,8 +580,9 @@ main {
     // justify-content: center;
     // width: 100%;
     // height: 100%;
-    background: url(/images/go-top.svg) no-repeat 50% 50%;
-    background-size: 25px 25px;
+    // background: url(/public/images/go-top.svg) no-repeat 50% 50%;
+    background: url(/public/images/go-top.svg) no-repeat 50% 50%;
+    background-size: 20px;
   }
 }
 
@@ -666,22 +642,22 @@ main {
 //       }
 
 //       .cloneImg_1 {
-//         background: url(/images/full-screen_ckdhc.JPG) no-repeat;
+//         background: url(/public/images/full-screen_ckdhc.JPG) no-repeat;
 //         background-size: cover;
 //       }
 
 //       .cloneImg_2 {
-//         background: url(/images/full-screen_suseong.JPG) no-repeat;
+//         background: url(/public/images/full-screen_suseong.JPG) no-repeat;
 //         background-size: cover;
 //       }
 
 //       .cloneImg_3 {
-//         background: url(/images/full-screen_ulsan-fire.JPG) no-repeat;
+//         background: url(/public/images/full-screen_ulsan-fire.JPG) no-repeat;
 //         background-size: cover;
 //       }
 
 //       .cloneImg_4 {
-//         background: url(/images/full-screen_SPC.jpg) no-repeat;
+//         background: url(/public/images/full-screen_SPC.jpg) no-repeat;
 //         background-size: cover;
 //       }
 //     }
@@ -762,22 +738,22 @@ main {
 //       }
 
 //       .cloneImg_1 {
-//         background: url(/images/full-screen_ckdhc.JPG) no-repeat;
+//         background: url(/public/images/full-screen_ckdhc.JPG) no-repeat;
 //         background-size: cover;
 //       }
 
 //       .cloneImg_2 {
-//         background: url(/images/full-screen_suseong.JPG) no-repeat;
+//         background: url(/public/images/full-screen_suseong.JPG) no-repeat;
 //         background-size: cover;
 //       }
 
 //       .cloneImg_3 {
-//         background: url(/images/full-screen_ulsan-fire.JPG) no-repeat;
+//         background: url(/public/images/full-screen_ulsan-fire.JPG) no-repeat;
 //         background-size: cover;
 //       }
 
 //       .cloneImg_4 {
-//         background: url(/images/full-screen_SPC.jpg) no-repeat;
+//         background: url(/public/images/full-screen_SPC.jpg) no-repeat;
 //         background-size: cover;
 //       }
 
@@ -981,7 +957,7 @@ main {
 }
 
 .zoom_img.zoom {
-  background: url(/images/suseong.JPG) no-repeat;
+  background: url(/public/images/suseong.JPG) no-repeat;
   background-size: cover;
   width: 700px;
   height: 400px;

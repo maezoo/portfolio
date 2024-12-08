@@ -77,7 +77,7 @@ main {
       align-items: center;
       flex-direction: column;
       gap: 50px;
-      padding: 190px 9% 0px 22%;
+      padding: 190px 0% 0px 150px;
 
 
       .mySwiper {
@@ -163,11 +163,11 @@ main {
         }
 
         .swiper-button-prev {
-          background: url(/public/images/arrow-left.svg) no-repeat;
+          background: url(/images/arrow-left.svg) no-repeat;
         }
 
         .swiper-button-next {
-          background: url(/public/images/arrow-right.svg) no-repeat;
+          background: url(/images/arrow-right.svg) no-repeat;
         }
 
         .swiper-button-next:after,
@@ -182,14 +182,14 @@ main {
         // }
 
         // .swiper-button-next {
-        //   background: url(/public/images/slide_next.svg) no-repeat;
+        //   background: url(/images/slide_next.svg) no-repeat;
         //   width: 21px;
         //   height: 21px;
         //   background-size: contain;
         // }
 
         // .swiper-button-prev {
-        //   background: url(/public/images/slide_prev.svg) no-repeat;
+        //   background: url(/images/slide_prev.svg) no-repeat;
         //   width: 21px;
         //   height: 21px;
         //   background-size: contain;
@@ -273,22 +273,22 @@ main {
           }
 
           .cloneImg_1 {
-            background: url(/public/images/full-screen_ckdhc.JPG) no-repeat;
+            background: url(/images/full-screen_ckdhc.JPG) no-repeat;
             background-size: cover;
           }
 
           .cloneImg_2 {
-            background: url(/public/images/full-screen_suseong.JPG) no-repeat;
+            background: url(/images/full-screen_suseong.JPG) no-repeat;
             background-size: cover;
           }
 
           .cloneImg_3 {
-            background: url(/public/images/full-screen_ulsan-fire.JPG) no-repeat;
+            background: url(/images/full-screen_ulsan-fire.JPG) no-repeat;
             background-size: cover;
           }
 
           .cloneImg_4 {
-            background: url(/public/images/full-screen_SPC.jpg) no-repeat;
+            background: url(/images/full-screen_SPC.JPG) no-repeat;
             background-size: cover;
           }
 
@@ -386,21 +386,21 @@ main {
             }
 
             .detailPage_1 {
-              background: url(/public/images/detailPage_1.jpg) no-repeat;
+              background: url(/images/detailPage_1.jpg) no-repeat;
               background-size: cover;
               transition: background-position 3.5s linear;
 
             }
 
             .detailPage_2 {
-              background: url(/public/images/detailPage_2.jpg) no-repeat;
+              background: url(/images/detailPage_2.jpg) no-repeat;
               background-size: cover;
               transition: background-position 4s linear;
 
             }
 
             .detailPage_3 {
-              background: url(/public/images/detailPage_3.jpg) no-repeat;
+              background: url(/images/detailPage_3.jpg) no-repeat;
               background-size: cover;
               transition: background-position 2s linear;
 
@@ -580,8 +580,8 @@ main {
     // justify-content: center;
     // width: 100%;
     // height: 100%;
-    // background: url(/public/images/go-top.svg) no-repeat 50% 50%;
-    background: url(/public/images/go-top.svg) no-repeat 50% 50%;
+    // background: url(/images/go-top.svg) no-repeat 50% 50%;
+    background: url(/images/go-top.svg) no-repeat 50% 50%;
     background-size: 20px;
   }
 }
@@ -642,22 +642,22 @@ main {
 //       }
 
 //       .cloneImg_1 {
-//         background: url(/public/images/full-screen_ckdhc.JPG) no-repeat;
+//         background: url(/images/full-screen_ckdhc.JPG) no-repeat;
 //         background-size: cover;
 //       }
 
 //       .cloneImg_2 {
-//         background: url(/public/images/full-screen_suseong.JPG) no-repeat;
+//         background: url(/images/full-screen_suseong.JPG) no-repeat;
 //         background-size: cover;
 //       }
 
 //       .cloneImg_3 {
-//         background: url(/public/images/full-screen_ulsan-fire.JPG) no-repeat;
+//         background: url(/images/full-screen_ulsan-fire.JPG) no-repeat;
 //         background-size: cover;
 //       }
 
 //       .cloneImg_4 {
-//         background: url(/public/images/full-screen_SPC.jpg) no-repeat;
+//         background: url(/images/full-screen_SPC.jpg) no-repeat;
 //         background-size: cover;
 //       }
 //     }
@@ -738,22 +738,22 @@ main {
 //       }
 
 //       .cloneImg_1 {
-//         background: url(/public/images/full-screen_ckdhc.JPG) no-repeat;
+//         background: url(/images/full-screen_ckdhc.JPG) no-repeat;
 //         background-size: cover;
 //       }
 
 //       .cloneImg_2 {
-//         background: url(/public/images/full-screen_suseong.JPG) no-repeat;
+//         background: url(/images/full-screen_suseong.JPG) no-repeat;
 //         background-size: cover;
 //       }
 
 //       .cloneImg_3 {
-//         background: url(/public/images/full-screen_ulsan-fire.JPG) no-repeat;
+//         background: url(/images/full-screen_ulsan-fire.JPG) no-repeat;
 //         background-size: cover;
 //       }
 
 //       .cloneImg_4 {
-//         background: url(/public/images/full-screen_SPC.jpg) no-repeat;
+//         background: url(/images/full-screen_SPC.jpg) no-repeat;
 //         background-size: cover;
 //       }
 
@@ -957,7 +957,7 @@ main {
 }
 
 .zoom_img.zoom {
-  background: url(/public/images/suseong.JPG) no-repeat;
+  background: url(/images/suseong.JPG) no-repeat;
   background-size: cover;
   width: 700px;
   height: 400px;

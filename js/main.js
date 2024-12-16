@@ -1,3 +1,5 @@
+
+// ==============================================
 const mobileBtn = document.querySelector('.mobile-btn');
 const mobilePop = document.querySelector('.menu-pop');
 const visual = document.querySelector('.visual');
@@ -53,7 +55,7 @@ var swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
   autoplay: {
-    delay: 1500,
+    delay: 1300,
   },
   keyboard: true,
   slidesPerView: 1,

@@ -1,3 +1,28 @@
+const mobileBtn = document.querySelector('.mobile-btn');
+const mobilePop = document.querySelector('.menu-pop');
+const visual = document.querySelector('.visual');
+
+
+mobileBtn.addEventListener('click', function () {
+  mobilePop.classList.toggle('show');
+
+  // 메뉴 높이에 따라 visual 이동
+  const popHeight = mobilePop.classList.contains('show')
+    ? mobilePop.scrollHeight
+    : 0;
+
+  // visual의 margin-top 조정
+  visual.style.marginTop = `${popHeight}px`;
+});
+
+
+//   // 메뉴 높이에 따라 main-content의 margin-top 조정
+//   const popHeight = mobilePop.classList.contains('show')
+//     ? mobilePop.scrollHeight
+//     : 0;
+
+//   mainContent.style.marginTop = `${popHeight}px`;
+// });
 // ==============================================
 // // go to top =================================
 document.addEventListener('DOMContentLoaded', function () {

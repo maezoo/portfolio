@@ -1,4 +1,9 @@
 .coding {
+  .animate__flash {
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+
   .section {
     width: 100%;
     height: 100vh;
@@ -315,7 +320,7 @@
 }
 
 .go-top.move {
-  animation: fadeInUp 5s infinite;
+  animation: fadeInUp 4s infinite;
   opacity: 1;
 }
 

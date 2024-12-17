@@ -6,6 +6,7 @@ $(document).ready(function () {
     scrollBar: true,
     normalScrollElements: '.design, .aboutMe',
     anchors: ['spc', 'ckdhc', 'ulsan', 'hotel', 'trans'],
+    anchors: ['menu-coding', 'menu-design', 'menu-aboutMe'],
     onLeave: function (origin, destination, direction) {
       const goTopBtn = document.querySelector('.go-top');
 

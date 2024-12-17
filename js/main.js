@@ -1,5 +1,6 @@
 
-
+// const fullNav = document.querySelector('#fp-nav.fp-right');
+// nav.style.display = 'none';
 
 // ==============================================
 // const mobileBtn = document.querySelector('.mobile-btn');

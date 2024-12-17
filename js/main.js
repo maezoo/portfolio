@@ -1,21 +1,27 @@
 
+
+
 // ==============================================
-const mobileBtn = document.querySelector('.mobile-btn');
-const mobilePop = document.querySelector('.menu-pop');
-const visual = document.querySelector('.visual');
+// const mobileBtn = document.querySelector('.mobile-btn');
+// const mobilePop = document.querySelector('.menu-pop');
+// const visual = document.querySelector('.visual');
 
 
-mobileBtn.addEventListener('click', function () {
-  mobilePop.classList.toggle('show');
+// mobileBtn.addEventListener('click', function () {
+//   mobilePop.classList.toggle('show');
 
-  // 메뉴 높이에 따라 visual 이동
-  const popHeight = mobilePop.classList.contains('show')
-    ? mobilePop.scrollHeight
-    : 0;
+//   // 메뉴 높이에 따라 visual 이동
+//   const popHeight = mobilePop.classList.contains('show')
+//     ? mobilePop.scrollHeight
+//     : 0;
 
-  // visual의 margin-top 조정
-  visual.style.marginTop = `${popHeight}px`;
-});
+//   // visual의 margin-top 조정
+//   visual.style.marginTop = `${popHeight}px`;
+// });
+
+
+
+// Go-top 버튼 클릭 시 첫 화면으로 이동
 
 
 //   // 메뉴 높이에 따라 main-content의 margin-top 조정
@@ -27,21 +33,21 @@ mobileBtn.addEventListener('click', function () {
 // });
 // ==============================================
 // // go to top =================================
-document.addEventListener('DOMContentLoaded', function () {
-  const goTopBtn = document.querySelector('.go-top');
-  const threshold = window.innerHeight * 1.9;
+// document.addEventListener('DOMContentLoaded', function () {
+//   const goTopBtn = document.querySelector('.go-top');
+//   const threshold = window.innerHeight * 1.9;
 
-  function toggleGoTopBtn() {
-    const pageScroll = window.scrollY;
-    if (pageScroll > threshold) {
-      goTopBtn.classList.add('visible');
-    } else {
-      goTopBtn.classList.remove('visible');
-    }
-  }
-  toggleGoTopBtn();
-  window.addEventListener('scroll', toggleGoTopBtn);
-});
+//   function toggleGoTopBtn() {
+//     const pageScroll = window.scrollY;
+//     if (pageScroll > threshold) {
+//       goTopBtn.classList.add('visible');
+//     } else {
+//       goTopBtn.classList.remove('visible');
+//     }
+//   }
+//   toggleGoTopBtn();
+//   window.addEventListener('scroll', toggleGoTopBtn);
+// });
 
 // =======================================================
 // // 스와이퍼 =============================================

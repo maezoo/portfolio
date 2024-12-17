@@ -1,11 +1,30 @@
-
 $(document).ready(function () {
   $('#fullpage').fullpage({
+    navigation: true,
+    scrollingSpeed: 600,
+    anchors: ['spc', 'ckdhc', 'ulsan', 'hotel', 'trans'],
+    onLeave: function (origin, destination, direction) {
+      const goTopBtn = document.querySelector('.go-top');
 
+      if (destination.anchor === 'trans') {
+        goTopBtn.classList.add('move');
+
+      } else {
+        goTopBtn.classList.remove('move');
+
+      }
+    }
+  });
+
+  $('.go-top').click(function () {
+    $.fn.fullpage.moveTo('spc');
   });
 });
 
 
+
+// ============================================================================================
+// ============================================================================================
 /*!
 * fullPage 4.0.31
 * https://github.com/alvarotrigo/fullPage.js
@@ -481,11 +500,11 @@ $(document).ready(function () {
   }
   /**
   Usage:
-
+ 
   var wrapper = document.createElement('div');
   wrapper.className = 'fp-slides';
   wrap($('.slide'), wrapper);
-
+ 
   https://jsfiddle.net/qwzc7oy3/15/ (vanilla)
   https://jsfiddle.net/oya6ndka/1/ (jquery equivalent)
   */
@@ -512,7 +531,7 @@ $(document).ready(function () {
   var wrapper = document.createElement('div');
   wrapper.className = 'fp-slides';
   wrap($('.slide'), wrapper);
-
+ 
   https://jsfiddle.net/qwzc7oy3/27/ (vanilla)
   https://jsfiddle.net/oya6ndka/4/ (jquery equivalent)
   */
@@ -3985,7 +4004,7 @@ $(document).ready(function () {
     }
   }
   /* Detecting touch events
-
+ 
   * As we are changing the top property of the page on scrolling, we can not use the traditional way to detect it.
   * This way, the touchstart and the touch moves shows an small difference between them which is the
   * used one to determine the direction.

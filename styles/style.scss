@@ -3,6 +3,7 @@
 @use "./main.scss";
 @use "./intro.scss";
 @use "./media.scss";
+@use "./coding.scss";
 
 
 * {
@@ -34,7 +35,6 @@ a {
   display: none;
 }
 
-
 .firstPage {
   display: none;
   opacity: 0;
@@ -47,15 +47,15 @@ a {
   opacity: 1;
 }
 
+
+
 // //  =================================================
 // //  ==================================================
+
 
 .hover_effect {
   font-family: 'InkLipquid';
   font-size: 1.8rem;
-  // font-size: 2.2rem;
-  // padding: 8px 0px 0px 30px;
-  // padding: 10px 0px 0px 5px;
   padding: 0px 0px 8px 8px;
 }
 

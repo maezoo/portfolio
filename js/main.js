@@ -180,3 +180,5 @@ topCoding.addEventListener('click', () => {
 
 });
 
+
+// AOS.init();

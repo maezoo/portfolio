@@ -2,6 +2,9 @@ $(document).ready(function () {
   $('#fullpage').fullpage({
     navigation: true,
     scrollingSpeed: 600,
+    autoScrolling: true,
+    scrollBar: true,
+    normalScrollElements: '.design, .aboutMe',
     anchors: ['spc', 'ckdhc', 'ulsan', 'hotel', 'trans'],
     onLeave: function (origin, destination, direction) {
       const goTopBtn = document.querySelector('.go-top');

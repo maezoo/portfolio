@@ -55,7 +55,7 @@ var swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
   autoplay: {
-    delay: 1300,
+    delay: 10000,
   },
   keyboard: true,
   slidesPerView: 1,

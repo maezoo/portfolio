@@ -24,7 +24,7 @@ main {
   width: 100%;
 
   .tab_title {
-    font-size: 3rem;
+    font-size: 2.5rem;
     letter-spacing: 3px;
   }
 }
@@ -83,11 +83,6 @@ main {
 
 
 .coding {
-  // width: 100%;
-  // height: 100vh;
-
-
-
 
   .section {
     width: 100%;
@@ -135,137 +130,171 @@ main {
       height: 100%;
       display: flex;
       align-items: center;
-      justify-content: center;
       flex-direction: column;
+      justify-content: center;
       gap: 80px;
     }
 
 
     .mo-content {
-      // position: relative;
-      gap: 50px;
+      gap: 20px;
       display: flex;
-      flex-direction: column;
+      // justify-content: center;
+      // flex-direction: column;
       // align-items: flex-end;
       // height: 50%;
       // background-color: orange;
       // padding-top: 20px;
       // padding-top: 45px;
 
+      .info {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+
+        h3 {
+          font-size: 3rem;
+          font-weight: 500;
+        }
+
+        table {
+          font-size: 1.5rem;
+          width: 300px;
+
+          th,
+          td {
+            border: 1px solid black;
+            vertical-align: middle;
+          }
+
+          th {
+            // height: 50px;
+            width: 75px;
+          }
+
+          td {
+            padding: 8px 5px 8px 5px;
+
+          }
+
+          ul {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+          }
+        }
+
+        .link_btn {
+          display: flex;
+          gap: 10px;
+          align-items: center;
+
+          button {
+            width: 100px;
+            height: 40px;
+            border-radius: 8px;
+            border: none;
+            box-shadow: 5px 5px 6px rgba(57, 57, 57, 0.344);
+            background-color: rgb(210, 210, 210);
+            transition: all .4s ease-in-out;
+
+            a {
+              display: block;
+              width: 100%;
+              height: 100%;
+              line-height: 40px;
+            }
+
+            &:hover {
+              background-color: white;
+            }
+          }
+        }
+      }
+
       .screen {
+        // justify-content: flex-start;
+        // align-items: flex-end;
+        position: relative;
         display: flex;
         align-items: flex-end;
-      }
+        // flex-direction: column;
+        // justify-content: flex-end;
 
-      .res-phone {
-        width: 23.4rem;
-        height: 45.9rem;
-        box-shadow: 9px 2px 10px 0px rgba(0, 0, 0, 0.8);
-        outline: 3px ridge #444444;
-        overflow: hidden;
-        cursor: pointer;
-        border-radius: 3.6rem;
-        z-index: 2;
+        // 
+        .preview {
+          width: 515px;
+          // height: 450px;
+          z-index: 1;
+          // font-size: 1.6rem;
+          padding-bottom: 25px;
 
-        // position: absolute;
-        // left: 59rem;
-        // top: .5rem;
-        background: url(/images/mobile_SPC.jpg) no-repeat;
-        background-size: cover;
-        transition: background-position 3s linear;
+          .cloneImg {
+            // min-width: 28vw;
+            // height: 15vw;
+            // border-radius: 1.5vw;
+            // min-width: 600px;
+            // height: 350px;
+            // border-radius: 2.6rem;
+            min-width: 360px;
+            width: 360px;
+            height: 212px;
+            border-radius: 1.5rem;
+            box-shadow: -5px 10px 15px rgba(0, 0, 0, 0.25);
+            filter: grayscale(1) brightness(0.8);
+            cursor: pointer;
+            transition: background-position 2s linear;
 
-        &:hover {
-          background-position: 100% 100%;
-        }
-      }
-    }
-
-    .preview {
-      z-index: 1;
-      font-size: 1.6rem;
-      padding-bottom: 15px;
-
-      .cloneImg {
-        min-width: 600px;
-        height: 350px;
-        border-radius: 2.6rem;
-        box-shadow: -5px 10px 15px rgba(0, 0, 0, 0.25);
-        filter: grayscale(1) brightness(0.8);
-        cursor: pointer;
-        transition: background-position 2s linear;
-
-        &:hover {
-          background-position: 100% 100%;
-          filter: none;
-        }
-      }
-
-      .cloneImg_1 {
-        background: url(/images/full-screen_SPC.JPG) no-repeat;
-        background-size: cover;
-      }
-
-
-    }
-
-    .info {
-      display: flex;
-      row-gap: 10px;
-      flex-direction: column;
-
-      h3 {
-        font-size: 3rem;
-        font-weight: 500;
-      }
-
-      table {
-        font-size: 1.6rem;
-
-        th,
-        td {
-          border: 1px solid black;
-          vertical-align: middle;
-        }
-
-        th {
-          height: 70px;
-          width: 90px;
-        }
-
-        td {
-          padding: 0px 15px;
-
-        }
-      }
-
-      .link_btn {
-        margin-top: 5px;
-        display: flex;
-        gap: 10px;
-        align-items: center;
-
-        button {
-          width: 100px;
-          height: 40px;
-          border-radius: 8px;
-          border: none;
-          // box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.25);
-          background-color: rgb(210, 210, 210);
-          transition: all .4s ease-in-out;
-
-          a {
-            display: block;
-            width: 100%;
-            height: 100%;
-            line-height: 40px;
+            &:hover {
+              background-position: 100% 100%;
+              filter: none;
+            }
           }
+
+          .cloneImg_1 {
+            background: url(/images/full-screen_SPC.JPG) no-repeat;
+            background-size: cover;
+          }
+
+
+        }
+
+        .res-phone {
+          // width: 190px;
+          // height: 380px;
+          // border-radius: 2.8rem;
+
+          width: 160px;
+          height: 320px;
+          border-radius: 2rem;
+
+
+          // width: 23.4rem;
+          // height: 45.9rem;
+          // border-radius: 3.6rem;
+          box-shadow: 9px 2px 10px 0px rgba(0, 0, 0, 0.8);
+          outline: 3px ridge #444444;
+          overflow: hidden;
+          cursor: pointer;
+          z-index: 2;
+
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          // left: 59rem;
+          // top: .5rem;
+          background: url(/images/mobile_SPC.jpg) no-repeat;
+          background-size: cover;
+          transition: background-position 3s linear;
 
           &:hover {
-            background-color: white;
+            background-position: 100% 100%;
           }
         }
       }
     }
+
+
 
     // 원본
     // .mo-content {
@@ -498,6 +527,7 @@ main {
 .fp-is-overflow>.fp-overflow {
   height: 100vh;
   width: 100%;
+
 }
 
 .fp-watermark {

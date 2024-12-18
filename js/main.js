@@ -17,7 +17,7 @@
 // });
 
 // =======================================================
-// // 스와이퍼 =============================================
+// // coding 마지막 스와이퍼 =============================================
 var swiper = new Swiper(".mySwiper", {
   pagination: {
     el: ".swiper-pagination",
@@ -57,13 +57,13 @@ document.querySelectorAll('.close_btn').forEach(closeBtn => {
 
 // =======================================================
 // 인트로 화면전환 ===========================================
-const clickEnter = document.querySelector('.enter_btn');
+const clickClick = document.querySelector('.intro-click');
 const lightElement = document.querySelector('.light');
 const clickLogo = document.querySelector('.logo');
 const hideIntro = document.querySelector('.intro');
 const firstTab = document.querySelectorAll('.firstPage');
-const leftBar = document.querySelector('.left-menu');
-const LnbItem = document.querySelectorAll('.lnb_item');
+// const leftBar = document.querySelector('.left-menu');
+// const LnbItem = document.querySelectorAll('.lnb_item');
 
 function showFirstPage() {
   hideIntro.classList.add('hide');
@@ -71,19 +71,19 @@ function showFirstPage() {
     active.classList.add('show');
   });
 
-  leftBar.classList.add('visible');
+  // leftBar.classList.add('visible');
 
-  LnbItem.forEach(clickedlnb => {
-    clickedlnb.style.color = '';
-    clickedlnb.style.fontWeight = '';
-  });
+  // LnbItem.forEach(clickedlnb => {
+  //   clickedlnb.style.color = '';
+  //   clickedlnb.style.fontWeight = '';
+  // });
 
-  LnbItem[0].style.color = '#FF6347';
-  LnbItem[0].style.fontWeight = '400';
+  // LnbItem[0].style.color = '#FF6347';
+  // LnbItem[0].style.fontWeight = '400';
 }
 
 // Enter 버튼 클릭 시
-clickEnter.addEventListener('click', showFirstPage);
+clickClick.addEventListener('click', showFirstPage);
 
 // 애니메이션 끝날 시
 lightElement.addEventListener('animationend', showFirstPage);

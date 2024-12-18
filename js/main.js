@@ -57,44 +57,44 @@ document.querySelectorAll('.close_btn').forEach(closeBtn => {
 
 // =======================================================
 // 인트로 화면전환 ===========================================
-// const clickEnter = document.querySelector('.enter_btn');
-// const lightElement = document.querySelector('.light');
-// const clickLogo = document.querySelector('.logo');
-// const hideIntro = document.querySelector('.intro');
-// const firstTab = document.querySelectorAll('.firstPage');
-// const leftBar = document.querySelector('.left-menu');
-// const LnbItem = document.querySelectorAll('.lnb_item');
+const clickEnter = document.querySelector('.enter_btn');
+const lightElement = document.querySelector('.light');
+const clickLogo = document.querySelector('.logo');
+const hideIntro = document.querySelector('.intro');
+const firstTab = document.querySelectorAll('.firstPage');
+const leftBar = document.querySelector('.left-menu');
+const LnbItem = document.querySelectorAll('.lnb_item');
 
-// function showFirstPage() {
-//   hideIntro.classList.add('hide');
-//   firstTab.forEach(active => {
-//     active.classList.add('show');
-//   });
+function showFirstPage() {
+  hideIntro.classList.add('hide');
+  firstTab.forEach(active => {
+    active.classList.add('show');
+  });
 
-//   leftBar.classList.add('visible');
+  leftBar.classList.add('visible');
 
-//   LnbItem.forEach(clickedlnb => {
-//     clickedlnb.style.color = '';
-//     clickedlnb.style.fontWeight = '';
-//   });
+  LnbItem.forEach(clickedlnb => {
+    clickedlnb.style.color = '';
+    clickedlnb.style.fontWeight = '';
+  });
 
-//   LnbItem[0].style.color = '#FF6347';
-//   LnbItem[0].style.fontWeight = '400';
-// }
+  LnbItem[0].style.color = '#FF6347';
+  LnbItem[0].style.fontWeight = '400';
+}
 
-// // Enter 버튼 클릭 시
-// clickEnter.addEventListener('click', showFirstPage);
+// Enter 버튼 클릭 시
+clickEnter.addEventListener('click', showFirstPage);
 
-// // 애니메이션 끝날 시
-// lightElement.addEventListener('animationend', showFirstPage);
+// 애니메이션 끝날 시
+lightElement.addEventListener('animationend', showFirstPage);
 
-// // 로고 클릭 시
-// clickLogo.addEventListener('click', () => {
-//   hideIntro.classList.remove('hide');
-//   firstTab.forEach(active => {
-//     active.classList.remove('show');
-//   });
-// });
+// 로고 클릭 시
+clickLogo.addEventListener('click', () => {
+  hideIntro.classList.remove('hide');
+  firstTab.forEach(active => {
+    active.classList.remove('show');
+  });
+});
 // =======================================================
 // =======================================================
 // // 메뉴 전환 ============================================

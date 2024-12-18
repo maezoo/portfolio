@@ -1,37 +1,3 @@
-
-// const fullNav = document.querySelector('#fp-nav.fp-right');
-// nav.style.display = 'none';
-
-// ==============================================
-// const mobileBtn = document.querySelector('.mobile-btn');
-// const mobilePop = document.querySelector('.menu-pop');
-// const visual = document.querySelector('.visual');
-
-
-// mobileBtn.addEventListener('click', function () {
-//   mobilePop.classList.toggle('show');
-
-//   // 메뉴 높이에 따라 visual 이동
-//   const popHeight = mobilePop.classList.contains('show')
-//     ? mobilePop.scrollHeight
-//     : 0;
-
-//   // visual의 margin-top 조정
-//   visual.style.marginTop = `${popHeight}px`;
-// });
-
-
-
-// Go-top 버튼 클릭 시 첫 화면으로 이동
-
-
-//   // 메뉴 높이에 따라 main-content의 margin-top 조정
-//   const popHeight = mobilePop.classList.contains('show')
-//     ? mobilePop.scrollHeight
-//     : 0;
-
-//   mainContent.style.marginTop = `${popHeight}px`;
-// });
 // ==============================================
 // // go to top =================================
 // document.addEventListener('DOMContentLoaded', function () {
@@ -133,53 +99,53 @@ clickLogo.addEventListener('click', () => {
 // =======================================================
 // // 메뉴 전환 ============================================
 // =======================================================
-const menuItems = document.querySelectorAll('.gnb_list');
-const sectionTabs = document.querySelectorAll('.tab_item');
-const topCoding = document.querySelector('.codingMenu');
-const leftMenu = document.querySelector('#leftMenu');
-const lnbItem = document.querySelectorAll('.lnb_item');
-const sectionCoding = document.querySelector('.coding');
+// const menuItems = document.querySelectorAll('.gnb_list');
+// const sectionTabs = document.querySelectorAll('.tab_item');
+// const topCoding = document.querySelector('.codingMenu');
+// const leftMenu = document.querySelector('#leftMenu');
+// const lnbItem = document.querySelectorAll('.lnb_item');
+// const sectionCoding = document.querySelector('.coding');
 
-lnbItem.forEach(leftItems => {
-  leftItems.addEventListener('click', function () {
-    lnbItem.forEach(clickedlnb => {
-      clickedlnb.style.color = '';
-      clickedlnb.style.fontWeight = '';
-    });
+// lnbItem.forEach(leftItems => {
+//   leftItems.addEventListener('click', function () {
+//     lnbItem.forEach(clickedlnb => {
+//       clickedlnb.style.color = '';
+//       clickedlnb.style.fontWeight = '';
+//     });
 
-    leftItems.style.color = '#FF6347';
-    leftItems.style.fontWeight = '400';
-  });
-});
+//     leftItems.style.color = '#FF6347';
+//     leftItems.style.fontWeight = '400';
+//   });
+// });
 
-menuItems.forEach(button => {
-  button.addEventListener('click', function () {
-    menuItems.forEach(item => {
-      item.style.color = '';
-    });
+// menuItems.forEach(button => {
+//   button.addEventListener('click', function () {
+//     menuItems.forEach(item => {
+//       item.style.color = '';
+//     });
 
-    button.style.color = '#FF6347';
+//     button.style.color = '#FF6347';
 
-    sectionTabs.forEach(tab => {
-      tab.style.display = 'none';
-    });
+//     sectionTabs.forEach(tab => {
+//       tab.style.display = 'none';
+//     });
 
-    const targetTabId = button.getAttribute('data-tab');
-    const targetTab = document.querySelector(`#${targetTabId}`);
-    targetTab.style.display = 'block';
-  });
-});
+//     const targetTabId = button.getAttribute('data-tab');
+//     const targetTab = document.querySelector(`#${targetTabId}`);
+//     targetTab.style.display = 'block';
+//   });
+// });
 
-topCoding.addEventListener('click', () => {
-  leftMenu.classList.add('visible');
-  lnbItem.forEach(clickedlnb => {
-    clickedlnb.style.color = '';
-    clickedlnb.style.fontWeight = '';
-  });
-  lnbItem[0].style.color = '#FF6347';
-  lnbItem[0].style.fontWeight = '400';
+// topCoding.addEventListener('click', () => {
+//   leftMenu.classList.add('visible');
+//   lnbItem.forEach(clickedlnb => {
+//     clickedlnb.style.color = '';
+//     clickedlnb.style.fontWeight = '';
+//   });
+//   lnbItem[0].style.color = '#FF6347';
+//   lnbItem[0].style.fontWeight = '400';
 
-});
+// });
 
 
 // AOS.init();

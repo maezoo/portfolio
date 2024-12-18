@@ -1,30 +1,121 @@
-$(document).ready(function () {
-  $('#fullpage').fullpage({
+document.addEventListener('DOMContentLoaded', function () {
+  const codingFullpage = new fullpage('#fullpage-1', {
+
     navigation: true,
     scrollingSpeed: 600,
     autoScrolling: true,
-    scrollBar: true,
-    normalScrollElements: '.design, .aboutMe',
-    anchors: ['spc', 'ckdhc', 'ulsan', 'hotel', 'trans'],
-    anchors: ['menu-coding', 'menu-design', 'menu-aboutMe'],
+    licenseKey: 'YOUR_LICENSE_KEY',
     onLeave: function (origin, destination, direction) {
       const goTopBtn = document.querySelector('.go-top');
-
-      if (destination.anchor === 'trans') {
+      if (destination.index === 4) {
         goTopBtn.classList.add('move');
-
       } else {
         goTopBtn.classList.remove('move');
-
       }
     }
   });
 
-  $('.go-top').click(function () {
-    $.fn.fullpage.moveTo('spc');
+  const designFullpage = new fullpage('#fullpage-2', {
+    licenseKey: 'YOUR_LICENSE_KEY',
+    navigation: false,  // 네비게이션 끄기
+  });
+
+  const goTopBtn = document.querySelector('.go-top');
+  goTopBtn.addEventListener('click', function () {
+    fullpage_api.moveTo(1);
+  });
+
+  const menuItems = document.querySelectorAll('.gnb_list');
+  menuItems.forEach(menuItem => {
+    menuItem.addEventListener('click', function () {
+      const targetTab = this.getAttribute('data-tab');
+
+      document.querySelectorAll('.tab_item').forEach(item => {
+        item.style.display = 'none';
+      });
+
+      const target = document.querySelector(`#${targetTab}`);
+      if (target) {
+        target.style.display = 'block';
+      }
+
+      fullpage_api.reBuild();
+    });
   });
 });
 
+// document.addEventListener('DOMContentLoaded', function () {
+//   const codingFullpage = new fullpage('#fullpage-1', {
+//     navigation: true,
+//     scrollingSpeed: 600,
+//     autoScrolling: true,
+//     licenseKey: 'YOUR_LICENSE_KEY',
+//     onLeave: function (origin, destination, direction) {
+//       const goTopBtn = document.querySelector('.go-top');
+//       if (destination.index === 4) {
+//         goTopBtn.classList.add('move');
+//       } else {
+//         goTopBtn.classList.remove('move');
+//       }
+//     }
+//   });
+
+//   const designFullpage = new fullpage('#fullpage-2', {
+//     // navigation: true,
+//     // scrollingSpeed: 700,
+//     licenseKey: 'YOUR_LICENSE_KEY',
+//   });
+
+//   const goTopBtn = document.querySelector('.go-top');
+//   goTopBtn.addEventListener('click', function () {
+//     fullpage_api.moveTo(1);
+//   });
+
+//   const menuItems = document.querySelectorAll('.gnb_list');
+
+//   menuItems.forEach(menuItem => {
+//     menuItem.addEventListener('click', function () {
+//       const targetTab = this.getAttribute('data-tab');
+
+//       document.querySelectorAll('.tab_item').forEach(item => {
+//         item.style.display = 'none';
+//       });
+
+//       const target = document.querySelector(`#${targetTab}`);
+//       if (target) {
+//         target.style.display = 'block';
+//       }
+
+//       fullpage_api.reBuild();
+//     });
+//   });
+
+
+
+//   // const menuTab = document.querySelectorAll('.tab_item');
+//   // menuTab.forEach(tabClick => {
+//   //   tabClick.addEventListener('click', function () {
+//   //     document.querySelectorAll('.tab_item').forEach(item => {
+//   //       item.style.display = 'none';
+//   //     });
+
+//   //     const target = document.querySelector(`#${this.id}`);
+//   //     target.style.display = 'block';
+
+//   //     fullpage_api.reBuild();
+//   //   });
+//   // });
+// });
+
+
+// normalScrollElements: '.design, .aboutMe',
+// anchors: ['spc', 'ckdhc', 'ulsan', 'hotel', 'trans'],
+// anchors: ['menu-coding', 'menu-design', 'menu-aboutMe'],
+// Design 섹션 Fullpage.js 초기화
+
+
+// =============================================================
+// 두 번째 fullpage ==============================================
 
 
 // ============================================================================================
@@ -504,11 +595,11 @@ $(document).ready(function () {
   }
   /**
   Usage:
- 
+
   var wrapper = document.createElement('div');
   wrapper.className = 'fp-slides';
   wrap($('.slide'), wrapper);
- 
+
   https://jsfiddle.net/qwzc7oy3/15/ (vanilla)
   https://jsfiddle.net/oya6ndka/1/ (jquery equivalent)
   */
@@ -535,7 +626,7 @@ $(document).ready(function () {
   var wrapper = document.createElement('div');
   wrapper.className = 'fp-slides';
   wrap($('.slide'), wrapper);
- 
+
   https://jsfiddle.net/qwzc7oy3/27/ (vanilla)
   https://jsfiddle.net/oya6ndka/4/ (jquery equivalent)
   */
@@ -1997,7 +2088,7 @@ $(document).ready(function () {
   }
 
   function slideBulletHandler(e) {
-    // not all events are cancellable 
+    // not all events are cancellable
     // https://www.uriports.com/blog/easy-fix-for-intervention-ignored-attempt-to-cancel-a-touchmove-event-with-cancelable-false/
     if (e.cancelable) {
       preventDefault(e);
@@ -2299,7 +2390,7 @@ $(document).ready(function () {
 
   /**
   * Makes sure lazyload is done for other sections in the viewport that are not the
-  * active one. 
+  * active one.
   */
 
   function lazyLoadOthers() {
@@ -2323,9 +2414,9 @@ $(document).ready(function () {
   function isSectionInViewport(el) {
     var rect = el.getBoundingClientRect();
     var top = rect.top;
-    var bottom = rect.bottom; //sometimes there's a 1px offset on the bottom of the screen even when the 
+    var bottom = rect.bottom; //sometimes there's a 1px offset on the bottom of the screen even when the
     //section's height is the window.innerHeight one. I guess because pixels won't allow decimals.
-    //using this prevents from lazyLoading the section that is not yet visible 
+    //using this prevents from lazyLoading the section that is not yet visible
     //(only 1 pixel offset is)
 
     var pixelOffset = 2;
@@ -2990,7 +3081,7 @@ $(document).ready(function () {
       // We avoid it on mobile due to a bug in iOS Safari
 
       if (scrollableItem && !isTouchDevice && !isTouch) {
-        this.focusedElem = scrollableItem; // Forcing the focus on the next paint 
+        this.focusedElem = scrollableItem; // Forcing the focus on the next paint
         // to avoid issue #4484 & #4493 on Safari
 
         requestAnimationFrame(function () {
@@ -3032,7 +3123,7 @@ $(document).ready(function () {
           if (!el.hasScroll) {
             scrollOverflowHandler.createWrapper(item);
             scrollOverflowHandler.bindEvents(item);
-          } // updating the state now in case 
+          } // updating the state now in case
           // this is executed on page load (after images load)
 
 
@@ -3089,7 +3180,7 @@ $(document).ready(function () {
 
       var scrollableItem = scrollOverflowHandler.getScrollableItem(el);
 
-      if (!getOptions().scrollOverflow || !hasClass(scrollableItem, OVERFLOW) || // Checking the section first 
+      if (!getOptions().scrollOverflow || !hasClass(scrollableItem, OVERFLOW) || // Checking the section first
         // In case they apply to both section + slide #4505
         hasClass(el, 'fp-noscroll') || // Checking the slide (in case it has)
         hasClass(getSlideOrSection(el), 'fp-noscroll')) {
@@ -3345,7 +3436,7 @@ $(document).ready(function () {
 
   var g_prevActiveSectionIndex = null;
   var g_prevActiveSlideIndex = null;
-  /** 
+  /**
    * Updates the state of the app.
    */
 
@@ -3416,8 +3507,8 @@ $(document).ready(function () {
     return null;
   }
   /**
-   * When changes in the DOM take place there's a change 
-   * the active section is now hidden or removed. 
+   * When changes in the DOM take place there's a change
+   * the active section is now hidden or removed.
    * fullPage.js will scroll to the closest section nearby.
    */
 
@@ -3624,7 +3715,7 @@ $(document).ready(function () {
 
     if (didSectionsOrSlidesChange() && !state.isDoingContinousVertical) {
       if (getOptions().observer && g_wrapperObserver) {
-        // Temporally disabling the observer while 
+        // Temporally disabling the observer while
         // we modidy the DOM again
         g_wrapperObserver.disconnect();
       }
@@ -4008,7 +4099,7 @@ $(document).ready(function () {
     }
   }
   /* Detecting touch events
- 
+
   * As we are changing the top property of the page on scrolling, we can not use the traditional way to detect it.
   * This way, the touchstart and the touch moves shows an small difference between them which is the
   * used one to determine the direction.
@@ -4951,11 +5042,11 @@ $(document).ready(function () {
     }
 
     g_isConsecutiveResize = true; //in order to call the functions only when the resize is finished
-    //http://stackoverflow.com/questions/4298612/jquery-how-to-call-resize-event-only-once-its-finished-resizing    
+    //http://stackoverflow.com/questions/4298612/jquery-how-to-call-resize-event-only-once-its-finished-resizing
 
     clearTimeout(g_resizeId);
     g_resizeId = setTimeout(function () {
-      //issue #3336 
+      //issue #3336
       //(some apps or browsers, like Chrome/Firefox for Mobile take time to report the real height)
       //so we check it 3 times with intervals in that case
       // for(var i = 0; i< 4; i++){
@@ -4967,7 +5058,7 @@ $(document).ready(function () {
   function fitToActiveSection() {
     if (isTouchDevice) {
       // Issue #4393 and previously in v3, #3336
-      // (some apps or browsers, like Chrome/Firefox will delay a bit to scroll 
+      // (some apps or browsers, like Chrome/Firefox will delay a bit to scroll
       // to the focused input
       for (var i = 0; i < 4; i++) {
         g_resizeMobileHandlerId = setTimeout(function () {

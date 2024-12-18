@@ -124,14 +124,26 @@
     }
 
     .info {
+      width: 310px;
+
       display: flex;
       flex-direction: column;
       row-gap: 10px;
       justify-content: flex-end;
 
       h3 {
-        font-size: 3rem;
+        font-size: 2.8rem;
         font-weight: 500;
+      }
+
+      h4 {
+        font-size: 1.5rem;
+      }
+
+      .feature {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
       }
 
       table {

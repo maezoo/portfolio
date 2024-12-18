@@ -99,14 +99,14 @@ main {
   animation-iteration-count: infinite;
 }
 
-.tab_item {
-  display: none;
-}
+// .tab_item {
+//   display: none;
+// }
 
 /* .firstPage.show가 적용되었을 때 */
-.firstPage.show .tab_item:nth-child(1) {
-  display: block;
-}
+// .firstPage.show .tab_item:nth-child(1) {
+//   display: block;
+// }
 
 
 
@@ -116,9 +116,9 @@ main {
 }
 
 
-.lnb_tab.active {
-  display: block;
-}
+// .lnb_tab.active {
+//   display: block;
+// }
 
 
 // =============================================
@@ -194,8 +194,8 @@ main {
   }
 }
 
-.clone_1.noAni {
-  animation: none !important;
-  filter: none !important;
-  background-position: 100% 100%;
-}
+// .clone_1.noAni {
+//   animation: none !important;
+//   filter: none !important;
+//   background-position: 100% 100%;
+// }

@@ -73,12 +73,21 @@ main {
 
 // // 인트로 화면전환 =======================================
 // //  ==================================================
-.intro {
-  display: block;
-}
+// .intro {
+//   display: block;
+// }
 
 .intro.hide {
   display: none;
+}
+
+.tab_item {
+  display: none;
+}
+
+.firstPage.show {
+  display: block;
+  opacity: 1;
 }
 
 .firstPage {
@@ -87,14 +96,16 @@ main {
   transition: opacity 2s ease;
 }
 
-.firstPage.show {
-  display: block;
-  opacity: 1;
-}
 
-.tab_item {
-  display: none;
-}
+
+
+
+
+
+
+
+
+
 
 // .tab_item.active {
 //   display: block;

@@ -39,7 +39,6 @@ var swiper = new Swiper(".mySwiper", {
 // =======================================================
 // // 팝업 열기 + 닫기 =============================================
 
-
 document.querySelectorAll('.design_box').forEach(item => {
   item.addEventListener('click', () => {
     document.querySelectorAll('.detail_pop').forEach(pop => {
@@ -63,16 +62,12 @@ document.querySelectorAll('.close_btn').forEach(closeBtn => {
 // 인트로 화면전환 ===========================================
 
 const hideIntro = document.querySelector('.intro');
-const sectionTabs = document.querySelectorAll('.tab_item');
-// const firstTab = document.querySelector('.firstPage');
+const lightElement = document.querySelector('.light');
 const firstTabs = document.querySelectorAll('.firstPage');
 const clickClick = document.querySelector('.intro-click');
 const clickLogo = document.querySelector('.logo');
 const menuItems = document.querySelectorAll('.gnb_list');
-const lightElement = document.querySelector('.light');
-
-
-// sectionTabs.forEach(tab => tab.style.display = 'none');
+const sectionTabs = document.querySelectorAll('.tab_item');
 
 // =============================================================
 // 클릭 or 애니메이션 끝날 시 ========================================
@@ -85,33 +80,47 @@ const addHideClass = () => {
 lightElement.addEventListener('animationend', addHideClass);
 clickClick.addEventListener('click', addHideClass);
 
-
 clickLogo.addEventListener('click', () => {
+
+  // sectionTabs.forEach(tab => {
+  //   tab.style.display = 'none';
+  // });
+
   hideIntro.classList.remove('hide');
-  firstTabs.forEach(active => active.classList.remove('show'));
+
+  firstTabs.forEach(active => {
+    active.style.display = 'block';
+  });
 });
 
-// =============================================================
 
-
-
-
-// menuItems.forEach(button => {
-//   button.addEventListener('click', function () {
-//     sectionTabs.forEach(tab => {
-//       tab.style.display = 'none';
-//     });
+// 원본
+// clickLogo.addEventListener('click', () => {
+//   sectionTabs.forEach(tab => {
+//     tab.style.display = 'none';
 //   });
-// });
 
-// const targetTabId = button.getAttribute('data-tab');
-// const targetTab = document.querySelector(`#${targetTabId}`);
-// if (targetTab) {
-//   targetTab.style.display = 'block';
-// }
+//   hideIntro.classList.remove('hide');
 // });
-// 
+// 원본
 
+// =============================================================
+menuItems.forEach(button => {
+  button.addEventListener('click', function () {
+    sectionTabs.forEach(tab => {
+      tab.style.display = 'none';
+    });
+
+    const targetTabId = button.getAttribute('data-tab');
+    const targetTab = document.querySelector(`#${targetTabId}`);
+
+    if (targetTab) {
+      targetTab.style.display = 'block';
+    }
+  });
+});
+// =============================================================
+// =============================================================
 
 
 
@@ -170,7 +179,6 @@ clickLogo.addEventListener('click', () => {
 // });
 
 
-// AOS.init();
 
 // JavaScript
 
@@ -224,3 +232,6 @@ clickLogo.addEventListener('click', () => {
 //     });
 //   });
 // });
+
+
+// AOS.init();

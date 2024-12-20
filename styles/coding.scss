@@ -333,11 +333,11 @@
 }
 
 .go-top.move {
-  animation: fadeInUp 4s infinite;
+  animation: topUp 4s infinite;
   opacity: 1;
 }
 
-@keyframes fadeInUp {
+@keyframes topUp {
   0% {
     transform: translateY(100px);
   }

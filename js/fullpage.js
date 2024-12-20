@@ -1,24 +1,24 @@
-// document.addEventListener('DOMContentLoaded', function () {
-//   const codingFullpage = new fullpage('#fullpage', {
-//     navigation: true,
-//     scrollingSpeed: 600,
-//     autoScrolling: true,
-//     licenseKey: 'YOUR_LICENSE_KEY',
-//     onLeave: function (origin, destination, direction) {
-//       const goTopBtn = document.querySelector('.go-top');
-//       if (destination.index === 4) {
-//         goTopBtn.classList.add('move');
-//       } else {
-//         goTopBtn.classList.remove('move');
-//       }
-//     }
-//   });
+$(document).ready(function () {
+  $('#fullpage').fullpage({
+    navigation: true,
+    scrollingSpeed: 500,
+    licenseKey: 'YOUR_LICENSE_KEY',
 
-//   const goTopBtn = document.querySelector('.go-top');
-//   goTopBtn.addEventListener('click', function () {
-//     fullpage_api.moveTo(1);
-//   });
-// });
+    onLeave: function (origin, destination, direction) {
+      const goTopBtn = document.querySelector('.go-top');
+      if (destination.index === 4) {
+        goTopBtn.classList.add('move');
+      } else {
+        goTopBtn.classList.remove('move');
+      }
+    }
+  });
+
+  const goTopBtn = document.querySelector('.go-top');
+  goTopBtn.addEventListener('click', function () {
+    $.fn.fullpage.moveTo(1);
+  });
+});
 
 
 // const menuItems = document.querySelectorAll('.gnb_list');
@@ -55,16 +55,7 @@
 //     }
 //   });
 
-//   const designFullpage = new fullpage('#fullpage-2', {
-//     // navigation: true,
-//     // scrollingSpeed: 700,
-//     licenseKey: 'YOUR_LICENSE_KEY',
-//   });
 
-//   const goTopBtn = document.querySelector('.go-top');
-//   goTopBtn.addEventListener('click', function () {
-//     fullpage_api.moveTo(1);
-//   });
 
 //   const menuItems = document.querySelectorAll('.gnb_list');
 
@@ -103,14 +94,6 @@
 // });
 
 
-// normalScrollElements: '.design, .aboutMe',
-// anchors: ['spc', 'ckdhc', 'ulsan', 'hotel', 'trans'],
-// anchors: ['menu-coding', 'menu-design', 'menu-aboutMe'],
-// Design 섹션 Fullpage.js 초기화
-
-
-// =============================================================
-// 두 번째 fullpage ==============================================
 
 
 // ============================================================================================
@@ -590,11 +573,11 @@
   }
   /**
   Usage:
-
+ 
   var wrapper = document.createElement('div');
   wrapper.className = 'fp-slides';
   wrap($('.slide'), wrapper);
-
+ 
   https://jsfiddle.net/qwzc7oy3/15/ (vanilla)
   https://jsfiddle.net/oya6ndka/1/ (jquery equivalent)
   */
@@ -621,7 +604,7 @@
   var wrapper = document.createElement('div');
   wrapper.className = 'fp-slides';
   wrap($('.slide'), wrapper);
-
+ 
   https://jsfiddle.net/qwzc7oy3/27/ (vanilla)
   https://jsfiddle.net/oya6ndka/4/ (jquery equivalent)
   */
@@ -4094,7 +4077,7 @@
     }
   }
   /* Detecting touch events
-
+ 
   * As we are changing the top property of the page on scrolling, we can not use the traditional way to detect it.
   * This way, the touchstart and the touch moves shows an small difference between them which is the
   * used one to determine the direction.

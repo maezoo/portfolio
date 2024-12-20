@@ -1,4 +1,68 @@
-// @media (max-width: 768px) {
+@media (max-width: 640px) {
+  .intro {
+    padding: 0% 6%;
+  }
+
+  .intro-inner {
+    .text-flow {
+      height: 30%;
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      padding-bottom: 0%;
+
+      h2 {
+        letter-spacing: 8px;
+        font-weight: 900;
+        font-size: 3rem;
+      }
+
+      .text-h3 {
+        letter-spacing: 3px;
+        font-size: 1.8rem;
+
+        p {
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    .line_text {
+      width: 100%;
+      padding-top: 0%;
+      height: 30%;
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      font-size: 1.6rem;
+
+      .text-h3 {
+        letter-spacing: 2px;
+
+        p {
+          display: block;
+          margin-bottom: 10px;
+        }
+
+        span {
+          color: #ec3b00;
+        }
+      }
+
+
+      .intro-click {
+        cursor: pointer;
+        letter-spacing: 10px;
+        font-style: italic;
+      }
+
+
+    }
+  }
+
+
+}
+
 //   header {
 
 //     .logo {

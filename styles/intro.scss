@@ -23,6 +23,7 @@
   flex-direction: column;
   justify-content: space-evenly;
 
+
   .text-flow {
     width: 100%;
     height: 50%;
@@ -33,15 +34,23 @@
     justify-content: flex-end;
     padding-bottom: 6%;
 
+
+
     h2 {
       letter-spacing: 8px;
       font-weight: 900;
       font-size: 4.2rem;
+      display: inline-block;
+
     }
 
-    h3 {
+    .text-h3 {
       letter-spacing: 4px;
       font-size: 2.1rem;
+
+      p {
+        display: inline-block;
+      }
     }
 
     .animate__fadeInDown {
@@ -79,21 +88,25 @@
   }
 
   .line_text {
+    width: 100%;
     padding-top: 6%;
     height: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
     gap: 20px;
     font-size: 1.8rem;
 
-    h3 {
+    .text-h3 {
       letter-spacing: 2px;
-    }
 
-    span {
-      color: color.$tomato;
+      p {
+        display: inline-block;
+      }
+
+      span {
+        color: color.$tomato;
+      }
     }
 
     .intro-click {

@@ -1,3 +1,5 @@
+
+
 // ==============================================
 // // go to top =================================
 // document.addEventListener('DOMContentLoaded', function () {
@@ -51,7 +53,7 @@ document.querySelectorAll('.design_box').forEach(item => {
   });
 });
 
-document.querySelectorAll('.close_btn').forEach(closeBtn => {
+document.querySelectorAll('.detail_img').forEach(closeBtn => {
   closeBtn.addEventListener('click', (event) => {
     const popUp = event.target.closest('.detail_pop');
     popUp.style.display = 'none';
@@ -69,7 +71,6 @@ const clickLogo = document.querySelector('.logo');
 const menuItems = document.querySelectorAll('.gnb_list');
 const sectionTabs = document.querySelectorAll('.tab_item');
 
-// =============================================================
 // 클릭 or 애니메이션 끝날 시 ========================================
 
 const addHideClass = () => {
@@ -122,8 +123,27 @@ menuItems.forEach(button => {
 // =============================================================
 // =============================================================
 
+// // 특정 탭 상태 감지 함수
+// function toggleFpNav() {
+//   let isSecondOrThirdVisible = Array.from(sectionTabs).some((tab, index) => {
+//     return (index === 1 || index === 2) && getComputedStyle(tab).display === 'block';
+//   });
 
+//   if (isSecondOrThirdVisible) {
+//     fpNav.classList.add('remove'); // `remove` 클래스 추가
+//   } else {
+//     fpNav.classList.remove('remove'); // `remove` 클래스 제거
+//   }
+// }
 
+// // 탭 상태 변경 시 호출
+// sectionTabs.forEach(tab => {
+//   const observer = new MutationObserver(toggleFpNav);
+//   observer.observe(tab, { attributes: true, attributeFilter: ['style'] });
+// });
+
+// // 초기 상태도 확인
+// toggleFpNav();
 
 
 

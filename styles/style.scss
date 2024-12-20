@@ -43,6 +43,7 @@ a {
 
 body {
   width: 100vw;
+  overflow-x: hidden;
 }
 
 main {
@@ -53,35 +54,6 @@ main {
     letter-spacing: 3px;
   }
 }
-
-
-
-// // 인트로 화면전환 =======================================
-// //  ==================================================
-.intro {
-  display: block;
-}
-
-.intro.hide {
-  display: none;
-}
-
-.firstPage {
-  display: none;
-  opacity: 0;
-  // transition: opacity 2s ease-in-out;
-  transition: opacity 2s ease;
-}
-
-.firstPage.show {
-  display: block;
-  opacity: 1;
-}
-
-
-// //  =================================================
-// //  ==================================================
-
 
 .hover_effect {
   font-family: 'InkLipquid';
@@ -99,9 +71,41 @@ main {
   animation-iteration-count: infinite;
 }
 
-// .tab_item {
-//   display: none;
+// // 인트로 화면전환 =======================================
+// //  ==================================================
+.intro {
+  display: block;
+}
+
+.intro.hide {
+  display: none;
+}
+
+.firstPage {
+  display: none;
+  opacity: 0;
+  transition: opacity 2s ease;
+}
+
+.firstPage.show {
+  display: block;
+  opacity: 1;
+}
+
+.tab_item {
+  display: none;
+}
+
+// .tab_item.active {
+//   display: block;
+//   /* 활성화된 탭만 보임 */
 // }
+
+// //  =================================================
+// //  ==================================================
+
+
+
 
 /* .firstPage.show가 적용되었을 때 */
 // .firstPage.show .tab_item:nth-child(1) {
@@ -110,10 +114,10 @@ main {
 
 
 
-.lnb_list li.active {
-  // background-color: cornflowerblue;
-  // display: block;
-}
+// .lnb_list li.active {
+// background-color: cornflowerblue;
+// display: block;
+// }
 
 
 // .lnb_tab.active {
@@ -156,9 +160,6 @@ main {
           cursor: pointer;
         }
       }
-
-
-
     }
   }
 }
@@ -172,30 +173,3 @@ main {
 .clone.remove {
   display: none;
 }
-
-.zoom_img.zoom {
-  background: url(/images/suseong.JPG) no-repeat;
-  background-size: cover;
-  width: 700px;
-  height: 400px;
-  border-radius: 2.6rem;
-  box-shadow: -5px 10px 15px rgba(0, 0, 0, 0.25);
-  filter: grayscale(1) brightness(0.8);
-  overflow: hidden;
-
-  &:hover {
-    filter: none;
-    transition: all 2s linear;
-    background-position: 100% 100%;
-
-    // transition: all .1s ease-in-out;
-    // animation: none;
-    // animation: size_img .1s linear infinite;
-  }
-}
-
-// .clone_1.noAni {
-//   animation: none !important;
-//   filter: none !important;
-//   background-position: 100% 100%;
-// }

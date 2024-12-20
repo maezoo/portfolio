@@ -1,48 +1,43 @@
-document.addEventListener('DOMContentLoaded', function () {
-  const codingFullpage = new fullpage('#fullpage-1', {
+// document.addEventListener('DOMContentLoaded', function () {
+//   const codingFullpage = new fullpage('#fullpage', {
+//     navigation: true,
+//     scrollingSpeed: 600,
+//     autoScrolling: true,
+//     licenseKey: 'YOUR_LICENSE_KEY',
+//     onLeave: function (origin, destination, direction) {
+//       const goTopBtn = document.querySelector('.go-top');
+//       if (destination.index === 4) {
+//         goTopBtn.classList.add('move');
+//       } else {
+//         goTopBtn.classList.remove('move');
+//       }
+//     }
+//   });
 
-    navigation: true,
-    scrollingSpeed: 600,
-    autoScrolling: true,
-    licenseKey: 'YOUR_LICENSE_KEY',
-    onLeave: function (origin, destination, direction) {
-      const goTopBtn = document.querySelector('.go-top');
-      if (destination.index === 4) {
-        goTopBtn.classList.add('move');
-      } else {
-        goTopBtn.classList.remove('move');
-      }
-    }
-  });
+//   const goTopBtn = document.querySelector('.go-top');
+//   goTopBtn.addEventListener('click', function () {
+//     fullpage_api.moveTo(1);
+//   });
+// });
 
-  const designFullpage = new fullpage('#fullpage-2', {
-    licenseKey: 'YOUR_LICENSE_KEY',
-    navigation: false,  // 네비게이션 끄기
-  });
 
-  const goTopBtn = document.querySelector('.go-top');
-  goTopBtn.addEventListener('click', function () {
-    fullpage_api.moveTo(1);
-  });
+// const menuItems = document.querySelectorAll('.gnb_list');
+// menuItems.forEach(menuItem => {
+//   menuItem.addEventListener('click', function () {
+//     const targetTab = this.getAttribute('data-tab');
 
-  const menuItems = document.querySelectorAll('.gnb_list');
-  menuItems.forEach(menuItem => {
-    menuItem.addEventListener('click', function () {
-      const targetTab = this.getAttribute('data-tab');
+//     document.querySelectorAll('.tab_item').forEach(item => {
+//       item.style.display = 'none';
+//     });
 
-      document.querySelectorAll('.tab_item').forEach(item => {
-        item.style.display = 'none';
-      });
+//     const target = document.querySelector(`#${targetTab}`);
+//     if (target) {
+//       target.style.display = 'block';
+//     }
 
-      const target = document.querySelector(`#${targetTab}`);
-      if (target) {
-        target.style.display = 'block';
-      }
-
-      fullpage_api.reBuild();
-    });
-  });
-});
+//     fullpage_api.reBuild();
+//   });
+// });
 
 // document.addEventListener('DOMContentLoaded', function () {
 //   const codingFullpage = new fullpage('#fullpage-1', {

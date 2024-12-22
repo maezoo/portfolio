@@ -76,6 +76,7 @@ const sectionTabs = document.querySelectorAll('.tab_item');
 const addHideClass = () => {
   hideIntro.classList.add('hide');
   firstTabs.forEach(active => active.classList.add('show'));
+  menuItems[0].style.color = '#ec3b00';
 };
 
 lightElement.addEventListener('animationend', addHideClass);
@@ -106,17 +107,25 @@ clickLogo.addEventListener('click', () => {
 // 원본
 
 // =============================================================
+
 menuItems.forEach(button => {
   button.addEventListener('click', function () {
+    // 모든 탭 숨기기
     sectionTabs.forEach(tab => {
       tab.style.display = 'none';
     });
 
+    menuItems.forEach(item => {
+      item.style.color = '';
+    });
+
+    // 클릭된 탭 활성화
     const targetTabId = button.getAttribute('data-tab');
     const targetTab = document.querySelector(`#${targetTabId}`);
 
     if (targetTab) {
-      targetTab.style.display = 'block';
+      targetTab.style.display = 'block'; // 클릭된 탭 표시
+      button.style.color = '#ec3b00'; // 클릭된 버튼 색상 변
     }
   });
 });

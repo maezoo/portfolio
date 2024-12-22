@@ -1,99 +1,77 @@
+// var myFullpage = new fullpage("#fullpage", {
+
 $(document).ready(function () {
   $('#fullpage').fullpage({
+    anchors: ["coding", "design", "aboutMe"],
+
+    // you can also use the HTML attribute data-tooltip on each section instead
+    // navigationTooltips: ["First Section", "Second Section", "Third Section"],
     navigation: true,
-    scrollingSpeed: 500,
-    licenseKey: 'YOUR_LICENSE_KEY',
 
-    onLeave: function (origin, destination, direction) {
-      const goTopBtn = document.querySelector('.go-top');
-      if (destination.index === 4) {
-        goTopBtn.classList.add('move');
-      } else {
-        goTopBtn.classList.remove('move');
-      }
-    }
-  });
+    verticalCentered: true,
 
-  const goTopBtn = document.querySelector('.go-top');
-  goTopBtn.addEventListener('click', function () {
-    $.fn.fullpage.moveTo(1);
+    // Navigation for horizontal slides
+    slidesNavigation: true,
+
+    controlArrows: true,
+
+    licenseKey: "xxxxxxxxxxxxxxxxxxxxxxxxx"
   });
 });
+// $(document).ready(function () {
+//   $('#fullpage').fullpage({
 
-
-// const menuItems = document.querySelectorAll('.gnb_list');
-// menuItems.forEach(menuItem => {
-//   menuItem.addEventListener('click', function () {
-//     const targetTab = this.getAttribute('data-tab');
-
-//     document.querySelectorAll('.tab_item').forEach(item => {
-//       item.style.display = 'none';
-//     });
-
-//     const target = document.querySelector(`#${targetTab}`);
-//     if (target) {
-//       target.style.display = 'block';
-//     }
-
-//     fullpage_api.reBuild();
-//   });
-// });
-
-// document.addEventListener('DOMContentLoaded', function () {
-//   const codingFullpage = new fullpage('#fullpage-1', {
-//     navigation: true,
-//     scrollingSpeed: 600,
-//     autoScrolling: true,
+//     navigationTooltips: ['ccc', 'ddd', 'aaa'],
 //     licenseKey: 'YOUR_LICENSE_KEY',
-//     onLeave: function (origin, destination, direction) {
-//       const goTopBtn = document.querySelector('.go-top');
-//       if (destination.index === 4) {
-//         goTopBtn.classList.add('move');
-//       } else {
-//         goTopBtn.classList.remove('move');
-//       }
-//     }
+//     navigationTooltips: ['First Section', 'Second Section', 'Third Section'],
+
+//     slidesNavigation: true,
+//     // slidesNavPosition: 'bottom',
+//     // navigationPosition: 'right',
+
+//     // controlArrows: false,
+//     // controlArrows: true,
 //   });
-
-
-
-//   const menuItems = document.querySelectorAll('.gnb_list');
-
-//   menuItems.forEach(menuItem => {
-//     menuItem.addEventListener('click', function () {
-//       const targetTab = this.getAttribute('data-tab');
-
-//       document.querySelectorAll('.tab_item').forEach(item => {
-//         item.style.display = 'none';
-//       });
-
-//       const target = document.querySelector(`#${targetTab}`);
-//       if (target) {
-//         target.style.display = 'block';
-//       }
-
-//       fullpage_api.reBuild();
-//     });
-//   });
-
-
-
-//   // const menuTab = document.querySelectorAll('.tab_item');
-//   // menuTab.forEach(tabClick => {
-//   //   tabClick.addEventListener('click', function () {
-//   //     document.querySelectorAll('.tab_item').forEach(item => {
-//   //       item.style.display = 'none';
-//   //     });
-
-//   //     const target = document.querySelector(`#${this.id}`);
-//   //     target.style.display = 'block';
-
-//   //     fullpage_api.reBuild();
-//   //   });
-//   // });
 // });
 
 
+
+// < !--원본 -->
+// < !--원본 -->
+// < !--원본 -->
+// < !--원본 -->
+// < !--원본 -->
+// < !--원본 -->
+//   $(document).ready(function () {
+//     $('#fullpage').fullpage({
+//       navigation: true,
+//       scrollingSpeed: 500,
+//       licenseKey: 'YOUR_LICENSE_KEY',
+
+//       anchors: ['#coding', '#design', '#aboutMe'],
+//       navigationTooltips: ['#coding'],
+
+//       onLeave: function (origin, destination, direction) {
+//         const goTopBtn = document.querySelector('.go-top');
+//         if (destination.index === 4) {
+//           goTopBtn.classList.add('move');
+//         } else {
+//           goTopBtn.classList.remove('move');
+//         }
+//       }
+//     });
+
+//     const goTopBtn = document.querySelector('.go-top');
+//     goTopBtn.addEventListener('click', function () {
+//       $.fn.fullpage.moveTo(1);
+//     });
+//   });
+// < !--원본 -->
+// < !--원본 -->
+// < !--원본 -->
+// < !--원본 -->
+// < !--원본 -->
+// < !--원본 -->
 
 
 // ============================================================================================

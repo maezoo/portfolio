@@ -97,18 +97,46 @@ main {
 }
 
 
+// #coding {
+//   width: 100%;
+//   height: 100vh;
+// }
 
-
-#aboutMe,
-#design {
-  height: 100vh;
-  overflow: auto;
-}
+// #design,
+// #aboutMe {
+//   height: 100vh;
+//   overflow: auto;
+// }
 
 // #fp-nav {
 //   display: none;
 // }
 
+
+
+.fp-table {
+  // align-items: center;
+}
+
+.fp-slides {
+  // padding-top: 100px;
+  // width: 100%;
+  // height: 100vh;
+}
+
+.fp-overflow {
+  background-color: rgb(140, 72, 133);
+  width: 100%;
+  height: 100vh;
+
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+}
+
+// .fp-watermark {
+//   display: none;
+// }
 
 
 

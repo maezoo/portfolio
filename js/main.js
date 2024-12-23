@@ -78,6 +78,7 @@ const sectionTabs = document.querySelectorAll('.tab_item');
 const addHideClass = () => {
   hideIntro.classList.add('hide');
   firstTabs.forEach(active => active.classList.add('show'));
+  menuItems[0].style.color = '#ec3b00';
 };
 
 lightElement.addEventListener('animationend', addHideClass);
@@ -85,27 +86,16 @@ clickClick.addEventListener('click', addHideClass);
 
 clickLogo.addEventListener('click', () => {
 
-  // sectionTabs.forEach(tab => {
-  //   tab.style.display = 'none';
-  // });
-
   hideIntro.classList.remove('hide');
+  menuItems.forEach(item => {
+    item.style.color = '';
+  });
 
   firstTabs.forEach(active => {
     active.style.display = 'block';
+
   });
 });
-
-
-// 원본
-// clickLogo.addEventListener('click', () => {
-//   sectionTabs.forEach(tab => {
-//     tab.style.display = 'none';
-//   });
-
-//   hideIntro.classList.remove('hide');
-// });
-// 원본
 
 // =============================================================
 menuItems.forEach(button => {
@@ -114,146 +104,18 @@ menuItems.forEach(button => {
       tab.style.display = 'none';
     });
 
+    menuItems.forEach(item => {
+      item.style.color = '';
+    });
+
     const targetTabId = button.getAttribute('data-tab');
     const targetTab = document.querySelector(`#${targetTabId}`);
 
     if (targetTab) {
       targetTab.style.display = 'block';
+      button.style.color = '#ec3b00';
+
     }
   });
 });
-// =============================================================
-// =============================================================
 
-// // 특정 탭 상태 감지 함수
-// function toggleFpNav() {
-//   let isSecondOrThirdVisible = Array.from(sectionTabs).some((tab, index) => {
-//     return (index === 1 || index === 2) && getComputedStyle(tab).display === 'block';
-//   });
-
-//   if (isSecondOrThirdVisible) {
-//     fpNav.classList.add('remove'); // `remove` 클래스 추가
-//   } else {
-//     fpNav.classList.remove('remove'); // `remove` 클래스 제거
-//   }
-// }
-
-// // 탭 상태 변경 시 호출
-// sectionTabs.forEach(tab => {
-//   const observer = new MutationObserver(toggleFpNav);
-//   observer.observe(tab, { attributes: true, attributeFilter: ['style'] });
-// });
-
-// // 초기 상태도 확인
-// toggleFpNav();
-
-
-
-
-
-// const leftBar = document.querySelector('.left-menu');
-// const LnbItem = document.querySelectorAll('.lnb_item');
-
-
-// leftBar.classList.add('visible');
-
-// LnbItem.forEach(clickedlnb => {
-//   clickedlnb.style.color = '';
-//   clickedlnb.style.fontWeight = '';
-// });
-
-// LnbItem[0].style.color = '#FF6347';
-// LnbItem[0].style.fontWeight = '400';
-
-// =======================================================
-// =======================================================
-// // 메뉴 전환 ============================================
-// =======================================================
-
-// const topCoding = document.querySelector('.codingMenu');
-// const leftMenu = document.querySelector('#leftMenu');
-// const lnbItem = document.querySelectorAll('.lnb_item');
-// const sectionCoding = document.querySelector('.coding');
-
-// lnbItem.forEach(leftItems => {
-//   leftItems.addEventListener('click', function () {
-//     lnbItem.forEach(clickedlnb => {
-//       clickedlnb.style.color = '';
-//       clickedlnb.style.fontWeight = '';
-//     });
-
-//     leftItems.style.color = '#FF6347';
-//     leftItems.style.fontWeight = '400';
-//   });
-// });
-
-
-
-// topCoding.addEventListener('click', () => {
-//   leftMenu.classList.add('visible');
-//   lnbItem.forEach(clickedlnb => {
-//     clickedlnb.style.color = '';
-//     clickedlnb.style.fontWeight = '';
-//   });
-//   lnbItem[0].style.color = '#FF6347';
-//   lnbItem[0].style.fontWeight = '400';
-
-// });
-
-
-
-// JavaScript
-
-
-
-// menuItems.forEach(item => {
-//   item.style.color = '';
-// });
-
-// button.style.color = '#FF6347';
-
-
-
-
-// document.addEventListener('DOMContentLoaded', function () {
-//   let codingFullpage;
-// ;
-//  
-
-//   menuItems.forEach(button => {
-//     button.addEventListener('click', function () {
-//       // 탭 변경 처리
-//       menuItems.forEach(item => item.style.color = '');
-//       button.style.color = '#FF6347';
-
-// /
-//       // Fullpage 활성화/비활성화
-//       if (targetTabId === 'tab1') {
-//         if (!codingFullpage) {
-//           codingFullpage = new fullpage('#fullpage', {
-//             navigation: true,
-//             scrollingSpeed: 600,
-//             autoScrolling: true,
-//             licenseKey: 'YOUR_LICENSE_KEY',
-//             onLeave: function (origin, destination, direction) {
-//               const goTopBtn = document.querySelector('.go-top');
-//               if (destination.index === 4) {
-//                 goTopBtn.classList.add('move');
-//               } else {
-//                 goTopBtn.classList.remove('move');
-//               }
-//             }
-//           });
-//         }
-//       } else {
-//         if (codingFullpage) {
-//           fullpage_api.destroy('all'); // fullpage.js 비활성화
-//           codingFullpage = null;
-//         }
-//       }
-//     });
-//   });
-// });
-
-
-// AOS.init();

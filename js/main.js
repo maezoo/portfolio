@@ -1,9 +1,11 @@
-
+// =======================================================
+// coding fullpage ========================================
 $(document).ready(function () {
   $('#fullpage').fullpage({
     navigation: true,
     scrollingSpeed: 500,
     licenseKey: 'YOUR_LICENSE_KEY',
+    responsiveWidth: 768,
 
     onLeave: function (origin, destination, direction) {
       const goTopBtn = document.querySelector('.go-top');

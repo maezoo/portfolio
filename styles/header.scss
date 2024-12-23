@@ -40,15 +40,6 @@ header {
     gap: 25px;
     padding-bottom: 2px;
 
-    .mobile-btn {
-      display: none;
-      cursor: pointer;
-      width: 35%;
-
-      img {
-        width: 100%;
-      }
-    }
 
     .gnb_list {
       letter-spacing: 2px;
@@ -60,6 +51,17 @@ header {
       }
     }
   }
+
+  .mobile-btn {
+    display: none;
+    cursor: pointer;
+    width: 35%;
+
+    img {
+      width: 100%;
+    }
+  }
+
 }
 
 .menu-pop {

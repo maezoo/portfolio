@@ -1,25 +1,28 @@
 
+$(document).ready(function () {
+  $('#fullpage').fullpage({
+    navigation: true,
+    scrollingSpeed: 500,
+    licenseKey: 'YOUR_LICENSE_KEY',
 
-// ==============================================
-// // go to top =================================
-// document.addEventListener('DOMContentLoaded', function () {
-//   const goTopBtn = document.querySelector('.go-top');
-//   const threshold = window.innerHeight * 1.9;
+    onLeave: function (origin, destination, direction) {
+      const goTopBtn = document.querySelector('.go-top');
+      if (destination.index === 4) {
+        goTopBtn.classList.add('move');
+      } else {
+        goTopBtn.classList.remove('move');
+      }
+    }
+  });
 
-//   function toggleGoTopBtn() {
-//     const pageScroll = window.scrollY;
-//     if (pageScroll > threshold) {
-//       goTopBtn.classList.add('visible');
-//     } else {
-//       goTopBtn.classList.remove('visible');
-//     }
-//   }
-//   toggleGoTopBtn();
-//   window.addEventListener('scroll', toggleGoTopBtn);
-// });
+  const goTopBtn = document.querySelector('.go-top');
+  goTopBtn.addEventListener('click', function () {
+    $.fn.fullpage.moveTo(1);
+  });
+});
 
 // =======================================================
-// // clone_5 스와이퍼 =============================================
+// clone_5 스와이퍼 ========================================
 var swiper = new Swiper(".mySwiper", {
 
   pagination: {
@@ -35,11 +38,11 @@ var swiper = new Swiper(".mySwiper", {
   },
   keyboard: true,
   loop: true,
-  slidesPerView: 1, // 슬라이드당 1개만 보이도록 설정
-  slidesPerGroup: 1, // 한 번에 1개의 슬라이드만 이동
+  slidesPerView: 1,
+  slidesPerGroup: 1,
 });
 // =======================================================
-// // 팝업 열기 + 닫기 =============================================
+// 팝업 열기 + 닫기 =========================================
 
 document.querySelectorAll('.design_box').forEach(item => {
   item.addEventListener('click', () => {
@@ -71,8 +74,7 @@ const clickLogo = document.querySelector('.logo');
 const menuItems = document.querySelectorAll('.gnb_list');
 const sectionTabs = document.querySelectorAll('.tab_item');
 
-// 클릭 or 애니메이션 끝날 시 ========================================
-
+// 클릭 or 애니메이션 끝날 시
 const addHideClass = () => {
   hideIntro.classList.add('hide');
   firstTabs.forEach(active => active.classList.add('show'));

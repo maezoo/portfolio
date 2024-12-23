@@ -73,9 +73,6 @@ main {
 
 // // 인트로 화면전환 =======================================
 // //  ==================================================
-// .intro {
-//   display: block;
-// }
 
 .intro.hide {
   display: none;
@@ -96,59 +93,8 @@ main {
   transition: opacity 2s ease;
 }
 
-
-
-
 #aboutMe,
 #design {
   height: 100vh;
   overflow: auto;
 }
-
-// #fp-nav {
-//   display: none;
-// }
-
-
-
-
-
-// .tab_item.active {
-//   display: block;
-//   /* 활성화된 탭만 보임 */
-// }
-
-// //  =================================================
-// //  ==================================================
-
-
-
-
-/* .firstPage.show가 적용되었을 때 */
-// .firstPage.show .tab_item:nth-child(1) {
-//   display: block;
-// }
-
-
-
-// .lnb_list li.active {
-// background-color: cornflowerblue;
-// display: block;
-// }
-
-
-// .lnb_tab.active {
-//   display: block;
-// }
-
-
-
-
-
-// .info_page.show {
-//   opacity: 1;
-// }
-
-// .clone.remove {
-//   display: none;
-// }

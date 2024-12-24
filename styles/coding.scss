@@ -67,9 +67,9 @@
     }
 
     .preview {
-      width: 515px;
+      width: 620px;
       z-index: 1;
-      padding-bottom: 25px;
+      padding-bottom: 20px;
 
       .cloneImg_1 {
         background: url(/images/full-screen_SPC.JPG) no-repeat;
@@ -79,13 +79,6 @@
     }
 
     .preview-2 {
-
-      .cloneImg {
-        max-width: 430px;
-        width: 430px;
-        height: 253px;
-        border-radius: 2rem;
-      }
 
       .cloneImg_2 {
         background: url(/images/full-screen_ckdhc.JPG) no-repeat;
@@ -107,10 +100,10 @@
     }
 
     .cloneImg {
-      min-width: 360px;
-      width: 360px;
-      height: 212px;
-      border-radius: 1.5rem;
+      min-width: 468px;
+      width: 468px;
+      height: 275px;
+      border-radius: 1.6rem;
       box-shadow: -5px 10px 15px rgba(0, 0, 0, 0.25);
       filter: grayscale(1) brightness(0.8);
       cursor: pointer;
@@ -211,6 +204,7 @@
               width: 100%;
               height: 100%;
               border-radius: 5px;
+
             }
           }
         }

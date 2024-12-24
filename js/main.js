@@ -1,3 +1,5 @@
+
+
 // =======================================================
 // coding fullpage ========================================
 $(document).ready(function () {
@@ -119,5 +121,31 @@ menuItems.forEach(button => {
 
     }
   });
+
+  // mo-menu ========================================
+  const moItems = document.querySelectorAll('.mo-item');
+
+  moItems.forEach((item, index) => {
+    item.addEventListener('click', function () {
+      // 모든 탭을 숨기기
+      sectionTabs.forEach(tab => {
+        tab.style.display = 'none';
+      });
+
+      // 클릭한 항목의 순서에 맞는 tab을 보이게 하기
+      sectionTabs[index].style.display = 'block';
+    });
+  });
 });
 
+
+
+
+// ===========================================================
+// ===========================================================
+const moBtn = document.querySelector('.mobile-btn');
+const moMenu = document.querySelector('.mo-menu');
+
+moBtn.addEventListener('click', function () {
+  moMenu.classList.toggle('show');
+});

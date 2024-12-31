@@ -128,31 +128,26 @@ menuItems.forEach(button => {
 
     }
   });
-
-  // mo-menu ========================================
-  const moItems = document.querySelectorAll('.mo-item');
-
-  moItems.forEach((item, index) => {
-    item.addEventListener('click', function () {
-      // 모든 탭을 숨기기
-      sectionTabs.forEach(tab => {
-        tab.style.display = 'none';
-      });
-
-      // 클릭한 항목의 순서에 맞는 tab을 보이게 하기
-      sectionTabs[index].style.display = 'block';
-    });
-  });
 });
 
-
-
-
-// ===========================================================
-// ===========================================================
-const moBtn = document.querySelector('.mobile-btn');
+// mo-menu ========================================
+const moItems = document.querySelectorAll('.mo-item');
 const moMenu = document.querySelector('.mo-menu');
+const moBtn = document.querySelector('.mobile-btn');
 
+// 모바일 버튼 클릭 시 메뉴 토글
 moBtn.addEventListener('click', function () {
   moMenu.classList.toggle('show');
+});
+
+moItems.forEach((item, index) => {
+  item.addEventListener('click', function () {
+    sectionTabs.forEach(tab => {
+      tab.style.display = 'none';
+    });
+
+    sectionTabs[index].style.display = 'block';
+
+    moMenu.classList.remove('show');
+  });
 });

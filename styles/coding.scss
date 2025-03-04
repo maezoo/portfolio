@@ -5,7 +5,6 @@
   }
 
   .section {
-
     .section_inner {
       padding: 2% 10% 0%;
       width: 100%;
@@ -20,7 +19,6 @@
     .mo-content {
       display: flex;
       gap: 20px;
-
 
       .screen-wrapper {
         position: relative;
@@ -70,7 +68,11 @@
     }
 
     .preview-2 {
-
+      .cloneImg_cream {
+        background: url(/images/full-screen_cream.jpg) no-repeat;
+        background-size: cover;
+        transition: background-position 2s linear;
+      }
       .cloneImg_2 {
         background: url(/images/full-screen_ckdhc.JPG) no-repeat;
         background-size: cover;
@@ -80,7 +82,7 @@
       .cloneImg_3 {
         background: url(/images/full-screen_ulsan-fire.JPG) no-repeat;
         background-size: cover;
-        transition: background-position .8s linear;
+        transition: background-position 0.8s linear;
       }
 
       .cloneImg_4 {
@@ -91,7 +93,6 @@
     }
 
     .cloneImg {
-      // min-width: 468px;
       width: 468px;
       height: 275px;
       border-radius: 1.6rem;
@@ -121,7 +122,9 @@
         display: flex;
         flex-direction: column;
         gap: 5px;
-
+        span {
+          color: #ff6347;
+        }
       }
 
       table {
@@ -167,7 +170,7 @@
           border: none;
           box-shadow: 5px 5px 6px rgba(57, 57, 57, 0.344);
           background-color: rgb(210, 210, 210);
-          transition: all .4s ease-in-out;
+          transition: all 0.4s ease-in-out;
           color: rgb(49, 48, 48);
 
           a {
@@ -196,13 +199,12 @@
               width: 100%;
               height: 100%;
               border-radius: 5px;
-
             }
           }
         }
 
         .btn1 {
-          background-color: #FF6347;
+          background-color: #ff6347;
           margin-right: 7px;
         }
       }
@@ -307,7 +309,7 @@
   }
 }
 
-.fp-is-overflow>.fp-overflow {
+.fp-is-overflow > .fp-overflow {
   height: 100vh;
   width: 100%;
 }
@@ -318,7 +320,7 @@
 
 .go-top {
   box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.25);
-  background-color: #FF6347;
+  background-color: #ff6347;
   border-radius: 50%;
   height: 35px;
   width: 35px;

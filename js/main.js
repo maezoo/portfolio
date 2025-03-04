@@ -18,7 +18,7 @@ $(document).ready(function () {
 
     onLeave: function (origin, destination, direction) {
       const goTopBtn = document.querySelector('.go-top');
-      if (destination.index === 4) {
+      if (destination.index === 5) {
         goTopBtn.classList.add('move');
       } else {
         goTopBtn.classList.remove('move');

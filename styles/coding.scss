@@ -43,10 +43,35 @@
           }
         }
 
-        .bl-phone {
+        .spc-phone {
           background: url(/images/mobile_SPC.jpg) no-repeat;
           background-size: cover;
           transition: background-position 3s linear;
+        }
+
+        .cream-phone {
+          display: flex;
+          flex-direction: column;
+
+          .hd-img {
+            img {
+              width: 100%;
+              // height: 100%;
+              object-fit: contain;
+            }
+          }
+
+          .slide-img {
+            width: 100%;
+            height: 100%;
+            background: url(/images/phone-cream-slide.JPG) no-repeat;
+            background-size: cover;
+            transition: background-position 2s linear;
+
+            &:hover {
+              background-position: 100% 100%;
+            }
+          }
         }
 
         .no-phone {
@@ -65,14 +90,15 @@
         background-size: cover;
         transition: background-position 2s linear;
       }
-    }
 
-    .preview-2 {
       .cloneImg_cream {
         background: url(/images/full-screen_cream.jpg) no-repeat;
         background-size: cover;
         transition: background-position 2s linear;
       }
+    }
+
+    .preview-2 {
       .cloneImg_2 {
         background: url(/images/full-screen_ckdhc.JPG) no-repeat;
         background-size: cover;

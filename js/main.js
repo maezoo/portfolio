@@ -76,7 +76,6 @@ document.querySelectorAll('.detail_img').forEach(closeBtn => {
 
 // =======================================================
 // 인트로 화면전환 ===========================================
-
 const hideIntro = document.querySelector('.intro');
 const lightElement = document.querySelector('.light');
 const firstTabs = document.querySelectorAll('.firstPage');
@@ -113,6 +112,8 @@ menuItems.forEach(button => {
   button.addEventListener('click', function () {
     sectionTabs.forEach(tab => {
       tab.style.display = 'none';
+
+
     });
 
     menuItems.forEach(item => {
